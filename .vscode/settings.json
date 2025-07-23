@@ -4,8 +4,8 @@
             "fileMatch": [
                 "/assets/resource/**/*.json",
                 "/install/resource/**/*.json",
-                "/assets/resource/**/*.jsonc",
-                "/install/resource/**/*.jsonc"
+                "!/assets/resource/{cn,en,jp,items}.json",
+                "!/install/resource/{cn,en,jp,items}.json"
             ],
             "url": "/deps/tools/pipeline.schema.json"
         },
@@ -23,6 +23,9 @@
             "url": "/deps/tools/interface_config.schema.json"
         }
     ],
+    "files.exclude": {
+        "__pycache__": true
+    },
     "files.associations": {
         "**/assets/**/*.json": "jsonc"
     },
@@ -33,10 +36,14 @@
         "editor.indentSize": "tabSize"
     },
     "[python]": {
+        "editor.formatOnSave": true,
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "[markdown]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "markdownlint.config": {
+        "MD028": false
     }
 }

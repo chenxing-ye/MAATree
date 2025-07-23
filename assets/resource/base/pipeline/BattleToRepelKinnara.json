@@ -1,0 +1,113 @@
+{
+  "startAutoKinnara": {
+    "next": [
+      "Kinnara_detectionHome",
+      "返回主页检测"
+    ],
+    "interrupt": [
+      "退出"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "Kinnara_detectionHome": {
+    "recognition": "TemplateMatch",
+    "template": "主页出击.png",
+    "roi": [
+      1031,
+      325,
+      119,
+      54
+    ],
+    "next": ["clickHighDifficulty"],
+    "action": "Click",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "clickHighDifficulty":{
+    "recognition": "OCR",
+    "expected": "高难",
+    "roi" : [1169,84,96,59],
+    "action": "Click",
+    "next": "clickKinnara",
+    "post_delay": 400,
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "clickKinnara": {
+    "recognition": "TemplateMatch",
+    "template" : "Kinnara.png",
+    "roi" : [16,261,480,323],
+    "action": "Click",
+    "next": "clickJoinTheBattle",
+    "post_delay": 400,
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "clickJoinTheBattle": {
+    "recognition": "OCR",
+    "expected" : "加入讨伐队",
+    "roi" : [833,594,198,84],
+    "action": "Click",
+    //两种情况:1找不到队伍一直转圈圈。2找到队伍直接进入队伍
+    "next": [
+      "clickToPrepare",
+      "quickJoinWaiting",
+      "quickJoinFailure"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //等待
+  "quickJoinWaiting": {
+    "recognition": "OCR",
+    "expected" : "正在寻找",
+    "roi" : [531,395,214,64],
+    "next": [
+      "quickJoinWaiting",
+      "clickToPrepare",
+      "quickJoinFailure"
+    ],
+    "rate_limit": 800,
+    "timeout": 35000,
+    "on_error": "stopapp"
+  },
+  //失败
+  "quickJoinFailure": {
+    "recognition": "OCR",
+    "expected" : "未找到房间",
+    "roi" : [475,370,290,67],
+    "action": "Click",
+    "target" : [453,470,85,40],
+    "next": "clickJoinTheBattle",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "clickToPrepare": {
+    "recognition": "OCR",
+    "expected" : "准备",
+    "roi" : [558,556,156,65],
+    "action": "Click",
+    "next": "cancelPreparation",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "cancelPreparation": {
+    "recognition": "OCR",
+    "expected" : "取消准备",
+    "roi" : [549,556,170,60],
+    "next":[
+      "cancelPreparation",
+      "teamBattleKinnara"
+    ],
+    "timeout": 4000,
+    "on_error": "stopapp"
+  },
+  "teamBattleKinnara": {
+    "recognition": "OCR",
+    "expected" : "没有掉线",
+    "roi" : [549,556,170,60],
+    "timeout": 4000,
+    "on_error": "stopapp"
+  }
+}
