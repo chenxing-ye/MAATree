@@ -163,7 +163,7 @@
                 "紧纳罗助战虚宿体",
                 "紧纳罗讨伐出战顺序"
             ],
-            "doc": "",
+            "doc": "[color:blue][size:20]自动讨伐紧那罗需配置好队伍[/size][/color]\n[color:red][size:20]好友助战机甲需配置：需在还有列表中设置星标，确保每个队伍所指定的机甲均在前三个助战位置中[/size][/color]\n[color:red][size:20]每个劫使均可配置指定出战队伍1~6队,紧罗本体需配置队伍需与劫使分开以免出现异常。[/size][/color]",
             "repeatable": true,
             "repeat_count": 1
         },
