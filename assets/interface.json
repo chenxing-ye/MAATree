@@ -2,8 +2,12 @@
     "custom_title": "树批小助手",
     "controller": [
         {
-            "name": "安卓端(模拟器选这个)此项目在GitHub上免费开源,如果你是付费购买,请立刻退款",
+            "name": "ADB 默认方式",
             "type": "Adb"
+        },
+        {
+            "name": "Win32 桌面应用方式",
+            "type": "Win32"
         }
     ],
     "resource": [
@@ -22,13 +26,6 @@
         }
     ],
     "task": [
-        {
-            "name": "模拟器请用1280*720(dpi240)分辨率",
-            "entry": "停止",
-            "repeatable": true,
-            "repeat_count": 1,
-            "doc": "[模拟器请用1280*720(dpi240)分辨率"
-        },
         {
             "name": "启动游戏",
             "entry": "启动游戏",
@@ -148,6 +145,24 @@
         {
             "name": "自动紧纳罗",
             "entry": "startAutoKinnara",
+            "option": [
+                "(光劫使)出战队伍",
+                "(光劫使)助战虚数体",
+                "(暗劫使)出战队伍",
+                "(暗劫使)助战虚数体",
+                "(火劫使)出战队伍",
+                "(火劫使)助战虚数体",
+                "(水劫使)出战队伍",
+                "(水劫使)助战虚数体",
+                "(土劫使)出战队伍",
+                "(土劫使)助战虚数体",
+                "(风劫使)出战队伍",
+                "(风劫使)助战虚数体",
+                "紧纳罗出战属性",
+                "紧纳罗出战队伍",
+                "紧纳罗助战虚宿体",
+                "紧纳罗讨伐出战顺序"
+            ],
             "doc": "",
             "repeatable": true,
             "repeat_count": 1
@@ -3027,6 +3042,1512 @@
                             ],
                             "enabled": true
                         }
+                    }
+                }
+            ]
+        },
+
+        "(光劫使)出战队伍": {
+            "cases": [
+                {
+                    "name": "1队",
+                    "pipeline_override": {
+                        "dispatchTeam__Dark": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "2队",
+                    "pipeline_override": {
+                        "dispatchTeam__Dark": {
+                            "target": [1140,227,36,47]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "3队",
+                    "pipeline_override": {
+                        "dispatchTeam__Dark": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "4队",
+                    "pipeline_override": {
+                        "dispatchTeam__Dark": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "5队",
+                    "pipeline_override": {
+                        "dispatchTeam__Dark": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "6队",
+                    "pipeline_override": {
+                        "dispatchTeam__Dark": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "(光劫使)助战虚数体": {
+            "cases": [
+                {
+                    "name": "高配暗王",
+                    "pipeline_override": {
+                        "DefaultMecha_Dark": {
+                            "template": "seniorDarkKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突暗王",
+                    "pipeline_override": {
+                        "DefaultMecha_Dark": {
+                            "template": "fullLevelKingofLight.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配暗方130",
+                    "pipeline_override": {
+                        "DefaultMecha_Dark": {
+                            "template": "advancedDarkPrescription.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突暗方150",
+                    "pipeline_override": {
+                        "DefaultMecha_Dark": {
+                            "template": "fullLevelDarkPrescription.png"
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "(暗劫使)出战队伍": {
+            "cases": [
+                {
+                    "name": "1队",
+                    "pipeline_override": {
+                        "dispatchTeam_Light": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "2队",
+                    "pipeline_override": {
+                        "dispatchTeam_Light": {
+                            "target": [1140,227,36,47]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "3队",
+                    "pipeline_override": {
+                        "dispatchTeam_Light": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "4队",
+                    "pipeline_override": {
+                        "dispatchTeam_Light": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "5队",
+                    "pipeline_override": {
+                        "dispatchTeam_Light": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "6队",
+                    "pipeline_override": {
+                        "dispatchTeam_Light": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "(暗劫使)助战虚数体": {
+            "cases": [
+                {
+                    "name": "高配光王",
+                    "pipeline_override": {
+                        "DefaultMecha_Light": {
+                            "template": "seniorKingofLight.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突光王",
+                    "pipeline_override": {
+                        "DefaultMecha_Light": {
+                            "template": "fullLevelKingofLight.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配光方130",
+                    "pipeline_override": {
+                        "DefaultMecha_Light": {
+                            "template": "advancedLightPrescription.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突光方150",
+                    "pipeline_override": {
+                        "DefaultMecha_Light": {
+                            "template": "fullLevelKingofLight.png"
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "(火劫使)出战队伍": {
+            "cases": [
+                {
+                    "name": "1队",
+                    "pipeline_override": {
+                        "dispatchTeam_Water": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "2队",
+                    "pipeline_override": {
+                        "dispatchTeam_Water": {
+                            "target": [1140,227,36,47]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "3队",
+                    "pipeline_override": {
+                        "dispatchTeam_Water": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "4队",
+                    "pipeline_override": {
+                        "dispatchTeam_Water": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "5队",
+                    "pipeline_override": {
+                        "dispatchTeam_Water": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "6队",
+                    "pipeline_override": {
+                        "dispatchTeam_Water": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "(火劫使)助战虚数体": {
+            "cases": [
+                {
+                    "name": "高配水王",
+                    "pipeline_override": {
+                        "DefaultMecha_Water": {
+                            "template": "seniorWaterKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突水王",
+                    "pipeline_override": {
+                        "DefaultMecha_Water": {
+                            "template": "fullLevelWaterKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配水方130",
+                    "pipeline_override": {
+                        "DefaultMecha_Water": {
+                            "template": "advancedWaterPrescription.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突水方150",
+                    "pipeline_override": {
+                        "DefaultMecha_Water": {
+                            "template": "fullLevelWaterPrescription.png"
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "(水劫使)出战队伍": {
+            "cases": [
+                {
+                    "name": "1队",
+                    "pipeline_override": {
+                        "dispatchTeam_Soil": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "2队",
+                    "pipeline_override": {
+                        "dispatchTeam_Soil": {
+                            "target": [1140,227,36,47]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "3队",
+                    "pipeline_override": {
+                        "dispatchTeam_Soil": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "4队",
+                    "pipeline_override": {
+                        "dispatchTeam_Soil": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "5队",
+                    "pipeline_override": {
+                        "dispatchTeam_Soil": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "6队",
+                    "pipeline_override": {
+                        "dispatchTeam_Soil": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "(水劫使)助战虚数体": {
+            "cases": [
+                {
+                    "name": "高配土王",
+                    "pipeline_override": {
+                        "DefaultMecha_Soil": {
+                            "template": "seniorEarthKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突土王",
+                    "pipeline_override": {
+                        "DefaultMecha_Soil": {
+                            "template": "fullLevelEarthKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配土方130",
+                    "pipeline_override": {
+                        "DefaultMecha_Soil": {
+                            "template": "advancedEarthwork.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突土方150",
+                    "pipeline_override": {
+                        "DefaultMecha_Soil": {
+                            "template": "fullLevelEarthworkPrescription.png"
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "(土劫使)出战队伍": {
+            "cases": [
+                {
+                    "name": "1队",
+                    "pipeline_override": {
+                        "dispatchTeam_Wind": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "2队",
+                    "pipeline_override": {
+                        "dispatchTeam_Wind": {
+                            "target": [1140,227,36,47]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "3队",
+                    "pipeline_override": {
+                        "dispatchTeam_Wind": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "4队",
+                    "pipeline_override": {
+                        "dispatchTeam_Wind": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "5队",
+                    "pipeline_override": {
+                        "dispatchTeam_Wind": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "6队",
+                    "pipeline_override": {
+                        "dispatchTeam_Wind": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "(土劫使)助战虚数体": {
+            "cases": [
+                {
+                    "name": "高配风王",
+                    "pipeline_override": {
+                        "DefaultMecha_Wind": {
+                            "template": "seniorWindKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突风王",
+                    "pipeline_override": {
+                        "DefaultMecha_Wind": {
+                            "template": "fullLevelWindKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配风方130",
+                    "pipeline_override": {
+                        "DefaultMecha_Wind": {
+                            "template": "advancedWind.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突风方150",
+                    "pipeline_override": {
+                        "DefaultMecha_Wind": {
+                            "template": "fullLevelWindPrescription.png"
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "(风劫使)出战队伍": {
+            "cases": [
+                {
+                    "name": "1队",
+                    "pipeline_override": {
+                        "dispatchTeam_Fire": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "2队",
+                    "pipeline_override": {
+                        "dispatchTeam_Fire": {
+                            "target": [1140,227,36,47]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "3队",
+                    "pipeline_override": {
+                        "dispatchTeam_Fire": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "4队",
+                    "pipeline_override": {
+                        "dispatchTeam_Fire": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "5队",
+                    "pipeline_override": {
+                        "dispatchTeam_Fire": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "6队",
+                    "pipeline_override": {
+                        "dispatchTeam_Fire": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "(风劫使)助战虚数体": {
+            "cases": [
+                {
+                    "name": "高配火王",
+                    "pipeline_override": {
+                        "DefaultMecha_Fire": {
+                            "template": "seniorFireKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突火王",
+                    "pipeline_override": {
+                        "DefaultMecha_Fire": {
+                            "template": "fullLevelFireKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配火方130",
+                    "pipeline_override": {
+                        "DefaultMecha_Fire": {
+                            "template": "advancedFire.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突火方150",
+                    "pipeline_override": {
+                        "DefaultMecha_Fire": {
+                            "template": "fullLevelFire.png"
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "紧纳罗出战属性": {
+            "cases": [
+                {
+                    "name": "火队",
+                    "pipeline_override": {
+                        "changeLineup_Kinnara": {
+                            "target" : [82,160,53,58]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "水队",
+                    "pipeline_override": {
+                        "changeLineup_Kinnara": {
+                            "target" : [81,237,57,55]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "土队",
+                    "pipeline_override": {
+                        "changeLineup_Kinnara": {
+                            "target" : [78,308,62,51]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "风队",
+                    "pipeline_override": {
+                        "changeLineup_Kinnara": {
+                            "target" : [77,375,59,50]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "光队",
+                    "pipeline_override": {
+                        "changeLineup_Kinnara": {
+                            "target" : [79,449,61,50]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "暗队",
+                    "pipeline_override": {
+                        "changeLineup_Kinnara": {
+                            "target" : [83,518,55,49]
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "紧纳罗出战队伍": {
+            "cases": [
+                {
+                    "name": "1队",
+                    "pipeline_override": {
+                        "dispatchTeam_Kinnara": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "2队",
+                    "pipeline_override": {
+                        "dispatchTeam_Kinnara": {
+                            "target": [1140,227,36,47]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "3队",
+                    "pipeline_override": {
+                        "dispatchTeam_Kinnara": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "4队",
+                    "pipeline_override": {
+                        "dispatchTeam_Kinnara": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "5队",
+                    "pipeline_override": {
+                        "dispatchTeam_Kinnara": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "6队",
+                    "pipeline_override": {
+                        "dispatchTeam_Kinnara": {
+                            "target": [1134,159,52,54]
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "紧纳罗助战虚宿体": {
+            "cases": [
+                {
+                    "name": "高配火王",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "seniorFireKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突火王",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "fullLevelFireKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配火方130",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "advancedFire.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突火方150",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "fullLevelFire.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配水王",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "seniorWaterKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突水王",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "fullLevelWaterKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配水方130",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "advancedWaterPrescription.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突水方150",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "fullLevelWaterPrescription.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配土王",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "seniorEarthKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突土王",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "fullLevelEarthKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配土方130",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "advancedEarthwork.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突土方150",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "fullLevelEarthworkPrescription.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配风王",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "seniorWindKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突风王",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "fullLevelWindKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配风方130",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "advancedWind.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突风方150",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "fullLevelWindPrescription.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配光王",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "seniorKingofLight.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突光王",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "fullLevelKingofLight.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配光方130",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "advancedLightPrescription.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突光方150",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "fullLevelKingofLight.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配暗王",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "seniorDarkKing.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突暗王",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "fullLevelKingofLight.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "高配暗方130",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "advancedDarkPrescription.png"
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "终突暗方150",
+                    "pipeline_override": {
+                        "DefaultMecha_Kinnara": {
+                            "template": "fullLevelDarkPrescription.png"
+                        },
+                        "enabled": true
+                    }
+                }
+            ]
+        },
+        "紧纳罗讨伐出战顺序": {
+            "cases": [
+                {
+                    "name": "光->顺时针",
+                    "pipeline_override": {
+                        "Envoy_one": {
+                            "template" : "光使节.png",
+                            "recommended roi" : [353,56,95,88],
+                            "next": [
+                                "offDefaultMecha_Dark"
+                            ]
+                        },
+                        "Envoy_two": {
+                            "template" : "暗使节.png",
+                            "recommended roi" : [833,56,98,87],
+                            "next": [
+                                "offDefaultMecha_Light"
+                            ]
+                        },
+                        "Envoy_three": {
+                            "template" : "火使节.png",
+                            "recommended roi" : [923,323,98,101],
+                            "next": [
+                              "offDefaultMecha_Water"
+                            ]
+                        },
+                        "Envoy_four": {
+                            "template" : "水使节.png",
+                            "recommended roi" : [828,564,103,89],
+                            "next": [
+                                "offDefaultMecha_Soil"
+                            ]
+                        },
+                        "Envoy_five": {
+                            "template" : "地使节.png",
+                            "recommended roi" : [346,563,96,90],
+                            "next": [
+                                "offDefaultMecha_Wind"
+                            ]
+                        },
+                        "Envoy_six": {
+                            "template" : "风使节.png",
+                            "recommended roi" : [260,328,97,86],
+                            "next": [
+                                "offDefaultMecha_Fire"
+                            ]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "光->逆时针",
+                    "pipeline_override": {
+                        "Envoy_one": {
+                            "template" : "光使节.png",
+                            "recommended roi" : [353,56,95,88],
+                            "next": [
+                                "offDefaultMecha_Dark"
+                            ]
+                        },
+                        "Envoy_two": {
+                            "template" : "风使节.png",
+                            "recommended roi" : [260,328,97,86],
+                            "next": [
+                                "offDefaultMecha_Fire"
+                            ]
+                        },
+                        "Envoy_three": {
+                            "template" : "地使节.png",
+                            "recommended roi" : [346,563,96,90],
+                            "next": [
+                                "offDefaultMecha_Wind"
+                            ]
+                        },
+                        "Envoy_four": {
+                            "template" : "水使节.png",
+                            "recommended roi" : [828,564,103,89],
+                            "next": [
+                                "offDefaultMecha_Soil"
+                            ]
+                        },
+                        "Envoy_five": {
+                            "template" : "火使节.png",
+                            "recommended roi" : [923,323,98,101],
+                            "next": [
+                              "offDefaultMecha_Water"
+                            ]
+                        },
+                        "Envoy_six": {
+                            "template" : "暗使节.png",
+                            "recommended roi" : [833,56,98,87],
+                            "next": [
+                                "offDefaultMecha_Light"
+                            ]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "暗->顺时针",
+                    "pipeline_override": {
+                        "Envoy_one": {
+                            "template" : "暗使节.png",
+                            "recommended roi" : [833,56,98,87],
+                            "next": [
+                                "offDefaultMecha_Light"
+                            ]
+                        },
+                        "Envoy_two": {
+                            "template" : "火使节.png",
+                            "recommended roi" : [923,323,98,101],
+                            "next": [
+                              "offDefaultMecha_Water"
+                            ]
+                        },
+                        "Envoy_three": {
+                            "template" : "水使节.png",
+                            "recommended roi" : [828,564,103,89],
+                            "next": [
+                                "offDefaultMecha_Soil"
+                            ]
+                        },
+                        "Envoy_four": {
+                            "template" : "地使节.png",
+                            "recommended roi" : [346,563,96,90],
+                            "next": [
+                                "offDefaultMecha_Wind"
+                            ]
+                        },
+                        "Envoy_five": {
+                            "template" : "风使节.png",
+                            "recommended roi" : [260,328,97,86],
+                            "next": [
+                                "offDefaultMecha_Fire"
+                            ]
+                        },
+                        "Envoy_six": {
+                            "template" : "光使节.png",
+                            "recommended roi" : [353,56,95,88],
+                            "next": [
+                                "offDefaultMecha_Dark"
+                            ]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "暗->逆时针",
+                    "pipeline_override": {
+                        "Envoy_one": {
+                            "template" : "暗使节.png",
+                            "recommended roi" : [833,56,98,87],
+                            "next": [
+                                "offDefaultMecha_Light"
+                            ]
+                        },
+                        "Envoy_two": {
+                            "template" : "光使节.png",
+                            "recommended roi" : [353,56,95,88],
+                            "next": [
+                                "offDefaultMecha_Dark"
+                            ]
+                        },
+                        "Envoy_three": {
+                            "template" : "风使节.png",
+                            "recommended roi" : [260,328,97,86],
+                            "next": [
+                                "offDefaultMecha_Fire"
+                            ]
+                        },
+                        "Envoy_four": {
+                            "template" : "地使节.png",
+                            "recommended roi" : [346,563,96,90],
+                            "next": [
+                                "offDefaultMecha_Wind"
+                            ]
+                        },
+                        "Envoy_five": {
+                            "template" : "水使节.png",
+                            "recommended roi" : [828,564,103,89],
+                            "next": [
+                                "offDefaultMecha_Soil"
+                            ]
+                        },
+                        "Envoy_six": {
+                            "template" : "火使节.png",
+                            "recommended roi" : [923,323,98,101],
+                            "next": [
+                              "offDefaultMecha_Water"
+                            ]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "火->顺时针",
+                    "pipeline_override": {
+                        "Envoy_one": {
+                            "template" : "火使节.png",
+                            "recommended roi" : [923,323,98,101],
+                            "next": [
+                              "offDefaultMecha_Water"
+                            ]
+                        },
+                        "Envoy_two": {
+                            "template" : "水使节.png",
+                            "recommended roi" : [828,564,103,89],
+                            "next": [
+                                "offDefaultMecha_Soil"
+                            ]
+                        },
+                        "Envoy_three": {
+                            "template" : "地使节.png",
+                            "recommended roi" : [346,563,96,90],
+                            "next": [
+                                "offDefaultMecha_Wind"
+                            ]
+                        },
+                        "Envoy_four": {
+                            "template" : "风使节.png",
+                            "recommended roi" : [260,328,97,86],
+                            "next": [
+                                "offDefaultMecha_Fire"
+                            ]
+                        },
+                        "Envoy_five": {
+                            "template" : "光使节.png",
+                            "recommended roi" : [353,56,95,88],
+                            "next": [
+                                "offDefaultMecha_Dark"
+                            ]
+                        },
+                        "Envoy_six": {
+                            "template" : "暗使节.png",
+                            "recommended roi" : [833,56,98,87],
+                            "next": [
+                                "offDefaultMecha_Light"
+                            ]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "火->逆时针",
+                    "pipeline_override": {
+                        "Envoy_one": {
+                            "template" : "火使节.png",
+                            "recommended roi" : [923,323,98,101],
+                            "next": [
+                              "offDefaultMecha_Water"
+                            ]
+                        },
+                        "Envoy_two": {
+                            "template" : "暗使节.png",
+                            "recommended roi" : [833,56,98,87],
+                            "next": [
+                                "offDefaultMecha_Light"
+                            ]
+                        },
+                        "Envoy_three": {
+                            "template" : "光使节.png",
+                            "recommended roi" : [353,56,95,88],
+                            "next": [
+                                "offDefaultMecha_Dark"
+                            ]
+                        },
+                        "Envoy_four": {
+                            "template" : "风使节.png",
+                            "recommended roi" : [260,328,97,86],
+                            "next": [
+                                "offDefaultMecha_Fire"
+                            ]
+                        },
+                        "Envoy_five": {
+                            "template" : "地使节.png",
+                            "recommended roi" : [346,563,96,90],
+                            "next": [
+                                "offDefaultMecha_Wind"
+                            ]
+                        },
+                        "Envoy_six": {
+                            "template" : "水使节.png",
+                            "recommended roi" : [828,564,103,89],
+                            "next": [
+                                "offDefaultMecha_Soil"
+                            ]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "水->顺时针",
+                    "pipeline_override": {
+                        "Envoy_one": {
+                            "template" : "水使节.png",
+                            "recommended roi" : [828,564,103,89],
+                            "next": [
+                                "offDefaultMecha_Soil"
+                            ]
+                        },
+                        "Envoy_two": {
+                            "template" : "地使节.png",
+                            "recommended roi" : [346,563,96,90],
+                            "next": [
+                                "offDefaultMecha_Wind"
+                            ]
+                        },
+                        "Envoy_three": {
+                            "template" : "风使节.png",
+                            "recommended roi" : [260,328,97,86],
+                            "next": [
+                                "offDefaultMecha_Fire"
+                            ]
+                        },
+                        "Envoy_four": {
+                            "template" : "光使节.png",
+                            "recommended roi" : [353,56,95,88],
+                            "next": [
+                                "offDefaultMecha_Dark"
+                            ]
+                        },
+                        "Envoy_five": {
+                            "template" : "暗使节.png",
+                            "recommended roi" : [833,56,98,87],
+                            "next": [
+                                "offDefaultMecha_Light"
+                            ]
+                        },
+                        "Envoy_six": {
+                            "template" : "火使节.png",
+                            "recommended roi" : [923,323,98,101],
+                            "next": [
+                              "offDefaultMecha_Water"
+                            ]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "水->逆时针",
+                    "pipeline_override": {
+                        "Envoy_one": {
+                            "template" : "水使节.png",
+                            "recommended roi" : [828,564,103,89],
+                            "next": [
+                                "offDefaultMecha_Soil"
+                            ]
+                        },
+                        "Envoy_two": {
+                            "template" : "火使节.png",
+                            "recommended roi" : [923,323,98,101],
+                            "next": [
+                              "offDefaultMecha_Water"
+                            ]
+                        },
+                        "Envoy_three": {
+                            "template" : "暗使节.png",
+                            "recommended roi" : [833,56,98,87],
+                            "next": [
+                                "offDefaultMecha_Light"
+                            ]
+                        },
+                        "Envoy_four": {
+                            "template" : "光使节.png",
+                            "recommended roi" : [353,56,95,88],
+                            "next": [
+                                "offDefaultMecha_Dark"
+                            ]
+                        },
+                        "Envoy_five": {
+                            "template" : "风使节.png",
+                            "recommended roi" : [260,328,97,86],
+                            "next": [
+                                "offDefaultMecha_Fire"
+                            ]
+                        },
+                        "Envoy_six": {
+                            "template" : "地使节.png",
+                            "recommended roi" : [346,563,96,90],
+                            "next": [
+                                "offDefaultMecha_Wind"
+                            ]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "土->顺时针",
+                    "pipeline_override": {
+                        "Envoy_one": {
+                            "template" : "地使节.png",
+                            "recommended roi" : [346,563,96,90],
+                            "next": [
+                                "offDefaultMecha_Wind"
+                            ]
+                        },
+                        "Envoy_two": {
+                            "template" : "风使节.png",
+                            "recommended roi" : [260,328,97,86],
+                            "next": [
+                                "offDefaultMecha_Fire"
+                            ]
+                        },
+                        "Envoy_three": {
+                            "template" : "光使节.png",
+                            "recommended roi" : [353,56,95,88],
+                            "next": [
+                                "offDefaultMecha_Dark"
+                            ]
+                        },
+                        "Envoy_four": {
+                            "template" : "暗使节.png",
+                            "recommended roi" : [833,56,98,87],
+                            "next": [
+                                "offDefaultMecha_Light"
+                            ]
+                        },
+                        "Envoy_five": {
+                            "template" : "火使节.png",
+                            "recommended roi" : [923,323,98,101],
+                            "next": [
+                              "offDefaultMecha_Water"
+                            ]
+                        },
+                        "Envoy_six": {
+                            "template" : "水使节.png",
+                            "recommended roi" : [828,564,103,89],
+                            "next": [
+                                "offDefaultMecha_Soil"
+                            ]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "土->逆时针",
+                    "pipeline_override": {
+                        "Envoy_one": {
+                            "template" : "地使节.png",
+                            "recommended roi" : [346,563,96,90],
+                            "next": [
+                                "offDefaultMecha_Wind"
+                            ]
+                        },
+                        "Envoy_two": {
+                            "template" : "水使节.png",
+                            "recommended roi" : [828,564,103,89],
+                            "next": [
+                                "offDefaultMecha_Soil"
+                            ]
+                        },
+                        "Envoy_three": {
+                            "template" : "火使节.png",
+                            "recommended roi" : [923,323,98,101],
+                            "next": [
+                              "offDefaultMecha_Water"
+                            ]
+                        },
+                        "Envoy_four": {
+                            "template" : "暗使节.png",
+                            "recommended roi" : [833,56,98,87],
+                            "next": [
+                                "offDefaultMecha_Light"
+                            ]
+                        },
+                        "Envoy_five": {
+                            "template" : "光使节.png",
+                            "recommended roi" : [353,56,95,88],
+                            "next": [
+                                "offDefaultMecha_Dark"
+                            ]
+                        },
+                        "Envoy_six": {
+                            "template" : "风使节.png",
+                            "recommended roi" : [260,328,97,86],
+                            "next": [
+                                "offDefaultMecha_Fire"
+                            ]
+                        },
+                        "enabled": true
+                    }
+                },
+
+                {
+                    "name": "风->顺时针",
+                    "pipeline_override": {
+                        "Envoy_one": {
+                            "template" : "风使节.png",
+                            "recommended roi" : [260,328,97,86],
+                            "next": [
+                                "offDefaultMecha_Fire"
+                            ]
+                        },
+                        "Envoy_two": {
+                            "template" : "光使节.png",
+                            "recommended roi" : [353,56,95,88],
+                            "next": [
+                                "offDefaultMecha_Dark"
+                            ]
+                        },
+                        "Envoy_three": {
+                            "template" : "暗使节.png",
+                            "recommended roi" : [833,56,98,87],
+                            "next": [
+                                "offDefaultMecha_Light"
+                            ]
+                        },
+                        "Envoy_four": {
+                            "template" : "火使节.png",
+                            "recommended roi" : [923,323,98,101],
+                            "next": [
+                              "offDefaultMecha_Water"
+                            ]
+                        },
+                        "Envoy_five": {
+                            "template" : "水使节.png",
+                            "recommended roi" : [828,564,103,89],
+                            "next": [
+                                "offDefaultMecha_Soil"
+                            ]
+                        },
+                        "Envoy_six": {
+                            "template" : "地使节.png",
+                            "recommended roi" : [346,563,96,90],
+                            "next": [
+                                "offDefaultMecha_Wind"
+                            ]
+                        },
+                        "enabled": true
+                    }
+                },
+                {
+                    "name": "风->逆时针",
+                    "pipeline_override": {
+                        "Envoy_one": {
+                            "template" : "风使节.png",
+                            "recommended roi" : [260,328,97,86],
+                            "next": [
+                                "offDefaultMecha_Fire"
+                            ]
+                        },
+                        "Envoy_two": {
+                            "template" : "地使节.png",
+                            "recommended roi" : [346,563,96,90],
+                            "next": [
+                                "offDefaultMecha_Wind"
+                            ]
+                        },
+                        "Envoy_three": {
+                            "template" : "水使节.png",
+                            "recommended roi" : [828,564,103,89],
+                            "next": [
+                                "offDefaultMecha_Soil"
+                            ]
+                        },
+                        "Envoy_four": {
+                            "template" : "火使节.png",
+                            "recommended roi" : [923,323,98,101],
+                            "next": [
+                              "offDefaultMecha_Water"
+                            ]
+                        },
+                        "Envoy_five": {
+                            "template" : "暗使节.png",
+                            "recommended roi" : [833,56,98,87],
+                            "next": [
+                                "offDefaultMecha_Light"
+                            ]
+                        },
+                        "Envoy_six": {
+                            "template" : "光使节.png",
+                            "recommended roi" : [353,56,95,88],
+                            "next": [
+                                "offDefaultMecha_Dark"
+                            ]
+                        },
+                        "enabled": true
                     }
                 }
             ]

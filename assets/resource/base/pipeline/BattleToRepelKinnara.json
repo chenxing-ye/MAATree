@@ -88,7 +88,11 @@
     "expected" : "准备",
     "roi" : [558,556,156,65],
     "action": "Click",
-    "next": "cancelPreparation",
+    //考虑野队特殊性如果被踢掉队伍进入重新循环
+    "next": [
+      "cancelPreparation",
+      "clickJoinTheBattle"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -104,10 +108,1117 @@
     "on_error": "stopapp"
   },
   "teamBattleKinnara": {
-    "recognition": "OCR",
-    "expected" : "没有掉线",
-    "roi" : [549,556,170,60],
+    "recognition": "TemplateMatch",
+    "template" : "团队主界面.png",
+    "recommended roi" : [427,161,423,391],
+    "next": [
+      "Envoy_one",
+      "Envoy_two",
+      "Envoy_three",
+      "Envoy_four",
+      "Envoy_five",
+      "Envoy_six",
+      "Envoy_seven"
+    ],
     "timeout": 4000,
     "on_error": "stopapp"
+  },
+  "Envoy_one": {
+    "recognition": "TemplateMatch",
+    "threshold": 0.95,
+    "template" : "水使节.png",
+    "recommended roi" : [828,564,103,89],
+    "action": "Click",
+    "next": [
+      "offDefaultMecha_Soil"
+    ],
+    "timeout": 4000
+  },
+  "Envoy_two": {
+    "recognition": "TemplateMatch",
+    "threshold": 0.95,
+    "template" : "地使节.png",
+    "recommended roi" : [346,563,96,90],
+    "action": "Click",
+    "next": [
+      "offDefaultMecha_Wind"
+    ],
+    "timeout": 4000,
+    "on_error": "stopapp"
+  },
+  "Envoy_three": {
+    "recognition": "TemplateMatch",
+    "threshold": 0.95,
+    "template" : "风使节.png",
+    "recommended roi" : [260,328,97,86],
+    "action": "Click",
+    "next": [
+      "offDefaultMecha_Fire"
+    ],
+    "timeout": 4000,
+    "on_error": "stopapp"
+  },
+  "Envoy_four": {
+    "recognition": "TemplateMatch",
+    "threshold": 0.95,
+    "template" : "光使节.png",
+    "recommended roi" : [353,56,95,88],
+    "action": "Click",
+    "next": [
+      "offDefaultMecha_Dark"
+    ],
+    "timeout": 4000,
+    "on_error": "stopapp"
+  },
+  "Envoy_five": {
+    "recognition": "TemplateMatch",
+    "threshold": 0.95,
+    "template" : "暗使节.png",
+    "recommended roi" : [833,56,98,87],
+    "action": "Click",
+    "next": [
+      "offDefaultMecha_Light"
+    ],
+    "timeout": 4000,
+    "on_error": "stopapp"
+  },
+  "Envoy_six": {
+    "recognition": "TemplateMatch",
+    "threshold": 0.95,
+    "template" : "火使节.png",
+    "recommended roi" : [923,323,98,101],
+    "action": "Click",
+    "next": [
+      "offDefaultMecha_Water"
+    ],
+    "timeout": 4000,
+    "on_error": "stopapp"
+  },
+  "Envoy_seven": {
+    "recognition": "TemplateMatch",
+    "threshold": 0.95,
+    "template" : "紧那罗本体.png",
+    "next": [
+      "offDefaultMecha_Kinnara"
+    ],
+    "recommended roi" : [574,300,125,117],
+    "action": "Click",
+    "timeout": 4000,
+    "on_error": "stopapp"
+  },
+
+  "clickOnTheBlankAreaKinnara": {
+    "recognition": "OCR",
+    "expected": "空白",
+    "action": "Click",
+    "roi" : [539,587,224,107]
+  },
+
+  "endTheCampaign": {
+    "recognition": "OCR",
+    "expected" : "结束讨伐",
+    "action": "Click",
+    "roi" : [1084,609,146,68]
+  },
+
+  //------------出战队伍设置火属性--------------
+  //第一步，点击出战默认会进入虚数体界面要关掉
+  "offDefaultMecha_Fire": {
+    "recognition": "TemplateMatch",
+    "template": "选择支援虚数体.png",
+    "roi" : [586,55,201,36],
+    "target" : [1213,76,45,45],
+    "action": "Click",
+    "next":[
+      "changeLineup_Fire"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "changeLineup_Fire": {
+    "recognition": "TemplateMatch",
+    "template" : "changeLineup.png",
+    "roi" : [5,75,153,47],
+    "target" : [82,160,53,58],
+    "action": "Click",
+    "next": "dispatchTeam_Fire",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第二步，选择出战属性有1~6个队伍
+  "dispatchTeam_Fire": {
+    "target": [1134,159,52,54],
+    "action": "Click",
+    "next": "selectEmpty_Fire",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第三步，选择完成后，检测支援虚数体栏位是否为"EMPT"。
+  "selectEmpty_Fire": {
+    "recognition": "OCR",
+    "expected" : "EMPTY",
+    "recommended roi" : [863,434,174,73],
+    "action": "Click",
+    "next": "DefaultMecha_Fire",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
+  "DefaultMecha_Fire": {
+    "recognition": "TemplateMatch",
+    "template": "fullLevelFire.png",
+    "roi" : [149,138,1052,267],
+    "action" : "Click",
+    "next": "dispatchCombat_Fire",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第五步，全部确认好之后点击出战
+  "dispatchCombat_Fire": {
+    "recognition": "OCR",
+    "expected" : "出击",
+    "recommended roi" : [1092,575,159,64],
+    "action": "Click",
+    "next": [
+      "recognizeEnteringTheRoom_Fire"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "recognizeEnteringTheRoom_Fire": {
+    "recognition": "TemplateMatch",
+    "template": "加载界面.png",
+    "roi": [
+      373,
+      155,
+      544,
+      413
+    ],
+    "timeout": 25000,
+    "next": [
+      "recognizeEnteringTheRoom_1_Fire",
+      "recognizeEnteringTheRoom_Fire",
+      "battleVictory_Fire"
+    ],
+    "rate_limit": 1000,
+    "on_error": "stopapp"
+  },
+  "recognizeEnteringTheRoom_1_Fire": {
+    "recognition": "OCR",
+    "expected" : "回合",
+    "roi" : [0,4,91,54],
+    "timeout": 900000,
+    "next": [
+      "battleVictory_Fire",
+      "deathInBattle_Fire"
+    ],
+    "rate_limit": 1500,
+    "on_error": "stopapp"
+  },
+  "battleVictory_Fire": {
+    "recognition": "TemplateMatch",
+    "template": "战斗胜利.png",
+    "roi": [
+      230,
+      145,
+      828,
+      419
+    ],
+    "rate_limit": 600,
+    "timeout": 20000,
+    "next": [
+      "battleConfirmation_Fire"
+    ],
+    "on_error": "stopapp"
+  },
+  "deathInBattle_Fire": {
+    "recognition": "TemplateMatch",
+    "template": "取消.png",
+    "timeout": 900000,
+    "rate_limit": 800,
+    "action": "Click",
+    "next": [
+      "battleVictory_Fire"
+    ],
+    "on_error": "deathInBattle_Fire"
+  },
+  "battleConfirmation_Fire": {
+    "recognition": "TemplateMatch",
+    "template": "继续.png",
+    "roi": [
+      938,
+      621,
+      341,
+      98
+    ],
+    "timeout": 10000,
+    "action": "Click",
+    "pre_delay": 800,
+    "post_delay": 5000,
+    "next": [
+      "teamBattleKinnara"
+    ],
+    "interrupt": [
+      "battleConfirmation_Fire",
+      "clickOnTheBlankAreaKinnara",
+      "endTheCampaign"
+    ],
+    "on_error": "stopapp"
+  },
+
+  //------------出战队伍设置水--------------
+  //第一步，点击出战默认会进入虚数体界面要关掉
+  "offDefaultMecha_Water": {
+    "recognition": "TemplateMatch",
+    "template": "选择支援虚数体.png",
+    "roi" : [586,55,201,36],
+    "target" : [1213,76,45,45],
+    "action": "Click",
+    "next":[
+      "changeLineup_Water"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "changeLineup_Water": {
+    "recognition": "TemplateMatch",
+    "template" : "changeLineup.png",
+    "roi" : [5,75,153,47],
+    "target" : [81,237,57,55],
+    "action": "Click",
+    "next": "dispatchTeam_Water",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第二步，选择出战属性有1~6个队伍
+  "dispatchTeam_Water": {
+    "target": [1134,159,52,54],
+    "action": "Click",
+    "next": "selectEmpty_Water",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第三步，选择完成后，检测支援虚数体栏位是否为"EMPT"。
+  "selectEmpty_Water": {
+    "recognition": "OCR",
+    "expected" : "EMPTY",
+    "recommended roi" : [863,434,174,73],
+    "action": "Click",
+    "next": "DefaultMecha_Water",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
+  "DefaultMecha_Water": {
+    "recognition": "TemplateMatch",
+    "template": "seniorWaterKing.png",
+    "roi" : [149,138,1052,267],
+    "action" : "Click",
+    "next": "dispatchCombat_Water",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第五步，全部确认好之后点击出战
+  "dispatchCombat_Water": {
+    "recognition": "OCR",
+    "expected" : "出击",
+    "recommended roi" : [1092,575,159,64],
+    "action": "Click",
+    "next": "recognizeEnteringTheRoom_Water",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "recognizeEnteringTheRoom_Water": {
+    "recognition": "TemplateMatch",
+    "template": "加载界面.png",
+    "roi": [
+      373,
+      155,
+      544,
+      413
+    ],
+    "timeout": 25000,
+    "next": [
+      "recognizeEnteringTheRoom_1_Water",
+      "recognizeEnteringTheRoom_Water",
+      "battleVictory_Fire"
+    ],
+    "rate_limit": 1000,
+    "on_error": "stopapp"
+  },
+  "recognizeEnteringTheRoom_1_Water": {
+    "recognition": "OCR",
+    "expected" : "回合",
+    "roi" : [0,4,91,54],
+    "timeout": 900000,
+    "next": [
+      "battleVictory_Water",
+      "deathInBattle_Water"
+    ],
+    "rate_limit": 1500,
+    "on_error": "stopapp"
+  },
+  "battleVictory_Water": {
+    "recognition": "TemplateMatch",
+    "template": "战斗胜利.png",
+    "roi": [
+      230,
+      145,
+      828,
+      419
+    ],
+    "rate_limit": 600,
+    "timeout": 20000,
+    "next": [
+      "battleConfirmation_Water"
+    ],
+    "on_error": "stopapp"
+  },
+  "deathInBattle_Water": {
+    "recognition": "TemplateMatch",
+    "template": "取消.png",
+    "timeout": 900000,
+    "rate_limit": 800,
+    "action": "Click",
+    "next": [
+      "battleVictory_Water"
+    ],
+    "on_error": "deathInBattle_Water"
+  },
+  "battleConfirmation_Water": {
+    "recognition": "TemplateMatch",
+    "template": "继续.png",
+    "roi": [
+      938,
+      621,
+      341,
+      98
+    ],
+    "timeout": 10000,
+    "action": "Click",
+    "pre_delay": 800,
+    "post_delay": 5000,
+    "next": [
+      "teamBattleKinnara"
+    ],
+    "interrupt": [
+      "battleConfirmation_Water",
+      "clickOnTheBlankAreaKinnara",
+      "endTheCampaign"
+    ],
+    "on_error": "stopapp"
+  },
+
+  //------------出战队伍设置土--------------
+  //第一步，点击出战默认会进入虚数体界面要关掉
+  "offDefaultMecha_Soil": {
+    "recognition": "TemplateMatch",
+    "template": "选择支援虚数体.png",
+    "roi" : [586,55,201,36],
+    "target" : [1213,76,45,45],
+    "action": "Click",
+    "next":[
+      "changeLineup_Soil"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "changeLineup_Soil": {
+    "recognition": "TemplateMatch",
+    "template" : "changeLineup.png",
+    "roi" : [5,75,153,47],
+    "target" : [78,308,62,51],
+    "action": "Click",
+    "next": "dispatchTeam_Soil",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第二步，选择出战属性有1~6个队伍
+  "dispatchTeam_Soil": {
+    "target": [1134,159,52,54],
+    "action": "Click",
+    "next": "selectEmpty_Soil",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第三步，选择完成后，检测支援虚数体栏位是否为"EMPT"。
+  "selectEmpty_Soil": {
+    "recognition": "OCR",
+    "expected" : "EMPTY",
+    "recommended roi" : [863,434,174,73],
+    "action": "Click",
+    "next": "DefaultMecha_Soil",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
+  "DefaultMecha_Soil": {
+    "recognition": "TemplateMatch",
+    "template": "fullLevelEarthKing.png",
+    "roi" : [149,138,1052,267],
+    "action" : "Click",
+    "next": "dispatchCombat_Soil",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第五步，全部确认好之后点击出战
+  "dispatchCombat_Soil": {
+    "recognition": "OCR",
+    "expected" : "出击",
+    "recommended roi" : [1092,575,159,64],
+    "action": "Click",
+    "next": "recognizeEnteringTheRoom_Soil",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "recognizeEnteringTheRoom_Soil": {
+    "recognition": "TemplateMatch",
+    "template": "加载界面.png",
+    "roi": [
+      373,
+      155,
+      544,
+      413
+    ],
+    "timeout": 25000,
+    "next": [
+      "recognizeEnteringTheRoom_1_Soil",
+      "recognizeEnteringTheRoom_Soil",
+      "battleVictory_Soil"
+    ],
+    "rate_limit": 1000,
+    "on_error": "stopapp"
+  },
+  "recognizeEnteringTheRoom_1_Soil": {
+    "recognition": "OCR",
+    "expected" : "回合",
+    "roi" : [0,4,91,54],
+    "timeout": 900000,
+    "next": [
+      "battleVictory_Soil",
+      "deathInBattle_Soil"
+    ],
+    "rate_limit": 1500,
+    "on_error": "stopapp"
+  },
+  "battleVictory_Soil": {
+    "recognition": "TemplateMatch",
+    "template": "战斗胜利.png",
+    "roi": [
+      230,
+      145,
+      828,
+      419
+    ],
+    "rate_limit": 600,
+    "timeout": 20000,
+    "next": [
+      "battleConfirmation_Soil"
+    ],
+    "on_error": "stopapp"
+  },
+  "deathInBattle_Soil": {
+    "recognition": "TemplateMatch",
+    "template": "取消.png",
+    "timeout": 900000,
+    "rate_limit": 800,
+    "action": "Click",
+    "next": [
+      "battleVictory_Soil"
+    ],
+    "on_error": "deathInBattle_Soil"
+  },
+  "battleConfirmation_Soil": {
+    "recognition": "TemplateMatch",
+    "template": "继续.png",
+    "roi": [
+      938,
+      621,
+      341,
+      98
+    ],
+    "timeout": 10000,
+    "action": "Click",
+    "pre_delay": 800,
+    "post_delay": 5000,
+    "next": [
+      "teamBattleKinnara"
+    ],
+    "interrupt": [
+      "battleConfirmation_Soil",
+      "clickOnTheBlankAreaKinnara",
+      "endTheCampaign"
+    ],
+    "on_error": "stopapp"
+  },
+
+  //------------出战队伍设置风--------------
+  //第一步，点击出战默认会进入虚数体界面要关掉
+  "offDefaultMecha_Wind": {
+    "recognition": "TemplateMatch",
+    "template": "选择支援虚数体.png",
+    "roi" : [586,55,201,36],
+    "target" : [1213,76,45,45],
+    "action": "Click",
+    "next":[
+      "changeLineup_Wind"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "changeLineup_Wind": {
+    "recognition": "TemplateMatch",
+    "template" : "changeLineup.png",
+    "roi" : [5,75,153,47],
+    "target" : [77,375,59,50],
+    "action": "Click",
+    "next": "dispatchTeam_Wind",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第二步，选择出战属性有1~6个队伍
+  "dispatchTeam_Wind": {
+    "target": [1134,159,52,54],
+    "action": "Click",
+    "next": "selectEmpty_Wind",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第三步，选择完成后，检测支援虚数体栏位是否为"EMPT"。
+  "selectEmpty_Wind": {
+    "recognition": "OCR",
+    "expected" : "EMPTY",
+    "recommended roi" : [863,434,174,73],
+    "action": "Click",
+    "next": "DefaultMecha_Wind",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
+  "DefaultMecha_Wind": {
+    "recognition": "TemplateMatch",
+    "template": "fullLevelWindPrescription.png",
+    "roi" : [149,138,1052,267],
+    "action" : "Click",
+    "next": "dispatchCombat_Wind",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第五步，全部确认好之后点击出战
+  "dispatchCombat_Wind": {
+    "recognition": "OCR",
+    "expected" : "出击",
+    "recommended roi" : [1092,575,159,64],
+    "action": "Click",
+    "next": "recognizeEnteringTheRoom_Wind",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "recognizeEnteringTheRoom_Wind": {
+    "recognition": "TemplateMatch",
+    "template": "加载界面.png",
+    "roi": [
+      373,
+      155,
+      544,
+      413
+    ],
+    "timeout": 25000,
+    "next": [
+      "recognizeEnteringTheRoom_1_Wind",
+      "recognizeEnteringTheRoom_Wind",
+      "battleVictory_Wind"
+    ],
+    "rate_limit": 1000,
+    "on_error": "stopapp"
+  },
+  "recognizeEnteringTheRoom_1_Wind": {
+    "recognition": "OCR",
+    "expected" : "回合",
+    "roi" : [0,4,91,54],
+    "timeout": 900000,
+    "next": [
+      "battleVictory_Wind",
+      "deathInBattle_Wind"
+    ],
+    "rate_limit": 1500,
+    "on_error": "stopapp"
+  },
+  "battleVictory_Wind": {
+    "recognition": "TemplateMatch",
+    "template": "战斗胜利.png",
+    "roi": [
+      230,
+      145,
+      828,
+      419
+    ],
+    "rate_limit": 600,
+    "timeout": 20000,
+    "next": [
+      "battleConfirmation_Wind"
+    ],
+    "on_error": "stopapp"
+  },
+  "deathInBattle_Wind": {
+    "recognition": "TemplateMatch",
+    "template": "取消.png",
+    "timeout": 900000,
+    "rate_limit": 800,
+    "action": "Click",
+    "next": [
+      "battleVictory_Wind"
+    ],
+    "on_error": "deathInBattle_Wind"
+  },
+  "battleConfirmation_Wind": {
+    "recognition": "TemplateMatch",
+    "template": "继续.png",
+    "roi": [
+      938,
+      621,
+      341,
+      98
+    ],
+    "timeout": 10000,
+    "action": "Click",
+    "pre_delay": 800,
+    "post_delay": 5000,
+    "next": [
+      "teamBattleKinnara"
+    ],
+    "interrupt": [
+      "battleConfirmation_Wind",
+      "clickOnTheBlankAreaKinnara",
+      "endTheCampaign"
+    ],
+    "on_error": "stopapp"
+  },
+
+  //------------出战队伍设置光--------------
+  //第一步，点击出战默认会进入虚数体界面要关掉
+  "offDefaultMecha_Light": {
+    "recognition": "TemplateMatch",
+    "template": "选择支援虚数体.png",
+    "roi" : [586,55,201,36],
+    "target" : [1213,76,45,45],
+    "action": "Click",
+    "next":[
+      "changeLineup_Light"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "changeLineup_Light": {
+    "recognition": "TemplateMatch",
+    "template" : "changeLineup.png",
+    "roi" : [5,75,153,47],
+    "target" : [79,449,61,50],
+    "action": "Click",
+    "next": "dispatchTeam_Light",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第二步，选择出战属性有1~6个队伍
+  "dispatchTeam_Light": {
+    "target": [1134,159,52,54],
+    "action": "Click",
+    "next": "selectEmpty_Light",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第三步，选择完成后，检测支援虚数体栏位是否为"EMPT"。
+  "selectEmpty_Light": {
+    "recognition": "OCR",
+    "expected" : "EMPTY",
+    "recommended roi" : [863,434,174,73],
+    "action": "Click",
+    "next": "DefaultMecha_Light",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
+  "DefaultMecha_Light": {
+    "recognition": "TemplateMatch",
+    "template": "fullLevelKingofLight.png",
+    "roi" : [149,138,1052,267],
+    "action" : "Click",
+    "next": "dispatchCombat_Light",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第五步，全部确认好之后点击出战
+  "dispatchCombat_Light": {
+    "recognition": "OCR",
+    "expected" : "出击",
+    "recommended roi" : [1092,575,159,64],
+    "action": "Click",
+    "next": "recognizeEnteringTheRoom_Light",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "recognizeEnteringTheRoom_Light": {
+    "recognition": "TemplateMatch",
+    "template": "加载界面.png",
+    "roi": [
+      373,
+      155,
+      544,
+      413
+    ],
+    "timeout": 25000,
+    "next": [
+      "recognizeEnteringTheRoom_1_Light",
+      "recognizeEnteringTheRoom_Light",
+      "battleVictory_Light"
+    ],
+    "rate_limit": 1000,
+    "on_error": "stopapp"
+  },
+  "recognizeEnteringTheRoom_1_Light": {
+    "recognition": "OCR",
+    "expected" : "回合",
+    "roi" : [0,4,91,54],
+    "timeout": 900000,
+    "next": [
+      "battleVictory_Light",
+      "deathInBattle_Light"
+    ],
+    "rate_limit": 1500,
+    "on_error": "stopapp"
+  },
+  "battleVictory_Light": {
+    "recognition": "TemplateMatch",
+    "template": "战斗胜利.png",
+    "roi": [
+      230,
+      145,
+      828,
+      419
+    ],
+    "rate_limit": 600,
+    "timeout": 20000,
+    "next": [
+      "battleConfirmation_Light"
+    ],
+    "on_error": "stopapp"
+  },
+  "deathInBattle_Light": {
+    "recognition": "TemplateMatch",
+    "template": "取消.png",
+    "timeout": 900000,
+    "rate_limit": 800,
+    "action": "Click",
+    "next": [
+      "battleVictory_Light"
+    ],
+    "on_error": "deathInBattle_Light"
+  },
+  "battleConfirmation_Light": {
+    "recognition": "TemplateMatch",
+    "template": "继续.png",
+    "roi": [
+      938,
+      621,
+      341,
+      98
+    ],
+    "timeout": 10000,
+    "action": "Click",
+    "pre_delay": 800,
+    "post_delay": 5000,
+    "next": [
+      "teamBattleKinnara"
+    ],
+    "interrupt": [
+      "battleConfirmation_Light",
+      "clickOnTheBlankAreaKinnara",
+      "endTheCampaign"
+    ],
+    "on_error": "stopapp"
+  },
+
+  //------------出战队伍设置暗--------------
+  //第一步，点击出战默认会进入虚数体界面要关掉
+  "offDefaultMecha_Dark": {
+    "recognition": "TemplateMatch",
+    "template": "选择支援虚数体.png",
+    "roi" : [586,55,201,36],
+    "target" : [1213,76,45,45],
+    "action": "Click",
+    "next":[
+      "changeLineup_Dark"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "changeLineup_Dark": {
+    "recognition": "TemplateMatch",
+    "template" : "changeLineup.png",
+    "roi" : [5,75,153,47],
+    "target" : [83,518,55,49],
+    "action": "Click",
+    "next": "dispatchTeam_Dark",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第二步，选择出战属性有1~6个队伍
+  "dispatchTeam_Dark": {
+    "target": [1134,159,52,54],
+    "action": "Click",
+    "next": "selectEmpty_Dark",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第三步，选择完成后，检测支援虚数体栏位是否为"EMPT"。
+  "selectEmpty_Dark": {
+    "recognition": "OCR",
+    "expected" : "EMPTY",
+    "recommended roi" : [863,434,174,73],
+    "action": "Click",
+    "next": "DefaultMecha_Dark",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
+  "DefaultMecha_Dark": {
+    "recognition": "TemplateMatch",
+    "template": "fullLevelDarkKing.png",
+    "roi" : [149,138,1052,267],
+    "action" : "Click",
+    "next": "dispatchCombat_Dark",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第五步，全部确认好之后点击出战
+  "dispatchCombat_Dark": {
+    "recognition": "OCR",
+    "expected" : "出击",
+    "recommended roi" : [1092,575,159,64],
+    "action": "Click",
+    "next": "recognizeEnteringTheRoom_Dark",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "recognizeEnteringTheRoom_Dark": {
+    "recognition": "TemplateMatch",
+    "template": "加载界面.png",
+    "roi": [
+      373,
+      155,
+      544,
+      413
+    ],
+    "timeout": 25000,
+    "next": [
+      "recognizeEnteringTheRoom_1_Dark",
+      "recognizeEnteringTheRoom_Dark",
+      "battleVictory_Dark"
+    ],
+    "rate_limit": 1000,
+    "on_error": "stopapp"
+  },
+  "recognizeEnteringTheRoom_1_Dark": {
+    "recognition": "OCR",
+    "expected" : "回合",
+    "roi" : [0,4,91,54],
+    "timeout": 900000,
+    "next": [
+      "battleVictory_Dark",
+      "deathInBattle_Dark"
+    ],
+    "rate_limit": 1500,
+    "on_error": "stopapp"
+  },
+  "battleVictory_Dark": {
+    "recognition": "TemplateMatch",
+    "template": "战斗胜利.png",
+    "roi": [
+      230,
+      145,
+      828,
+      419
+    ],
+    "rate_limit": 600,
+    "timeout": 20000,
+    "next": [
+      "battleConfirmation_Dark"
+    ],
+    "on_error": "stopapp"
+  },
+  "deathInBattle_Dark": {
+    "recognition": "TemplateMatch",
+    "template": "取消.png",
+    "timeout": 900000,
+    "rate_limit": 800,
+    "action": "Click",
+    "next": [
+      "battleVictory_Dark"
+    ],
+    "on_error": "deathInBattle_Dark"
+  },
+  "battleConfirmation_Dark": {
+    "recognition": "TemplateMatch",
+    "template": "继续.png",
+    "roi": [
+      938,
+      621,
+      341,
+      98
+    ],
+    "timeout": 10000,
+    "action": "Click",
+    "pre_delay": 800,
+    "post_delay": 5000,
+    "next": [
+      "teamBattleKinnara"
+    ],
+    "interrupt": [
+      "battleConfirmation_Dark",
+      "clickOnTheBlankAreaKinnara",
+      "endTheCampaign"
+    ],
+    "on_error": "stopapp"
+  },
+
+  //------------紧那罗本体出战队伍设置--------------
+  "offDefaultMecha_Kinnara": {
+    "recognition": "TemplateMatch",
+    "template": "选择支援虚数体.png",
+    "roi" : [586,55,201,36],
+    "target" : [1213,76,45,45],
+    "action": "Click",
+    "next":[
+      "changeLineup_Kinnara"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "changeLineup_Kinnara": {
+    "recognition": "TemplateMatch",
+    "template" : "changeLineup.png",
+    "roi" : [5,75,153,47],
+    "target" : [77,375,59,50],
+    "action": "Click",
+    "next": "dispatchTeam_Kinnara",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第二步，选择出战属性有1~6个队伍
+  "dispatchTeam_Kinnara": {
+    "target": [1140,227,36,47],
+    "action": "Click",
+    "next": "selectEmpty_Kinnara",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第三步，选择完成后，检测支援虚数体栏位是否为"EMPT"。
+  "selectEmpty_Kinnara": {
+    "recognition": "OCR",
+    "expected" : "EMPTY",
+    "recommended roi" : [863,434,174,73],
+    "action": "Click",
+    "next": "DefaultMecha_Kinnara",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
+  "DefaultMecha_Kinnara": {
+    "recognition": "TemplateMatch",
+    "template": "fullLevelWindPrescription.png",
+    "roi" : [149,138,1052,267],
+    "action" : "Click",
+    "next": "dispatchCombat_Dark",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  //第五步，全部确认好之后点击出战
+  "dispatchCombat_Kinnara": {
+    "recognition": "OCR",
+    "expected" : "出击",
+    "recommended roi" : [1092,575,159,64],
+    "action": "Click",
+    "next": "recognizeEnteringTheRoom_Kinnara",
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "recognizeEnteringTheRoom_Kinnara": {
+    "recognition": "TemplateMatch",
+    "template": "加载界面.png",
+    "roi": [
+      373,
+      155,
+      544,
+      413
+    ],
+    "timeout": 25000,
+    "next": [
+      "recognizeEnteringTheRoom_1_Kinnara",
+      "recognizeEnteringTheRoom_Kinnara",
+      "battleVictory_Kinnara"
+    ],
+    "rate_limit": 1000,
+    "on_error": "stopapp"
+  },
+  "recognizeEnteringTheRoom_1_Kinnara": {
+    "recognition": "OCR",
+    "expected" : "回合",
+    "roi" : [0,4,91,54],
+    "timeout": 900000,
+    "next": [
+      "battleVictory_Kinnara",
+      "deathInBattle_Kinnara"
+    ],
+    "rate_limit": 1500,
+    "on_error": "stopapp"
+  },
+  "battleVictory_Kinnara": {
+    "recognition": "TemplateMatch",
+    "template": "战斗胜利.png",
+    "roi": [
+      230,
+      145,
+      828,
+      419
+    ],
+    "rate_limit": 600,
+    "timeout": 20000,
+    "next": [
+      "battleConfirmation_Kinnara"
+    ],
+    "on_error": "stopapp"
+  },
+  "deathInBattle_Kinnara": {
+    "recognition": "TemplateMatch",
+    "template": "取消.png",
+    "timeout": 900000,
+    "rate_limit": 800,
+    "action": "Click",
+    "next": [
+      "battleVictory_Kinnara"
+    ],
+    "on_error": "deathInBattle_Kinnara"
+  },
+  "battleConfirmation_Kinnara": {
+    "recognition": "TemplateMatch",
+    "template": "继续.png",
+    "roi": [
+      938,
+      621,
+      341,
+      98
+    ],
+    "timeout": 10000,
+    "action": "Click",
+    "pre_delay": 800,
+    "post_delay": 5000,
+    "next": [
+      "battleConfirmation_Kinnara"
+    ],
+    "interrupt": [
+      "clickOnTheBlankAreaKinnara",
+      "endTheCampaign"
+    ],
+    "on_error": "停止"
   }
 }
