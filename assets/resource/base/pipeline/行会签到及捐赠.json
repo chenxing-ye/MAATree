@@ -5,7 +5,7 @@
             "返回主页检测"
         ],
         "interrupt": [
-            "退出"
+            "返回主页"
         ],
         "timeout": 3000,
         "on_error": "stopapp"
@@ -228,7 +228,7 @@
         "action": "Click",
         "next": [
             "点击确定_捐赠",
-            "退出"
+            "返回主页"
         ],
         "interrupt": [
             "点击空白处关闭"

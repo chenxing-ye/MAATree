@@ -9,12 +9,13 @@
     },
     "领取物质": {
         "recognition": "TemplateMatch",
+        "green_mask": true,
         "template" : "活动.png",
         "next": [
           "点击每日物资"
         ],
         "interrupt":"wz向上滑动",
-        "roi" : [833,613,84,79],
+        "roi" : [828,628,104,73],
         "action": "Click",
         "pre_delay": 300,
         "post_delay": 300,

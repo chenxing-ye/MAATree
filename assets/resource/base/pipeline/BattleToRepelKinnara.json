@@ -2,7 +2,9 @@
   "startAutoKinnara": {
     "next": [
       "Kinnara_detectionHome",
-      "返回主页检测"
+      "返回主页检测",
+      "teamBattleKinnara",
+      "recognizeEnteringTheRoom_1_Fire"
     ],
     "interrupt": [
       "退出"
@@ -19,7 +21,10 @@
       119,
       54
     ],
-    "next": ["clickHighDifficulty"],
+    "next": [
+      "clickHighDifficulty",
+      "teamBattleKinnara"
+    ],
     "action": "Click",
     "timeout": 3000,
     "on_error": "stopapp"
@@ -29,7 +34,10 @@
     "expected": "高难",
     "roi" : [1169,84,96,59],
     "action": "Click",
-    "next": "clickKinnara",
+    "next": [
+      "clickKinnara",
+      "teamBattleKinnara"
+    ],
     "post_delay": 400,
     "timeout": 3000,
     "on_error": "stopapp"
@@ -102,7 +110,8 @@
     "roi" : [549,556,170,60],
     "next":[
       "cancelPreparation",
-      "teamBattleKinnara"
+      "teamBattleKinnara",
+      "clickJoinTheBattle"
     ],
     "timeout": 4000,
     "on_error": "stopapp"
@@ -221,6 +230,25 @@
     "roi" : [1084,609,146,68]
   },
 
+  "slideToTheRight_Kinnara": {
+    "action": "Swipe",
+    "begin": [
+      1064,
+      427,
+      1,
+      1
+    ],
+    "end": [
+      546,
+      327,
+      1,
+      1
+    ],
+    "post_delay": 1000,
+    "duration": 500,
+    "timeout": 1000
+  },
+
   //------------出战队伍设置火属性--------------
   //第一步，点击出战默认会进入虚数体界面要关掉
   "offDefaultMecha_Fire": {
@@ -260,13 +288,19 @@
     "recommended roi" : [863,434,174,73],
     "action": "Click",
     "next": "DefaultMecha_Fire",
+    "interrupt": [
+      "slideToTheRight_Kinnara"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
   //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
   "DefaultMecha_Fire": {
     "recognition": "TemplateMatch",
-    "template": "fullLevelFire.png",
+    "green_mask": true,
+    "order_by": "Score",
+    "threshold": 0.95,
+    "template": "fullLevelEarthworkPrescription.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
     "next": "dispatchCombat_Fire",
@@ -405,12 +439,18 @@
     "recommended roi" : [863,434,174,73],
     "action": "Click",
     "next": "DefaultMecha_Water",
+    "interrupt": [
+      "slideToTheRight_Kinnara"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
   //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
   "DefaultMecha_Water": {
     "recognition": "TemplateMatch",
+    "green_mask": true,
+    "order_by": "Score",
+    "threshold": 0.95,
     "template": "seniorWaterKing.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
@@ -548,12 +588,18 @@
     "recommended roi" : [863,434,174,73],
     "action": "Click",
     "next": "DefaultMecha_Soil",
+    "interrupt": [
+      "slideToTheRight_Kinnara"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
   //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
   "DefaultMecha_Soil": {
     "recognition": "TemplateMatch",
+    "green_mask": true,
+    "order_by": "Score",
+    "threshold": 0.95,
     "template": "fullLevelEarthKing.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
@@ -691,12 +737,18 @@
     "recommended roi" : [863,434,174,73],
     "action": "Click",
     "next": "DefaultMecha_Wind",
+    "interrupt": [
+      "slideToTheRight_Kinnara"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
   //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
   "DefaultMecha_Wind": {
     "recognition": "TemplateMatch",
+    "green_mask": true,
+    "order_by": "Score",
+    "threshold": 0.95,
     "template": "fullLevelWindPrescription.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
@@ -834,12 +886,18 @@
     "recommended roi" : [863,434,174,73],
     "action": "Click",
     "next": "DefaultMecha_Light",
+    "interrupt": [
+      "slideToTheRight_Kinnara"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
   //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
   "DefaultMecha_Light": {
     "recognition": "TemplateMatch",
+    "green_mask": true,
+    "order_by": "Score",
+    "threshold": 0.95,
     "template": "fullLevelKingofLight.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
@@ -977,12 +1035,18 @@
     "recommended roi" : [863,434,174,73],
     "action": "Click",
     "next": "DefaultMecha_Dark",
+    "interrupt": [
+      "slideToTheRight_Kinnara"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
   //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
   "DefaultMecha_Dark": {
     "recognition": "TemplateMatch",
+    "green_mask": true,
+    "order_by": "Score",
+    "threshold": 0.95,
     "template": "fullLevelDarkKing.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
@@ -1119,12 +1183,18 @@
     "recommended roi" : [863,434,174,73],
     "action": "Click",
     "next": "DefaultMecha_Kinnara",
+    "interrupt": [
+      "slideToTheRight_Kinnara"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
   //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
   "DefaultMecha_Kinnara": {
     "recognition": "TemplateMatch",
+    "green_mask": true,
+    "order_by": "Score",
+    "threshold": 0.95,
     "template": "fullLevelWindPrescription.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",

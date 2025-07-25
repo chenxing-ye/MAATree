@@ -145,6 +145,19 @@
         {
             "name": "自动紧纳罗",
             "entry": "startAutoKinnara",
+            "pipeline_override": {
+                "等待进入": {
+                    "next":[
+                        "主页检测",
+                        "teamBattleKinnara",
+                        "recognizeEnteringTheRoom_Fire",
+                        "recognizeEnteringTheRoom_1_Fire"
+                    ]
+                },
+                "主页检测": {
+                    "next": "startAutoKinnara"
+                }
+            },
             "option": [
                 "(光劫使)出战队伍",
                 "(光劫使)助战虚数体",
@@ -3052,7 +3065,7 @@
                 {
                     "name": "1队",
                     "pipeline_override": {
-                        "dispatchTeam__Dark": {
+                        "dispatchTeam_Dark": {
                             "target": [1134,159,52,54]
                         },
                         "enabled": true
@@ -3061,7 +3074,7 @@
                 {
                     "name": "2队",
                     "pipeline_override": {
-                        "dispatchTeam__Dark": {
+                        "dispatchTeam_Dark": {
                             "target": [1140,227,36,47]
                         },
                         "enabled": true
@@ -3070,7 +3083,7 @@
                 {
                     "name": "3队",
                     "pipeline_override": {
-                        "dispatchTeam__Dark": {
+                        "dispatchTeam_Dark": {
                             "target" : [1137,287,44,48]
                         },
                         "enabled": true
@@ -3079,7 +3092,7 @@
                 {
                     "name": "4队",
                     "pipeline_override": {
-                        "dispatchTeam__Dark": {
+                        "dispatchTeam_Dark": {
                             "target": [1139,350,41,44]
                         },
                         "enabled": true
@@ -3088,7 +3101,7 @@
                 {
                     "name": "5队",
                     "pipeline_override": {
-                        "dispatchTeam__Dark": {
+                        "dispatchTeam_Dark": {
                             "target" : [1137,413,43,43]
                         },
                         "enabled": true
@@ -3097,7 +3110,7 @@
                 {
                     "name": "6队",
                     "pipeline_override": {
-                        "dispatchTeam__Dark": {
+                        "dispatchTeam_Dark": {
                             "target" : [1138,475,42,42]
                         },
                         "enabled": true
@@ -3120,7 +3133,7 @@
                     "name": "终突暗王",
                     "pipeline_override": {
                         "DefaultMecha_Dark": {
-                            "template": "fullLevelKingofLight.png"
+                            "template": "fullLevelDarkKing.png"
                         },
                         "enabled": true
                     }
@@ -3236,7 +3249,7 @@
                     "name": "终突光方150",
                     "pipeline_override": {
                         "DefaultMecha_Light": {
-                            "template": "fullLevelKingofLight.png"
+                            "template": "fullLightPrescription.png"
                         },
                         "enabled": true
                     }

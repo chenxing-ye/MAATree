@@ -39,7 +39,7 @@
   "点击探求者之书": {
     "recognition": "OCR",
     "expected": "探求",
-    "roi" : [46,188,97,47],
+    "roi" : [16,147,228,101],
     "action": "Click",
     "next": "探求者之书_任务_点击",
     "pre_delay": 150,
@@ -139,7 +139,7 @@
   "探求者之书_奖励_器灵讨伐书": {
     "recognition": "OCR",
     "expected" : "器灵讨伐书",
-    "roi" : [43,285,124,49],
+    "roi" : [10,237,224,106],
     "next": "器灵讨伐书_任务_点击",
     "action": "Click",
     "pre_delay": 150,
@@ -215,7 +215,7 @@
     "pre_delay": 100,
     "post_delay": 100,
     "timeout": 800,
-    "on_error": "停止"
+    "on_error": "返回主页"
   },
   "器灵讨伐书_奖励_一键领取": {
     "recognition": "OCR",
@@ -232,7 +232,7 @@
     "pre_delay": 150,
     "post_delay": 150,
     "timeout": 2000,
-    "on_error": "停止"
+    "on_error": "返回主页"
   },
   "ts点击空白处": {
     "recognition": "OCR",

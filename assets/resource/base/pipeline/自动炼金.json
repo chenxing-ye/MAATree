@@ -48,7 +48,7 @@
     },
     "lc选择炼成属性": {
         "recognition": "OCR",
-        "expected": "暗",
+        "expected": "光",
         "roi": [
             0,
             563,
@@ -464,6 +464,7 @@
     },
     "常规熔炼_低级奥秘_未炼完": {
         "recognition": "TemplateMatch",
+        "threshold": 0.95,
         "template": "炼成结果.png",
         "roi": [
             276,

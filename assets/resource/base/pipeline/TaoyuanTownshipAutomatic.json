@@ -265,7 +265,7 @@
     "action": "Click",
     "pre_delay": 400,
     "post_delay": 1000,
-    "next": "停止",
+    "next": "返回主页",
     "interrupt": "clickBlank",
     "timeout": 3000,
     "on_error": "stopapp"
@@ -300,7 +300,7 @@
     "recognition": "OCR",
     "expected": "需要通过",
     "roi" : [473,321,333,74],
-    "next": "停止",
+    "next": "返回主页",
     "timeout": 1000,
     "on_error": "stopapp"
   },
