@@ -54,9 +54,9 @@
     "on_error": "stopapp"
   },
   "lostItem": {
-    "recognition": "OCR",
-    "expected" : "迷失之物",
-    "roi" : [65,239,478,223],
+    "recognition": "TemplateMatch",
+    "template": "迷失之物-火.png",
+    "roi" : [78,232,1184,227],
     "action": "Click",
     "next": "lostItem_1",
     "pre_delay": 350,
@@ -131,9 +131,9 @@
     "on_error": "stopapp"
   },
   "LostThings": {
-    "recognition": "OCR",
-    "expected": "遗落",
-    "roi" : [258,225,960,222],
+    "recognition": "TemplateMatch",
+    "template": "遗落之物-火.png",
+    "roi" : [78,232,1184,227],
     "action": "Click",
     "next": "LostThings_1",
     "pre_delay": 400,
@@ -197,9 +197,9 @@
     "on_error": "stopapp"
   },
   "theMasterOfTaoyuan": {
-    "recognition": "OCR",
-    "expected": "神狱",
-    "roi" : [258,225,960,222],
+    "recognition": "TemplateMatch",
+    "template": "朱雀.png",
+    "roi" : [78,232,1184,227],
     "action": "Click",
     "next": "theMasterOfTaoyuan_Difficulty",
     "pre_delay": 400,
