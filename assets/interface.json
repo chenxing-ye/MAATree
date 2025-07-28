@@ -4530,7 +4530,7 @@
                     "name": "终突光方150",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "fullLevelKingofLight.png"
+                            "template": "fullLightPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4548,7 +4548,7 @@
                     "name": "终突暗王",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "fullLevelKingofLight.png"
+                            "template": "fullLevelDarkKing.png"
                         },
                         "enabled": true
                     }
