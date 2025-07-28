@@ -48,7 +48,7 @@
     },
     "lc选择炼成属性": {
         "recognition": "OCR",
-        "expected": "光",
+        "expected": "火",
         "roi": [
             0,
             563,
@@ -704,6 +704,21 @@
         "post_delay": 800,
         "next": [
             "一键炼成结束",
+            "一键炼成_常规奥秘_异种核心_材料1",
+            "停止"
+        ],
+        "timeout": 4000,
+        "on_error": "stopapp"
+    },
+    //开始高级炼金添加材料1----------
+    "一键炼成_常规奥秘_异种核心_材料1": {
+        "recognition": "TemplateMatch",
+        "template": "异种核心-火.png",
+        "roi" : [44,91,720,303],
+        "action": "Click",
+        "pre_delay": 100,
+        "post_delay": 300,
+        "next": [
             "一键炼成_高阶奥秘_选择数量_材料1"
         ],
         "timeout": 4000,
@@ -763,6 +778,7 @@
         "timeout": 4000,
         "on_error": "stopapp"
     },
+    //结束高级炼金添加材料1----------
     "一键炼成_高阶奥秘_添加材料2": {
         "recognition": "TemplateMatch",
         "template": "炼成_可放入.png",
@@ -777,7 +793,7 @@
         "post_delay": 800,
         "next": [
             "一键炼成_高阶奥秘_添加材料2_无材料",
-            "一键炼成_高阶奥秘_选择数量_材料2"
+            "一键炼成_常规奥秘_奥秘精粹_材料1"
         ],
         "timeout": 4000,
         "on_error": "stopapp"
@@ -803,6 +819,20 @@
         "next": [
             "一键炼成_高阶奥秘_已选完_炼成次数"
         ]
+    },
+    //开始高级炼金添加材料2----------
+    "一键炼成_常规奥秘_奥秘精粹_材料1": {
+        "recognition": "TemplateMatch",
+        "template": "奥秘精粹.png",
+        "roi" : [44,91,720,303],
+        "action": "Click",
+        "pre_delay": 100,
+        "post_delay": 300,
+        "next": [
+            "一键炼成_高阶奥秘_选择数量_材料2"
+        ],
+        "timeout": 4000,
+        "on_error": "stopapp"
     },
     "一键炼成_高阶奥秘_选择数量_材料2": {
         "recognition": "OCR",
@@ -858,6 +888,7 @@
         "timeout": 4000,
         "on_error": "stopapp"
     },
+    //结束高级炼金添加材料2----------
     "一键炼成_高阶奥秘_已选完_炼成次数": {
         "recognition": "OCR",
         "expected": "成次",
@@ -983,6 +1014,21 @@
         "post_delay": 800,
         "next": [
             "一键炼成结束",
+            "一键炼成_常规奥秘_奇元八面体_材料1",
+            "停止"
+        ],
+        "timeout": 4000,
+        "on_error": "stopapp"
+    },
+    //开始普通炼金添加材料-------------
+    "一键炼成_常规奥秘_奇元八面体_材料1": {
+        "recognition": "TemplateMatch",
+        "template": "奇元八面体-火.png",
+        "roi" : [44,91,720,303],
+        "action": "Click",
+        "pre_delay": 100,
+        "post_delay": 300,
+        "next": [
             "一键炼成_常规奥秘_选择数量_材料1"
         ],
         "timeout": 4000,
@@ -1042,6 +1088,7 @@
         "timeout": 4000,
         "on_error": "stopapp"
     },
+    //结束普通炼金添加材料--------------
     "一键炼成_常规奥秘_添加材料2": {
         "recognition": "TemplateMatch",
         "template": "炼成_可放入.png",
@@ -1056,11 +1103,13 @@
         "post_delay": 800,
         "next": [
             "一键炼成_常规奥秘_添加材料2_无材料",
-            "一键炼成_常规奥秘_选择数量_材料2"
+            "一键炼成_常规奥秘_选择数量_材料2",
+            "一键炼成_常规奥秘_已选完_炼成次数"
         ],
         "timeout": 4000,
         "on_error": "stopapp"
     },
+    //开始普通炼金添加材料2--------------
     "一键炼成_常规奥秘_添加材料2_无材料": {
         "recognition": "OCR",
         "expected": "没有",
@@ -1082,6 +1131,19 @@
         "next": [
             "一键炼成_常规奥秘_已选完_炼成次数"
         ]
+    },
+    "一键炼成_常规奥秘_奥秘因子_材料1": {
+        "recognition": "TemplateMatch",
+        "template": "奥秘因子.png",
+        "roi" : [44,91,720,303],
+        "action": "Click",
+        "pre_delay": 100,
+        "post_delay": 300,
+        "next": [
+            "一键炼成_常规奥秘_选择数量_材料2"
+        ],
+        "timeout": 4000,
+        "on_error": "stopapp"
     },
     "一键炼成_常规奥秘_选择数量_材料2": {
         "recognition": "OCR",
@@ -1137,6 +1199,7 @@
         "timeout": 4000,
         "on_error": "stopapp"
     },
+    //结束普通炼金添加材料2--------------
     "一键炼成_常规奥秘_已选完_炼成次数": {
         "recognition": "OCR",
         "expected": "成次",
@@ -1240,4 +1303,5 @@
             93
         ]
     }
+
 }
