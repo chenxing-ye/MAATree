@@ -5,8 +5,13 @@
 基于全新架构的 树批小助手。图像技术 + 模拟控制，解放双手！
 
 > **重要提示**：
->
-> 本项目GitHub链接：[@caicai00001/MAATree](https://github.com/caicai00001/MAATree)  
+> 
+> 本项目GitHub链接：[@caicai00001/MAATree](https://github.com/caicai00001/MAATree)
+> 
+> 有问题可在GitHub提Issues并且附上问题截图和log日志以便更快速的解决问题。
+> 
+> 如有更新失败请移步"本项目GitHub链接"下载最新版本。
+> 
 > 软件本体完全免费，若您有付费购买请立即退款并举报！
 
 ## 使用说明

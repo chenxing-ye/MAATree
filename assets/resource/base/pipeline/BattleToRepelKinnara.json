@@ -1287,8 +1287,9 @@
     ],
     "interrupt": [
       "clickOnTheBlankAreaKinnara",
-      "endTheCampaign"
+      "endTheCampaign",
+      "退出"
     ],
-    "on_error": "停止"
+    "on_error": "stopapp"
   }
 }
