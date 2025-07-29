@@ -269,9 +269,10 @@
   //------------出战队伍设置火属性--------------
   //第一步，点击出战默认会进入虚数体界面要关掉
   "offDefaultMecha_Fire": {
-    "recognition": "TemplateMatch",
-    "template": "选择支援虚数体.png",
-    "roi" : [586,55,201,36],
+    "recognition": "OCR",
+    "expected" : "选择支援虚数体",
+    "roi" : [511,0,354,150],
+    "pre_delay": 150,
     "target" : [1213,76,45,45],
     "action": "Click",
     "next":[
@@ -435,9 +436,10 @@
   //------------出战队伍设置水--------------
   //第一步，点击出战默认会进入虚数体界面要关掉
   "offDefaultMecha_Water": {
-    "recognition": "TemplateMatch",
-    "template": "选择支援虚数体.png",
-    "roi" : [586,55,201,36],
+    "recognition": "OCR",
+    "expected" : "选择支援虚数体",
+    "roi" : [511,0,354,150],
+    "pre_delay": 150,
     "target" : [1213,76,45,45],
     "action": "Click",
     "next":[
@@ -601,9 +603,10 @@
   //------------出战队伍设置土--------------
   //第一步，点击出战默认会进入虚数体界面要关掉
   "offDefaultMecha_Soil": {
-    "recognition": "TemplateMatch",
-    "template": "选择支援虚数体.png",
-    "roi" : [586,55,201,36],
+    "recognition": "OCR",
+    "expected" : "选择支援虚数体",
+    "roi" : [511,0,354,150],
+    "pre_delay": 150,
     "target" : [1213,76,45,45],
     "action": "Click",
     "next":[
@@ -767,9 +770,10 @@
   //------------出战队伍设置风--------------
   //第一步，点击出战默认会进入虚数体界面要关掉
   "offDefaultMecha_Wind": {
-    "recognition": "TemplateMatch",
-    "template": "选择支援虚数体.png",
-    "roi" : [586,55,201,36],
+    "recognition": "OCR",
+    "expected" : "选择支援虚数体",
+    "roi" : [511,0,354,150],
+    "pre_delay": 150,
     "target" : [1213,76,45,45],
     "action": "Click",
     "next":[
@@ -935,9 +939,10 @@
   //------------出战队伍设置光--------------
   //第一步，点击出战默认会进入虚数体界面要关掉
   "offDefaultMecha_Light": {
-    "recognition": "TemplateMatch",
-    "template": "选择支援虚数体.png",
-    "roi" : [586,55,201,36],
+    "recognition": "OCR",
+    "expected" : "选择支援虚数体",
+    "roi" : [511,0,354,150],
+    "pre_delay": 150,
     "target" : [1213,76,45,45],
     "action": "Click",
     "next":[
@@ -1103,9 +1108,10 @@
   //------------出战队伍设置暗--------------
   //第一步，点击出战默认会进入虚数体界面要关掉
   "offDefaultMecha_Dark": {
-    "recognition": "TemplateMatch",
-    "template": "选择支援虚数体.png",
-    "roi" : [586,55,201,36],
+    "recognition": "OCR",
+    "expected" : "选择支援虚数体",
+    "roi" : [511,0,354,150],
+    "pre_delay": 150,
     "target" : [1213,76,45,45],
     "action": "Click",
     "next":[
@@ -1270,9 +1276,10 @@
 
   //------------紧那罗本体出战队伍设置--------------
   "offDefaultMecha_Kinnara": {
-    "recognition": "TemplateMatch",
-    "template": "选择支援虚数体.png",
-    "roi" : [586,55,201,36],
+    "recognition": "OCR",
+    "expected" : "选择支援虚数体",
+    "roi" : [511,0,354,150],
+    "pre_delay": 150,
     "target" : [1213,76,45,45],
     "action": "Click",
     "next":[
