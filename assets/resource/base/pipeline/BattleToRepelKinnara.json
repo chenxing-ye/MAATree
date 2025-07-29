@@ -235,14 +235,16 @@
     "recognition": "OCR",
     "expected": "空白",
     "action": "Click",
-    "roi" : [539,587,224,107]
+    "roi" : [539,587,224,107],
+    "next": "endTheCampaign"
   },
 
   "endTheCampaign": {
     "recognition": "OCR",
     "expected" : "结束讨伐",
     "action": "Click",
-    "roi" : [1084,609,146,68]
+    "roi" : [1084,609,146,68],
+    "next": "停止"
   },
 
   "slideToTheRight_Kinnara": {
@@ -425,9 +427,7 @@
       "网络连接断开"
     ],
     "interrupt": [
-      "battleConfirmation_Fire",
-      "clickOnTheBlankAreaKinnara",
-      "endTheCampaign"
+      "clickOnTheBlankAreaKinnara"
     ],
     "on_error": "stopapp"
   },
@@ -593,9 +593,7 @@
       "网络连接断开"
     ],
     "interrupt": [
-      "battleConfirmation_Water",
-      "clickOnTheBlankAreaKinnara",
-      "endTheCampaign"
+      "clickOnTheBlankAreaKinnara"
     ],
     "on_error": "stopapp"
   },
@@ -761,9 +759,7 @@
       "网络连接断开"
     ],
     "interrupt": [
-      "battleConfirmation_Soil",
-      "clickOnTheBlankAreaKinnara",
-      "endTheCampaign"
+      "clickOnTheBlankAreaKinnara"
     ],
     "on_error": "stopapp"
   },
@@ -931,9 +927,7 @@
       "网络连接断开"
     ],
     "interrupt": [
-      "battleConfirmation_Wind",
-      "clickOnTheBlankAreaKinnara",
-      "endTheCampaign"
+      "clickOnTheBlankAreaKinnara"
     ],
     "on_error": "stopapp"
   },
@@ -1101,9 +1095,7 @@
       "网络连接断开"
     ],
     "interrupt": [
-      "battleConfirmation_Light",
-      "clickOnTheBlankAreaKinnara",
-      "endTheCampaign"
+      "clickOnTheBlankAreaKinnara"
     ],
     "on_error": "stopapp"
   },
@@ -1271,9 +1263,7 @@
       "网络连接断开"
     ],
     "interrupt": [
-      "battleConfirmation_Dark",
-      "clickOnTheBlankAreaKinnara",
-      "endTheCampaign"
+      "clickOnTheBlankAreaKinnara"
     ],
     "on_error": "stopapp"
   },
@@ -1435,12 +1425,7 @@
     "pre_delay": 800,
     "post_delay": 5000,
     "next": [
-      "battleConfirmation_Kinnara",
-      "停止"
-    ],
-    "interrupt": [
-      "clickOnTheBlankAreaKinnara",
-      "endTheCampaign"
+      "clickOnTheBlankAreaKinnara"
     ],
     "on_error": "stopapp"
   }
