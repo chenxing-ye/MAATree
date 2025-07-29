@@ -215,7 +215,7 @@
     "pre_delay": 100,
     "post_delay": 100,
     "timeout": 800,
-    "on_error": "返回主页"
+    "on_error": "stopapp"
   },
   "器灵讨伐书_奖励_一键领取": {
     "recognition": "OCR",
@@ -224,7 +224,8 @@
     "action": "Click",
     "post_wait_freezes": 300,
     "next": [
-      "器灵讨伐书_奖励_一键领取"
+      "器灵讨伐书_奖励_一键领取",
+      "停止"
     ],
     "interrupt": [
       "ts点击空白处"
@@ -232,7 +233,7 @@
     "pre_delay": 150,
     "post_delay": 150,
     "timeout": 2000,
-    "on_error": "返回主页"
+    "on_error": "stopapp"
   },
   "ts点击空白处": {
     "recognition": "OCR",
