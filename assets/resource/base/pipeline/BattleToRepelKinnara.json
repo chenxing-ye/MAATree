@@ -1198,7 +1198,10 @@
     "template": "fullLevelWindPrescription.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
-    "next": "dispatchCombat_Dark",
+    "next": [
+      "dispatchCombat_Kinnara",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
