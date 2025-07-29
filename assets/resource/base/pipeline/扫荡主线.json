@@ -9,7 +9,7 @@
     "zx识别是否在主页": {
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
-        "next": "zx识别主线",
+        "next": "zx识别主线1",
         "post_delay": 500,
         "action": "Click",
         "timeout": 3000,
@@ -21,7 +21,37 @@
         "post_delay": 500,
         "action": "Click"
     },
-    "zx识别主线": {
+    "zx识别主线1": {
+        "recognition": "OCR",
+        "expected": "主线",
+        "roi": [
+            12,
+            85,
+            1262,
+            59
+        ],
+        "next": "zx识别主线2",
+        "action": "Click",
+        "post_delay": 500,
+        "timeout": 3000,
+        "on_error": "stopapp"
+    },
+    "zx识别主线2": {
+        "recognition": "OCR",
+        "expected": "主线",
+        "roi": [
+            12,
+            85,
+            1262,
+            59
+        ],
+        "next": "zx识别主线3",
+        "action": "Click",
+        "post_delay": 500,
+        "timeout": 3000,
+        "on_error": "stopapp"
+    },
+    "zx识别主线3": {
         "recognition": "OCR",
         "expected": "主线",
         "roi": [
@@ -500,7 +530,7 @@
             168,
             62
         ],
-        "next": "返回主页",
+        "next": "停止",
         "timeout": 3000
     },
     "zx下一章": {
