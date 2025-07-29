@@ -4,7 +4,8 @@
       "Kinnara_detectionHome",
       "返回主页检测",
       "teamBattleKinnara",
-      "recognizeEnteringTheRoom_1_Fire"
+      "recognizeEnteringTheRoom_1_Fire",
+      "网络连接断开"
     ],
     "interrupt": [
       "退出"
@@ -23,7 +24,8 @@
     ],
     "next": [
       "clickHighDifficulty",
-      "teamBattleKinnara"
+      "teamBattleKinnara",
+      "网络连接断开"
     ],
     "action": "Click",
     "timeout": 3000,
@@ -36,7 +38,8 @@
     "action": "Click",
     "next": [
       "clickKinnara",
-      "teamBattleKinnara"
+      "teamBattleKinnara",
+      "网络连接断开"
     ],
     "post_delay": 400,
     "timeout": 3000,
@@ -47,7 +50,10 @@
     "template" : "Kinnara.png",
     "roi" : [16,261,480,323],
     "action": "Click",
-    "next": "clickJoinTheBattle",
+    "next": [
+      "clickJoinTheBattle",
+      "网络连接断开"
+    ],
     "post_delay": 400,
     "timeout": 3000,
     "on_error": "stopapp"
@@ -61,7 +67,8 @@
     "next": [
       "clickToPrepare",
       "quickJoinWaiting",
-      "quickJoinFailure"
+      "quickJoinFailure",
+      "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -74,7 +81,8 @@
     "next": [
       "quickJoinWaiting",
       "clickToPrepare",
-      "quickJoinFailure"
+      "quickJoinFailure",
+      "网络连接断开"
     ],
     "rate_limit": 800,
     "timeout": 35000,
@@ -87,7 +95,10 @@
     "roi" : [475,370,290,67],
     "action": "Click",
     "target" : [453,470,85,40],
-    "next": "clickJoinTheBattle",
+    "next": [
+      "clickJoinTheBattle",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -99,7 +110,8 @@
     //考虑野队特殊性如果被踢掉队伍进入重新循环
     "next": [
       "cancelPreparation",
-      "clickJoinTheBattle"
+      "clickJoinTheBattle",
+      "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -111,7 +123,8 @@
     "next":[
       "cancelPreparation",
       "teamBattleKinnara",
-      "clickJoinTheBattle"
+      "clickJoinTheBattle",
+      "网络连接断开"
     ],
     "timeout": 4000,
     "on_error": "stopapp"
@@ -127,7 +140,8 @@
       "Envoy_four",
       "Envoy_five",
       "Envoy_six",
-      "Envoy_seven"
+      "Envoy_seven",
+      "网络连接断开"
     ],
     "timeout": 4000,
     "on_error": "stopapp"
@@ -208,7 +222,8 @@
     "threshold": 0.95,
     "template" : "紧那罗本体.png",
     "next": [
-      "offDefaultMecha_Kinnara"
+      "offDefaultMecha_Kinnara",
+      "网络连接断开"
     ],
     "recommended roi" : [574,300,125,117],
     "action": "Click",
@@ -258,7 +273,8 @@
     "target" : [1213,76,45,45],
     "action": "Click",
     "next":[
-      "changeLineup_Fire"
+      "changeLineup_Fire",
+      "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -269,7 +285,10 @@
     "roi" : [5,75,153,47],
     "target" : [82,160,53,58],
     "action": "Click",
-    "next": "dispatchTeam_Fire",
+    "next": [
+      "dispatchTeam_Fire",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -277,7 +296,10 @@
   "dispatchTeam_Fire": {
     "target": [1134,159,52,54],
     "action": "Click",
-    "next": "selectEmpty_Fire",
+    "next": [
+      "selectEmpty_Fire",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -289,7 +311,8 @@
     "action": "Click",
     "next": "DefaultMecha_Fire",
     "interrupt": [
-      "slideToTheRight_Kinnara"
+      "slideToTheRight_Kinnara",
+      "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -299,11 +322,14 @@
     "recognition": "TemplateMatch",
     "green_mask": true,
     "order_by": "Score",
-    "threshold": 0.95,
+    "threshold": 0.8,
     "template": "fullLevelEarthworkPrescription.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
-    "next": "dispatchCombat_Fire",
+    "next": [
+      "dispatchCombat_Fire",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -314,7 +340,8 @@
     "recommended roi" : [1092,575,159,64],
     "action": "Click",
     "next": [
-      "recognizeEnteringTheRoom_Fire"
+      "recognizeEnteringTheRoom_Fire",
+      "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -332,7 +359,8 @@
     "next": [
       "recognizeEnteringTheRoom_1_Fire",
       "recognizeEnteringTheRoom_Fire",
-      "battleVictory_Fire"
+      "battleVictory_Fire",
+      "网络连接断开"
     ],
     "rate_limit": 1000,
     "on_error": "stopapp"
@@ -344,7 +372,8 @@
     "timeout": 900000,
     "next": [
       "battleVictory_Fire",
-      "deathInBattle_Fire"
+      "deathInBattle_Fire",
+      "网络连接断开"
     ],
     "rate_limit": 1500,
     "on_error": "stopapp"
@@ -361,7 +390,8 @@
     "rate_limit": 600,
     "timeout": 20000,
     "next": [
-      "battleConfirmation_Fire"
+      "battleConfirmation_Fire",
+      "网络连接断开"
     ],
     "on_error": "stopapp"
   },
@@ -372,7 +402,8 @@
     "rate_limit": 800,
     "action": "Click",
     "next": [
-      "battleVictory_Fire"
+      "battleVictory_Fire",
+      "网络连接断开"
     ],
     "on_error": "deathInBattle_Fire"
   },
@@ -390,7 +421,8 @@
     "pre_delay": 800,
     "post_delay": 5000,
     "next": [
-      "teamBattleKinnara"
+      "teamBattleKinnara",
+      "网络连接断开"
     ],
     "interrupt": [
       "battleConfirmation_Fire",
@@ -409,7 +441,8 @@
     "target" : [1213,76,45,45],
     "action": "Click",
     "next":[
-      "changeLineup_Water"
+      "changeLineup_Water",
+      "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -420,7 +453,10 @@
     "roi" : [5,75,153,47],
     "target" : [81,237,57,55],
     "action": "Click",
-    "next": "dispatchTeam_Water",
+    "next": [
+      "dispatchTeam_Water",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -428,7 +464,10 @@
   "dispatchTeam_Water": {
     "target": [1134,159,52,54],
     "action": "Click",
-    "next": "selectEmpty_Water",
+    "next": [
+      "selectEmpty_Water",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -440,7 +479,8 @@
     "action": "Click",
     "next": "DefaultMecha_Water",
     "interrupt": [
-      "slideToTheRight_Kinnara"
+      "slideToTheRight_Kinnara",
+      "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -450,11 +490,14 @@
     "recognition": "TemplateMatch",
     "green_mask": true,
     "order_by": "Score",
-    "threshold": 0.95,
+    "threshold": 0.8,
     "template": "seniorWaterKing.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
-    "next": "dispatchCombat_Water",
+    "next": [
+      "dispatchCombat_Water",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -464,7 +507,10 @@
     "expected" : "出击",
     "recommended roi" : [1092,575,159,64],
     "action": "Click",
-    "next": "recognizeEnteringTheRoom_Water",
+    "next": [
+      "recognizeEnteringTheRoom_Water",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -481,7 +527,8 @@
     "next": [
       "recognizeEnteringTheRoom_1_Water",
       "recognizeEnteringTheRoom_Water",
-      "battleVictory_Fire"
+      "battleVictory_Fire",
+      "网络连接断开"
     ],
     "rate_limit": 1000,
     "on_error": "stopapp"
@@ -493,7 +540,8 @@
     "timeout": 900000,
     "next": [
       "battleVictory_Water",
-      "deathInBattle_Water"
+      "deathInBattle_Water",
+      "网络连接断开"
     ],
     "rate_limit": 1500,
     "on_error": "stopapp"
@@ -510,7 +558,8 @@
     "rate_limit": 600,
     "timeout": 20000,
     "next": [
-      "battleConfirmation_Water"
+      "battleConfirmation_Water",
+      "网络连接断开"
     ],
     "on_error": "stopapp"
   },
@@ -521,7 +570,8 @@
     "rate_limit": 800,
     "action": "Click",
     "next": [
-      "battleVictory_Water"
+      "battleVictory_Water",
+      "网络连接断开"
     ],
     "on_error": "deathInBattle_Water"
   },
@@ -539,7 +589,8 @@
     "pre_delay": 800,
     "post_delay": 5000,
     "next": [
-      "teamBattleKinnara"
+      "teamBattleKinnara",
+      "网络连接断开"
     ],
     "interrupt": [
       "battleConfirmation_Water",
@@ -558,7 +609,8 @@
     "target" : [1213,76,45,45],
     "action": "Click",
     "next":[
-      "changeLineup_Soil"
+      "changeLineup_Soil",
+      "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -569,7 +621,10 @@
     "roi" : [5,75,153,47],
     "target" : [78,308,62,51],
     "action": "Click",
-    "next": "dispatchTeam_Soil",
+    "next": [
+      "dispatchTeam_Soil",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -577,7 +632,10 @@
   "dispatchTeam_Soil": {
     "target": [1134,159,52,54],
     "action": "Click",
-    "next": "selectEmpty_Soil",
+    "next": [
+      "selectEmpty_Soil",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -589,7 +647,8 @@
     "action": "Click",
     "next": "DefaultMecha_Soil",
     "interrupt": [
-      "slideToTheRight_Kinnara"
+      "slideToTheRight_Kinnara",
+      "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -599,11 +658,14 @@
     "recognition": "TemplateMatch",
     "green_mask": true,
     "order_by": "Score",
-    "threshold": 0.95,
+    "threshold": 0.8,
     "template": "fullLevelEarthKing.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
-    "next": "dispatchCombat_Soil",
+    "next": [
+      "dispatchCombat_Soil",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -613,7 +675,10 @@
     "expected" : "出击",
     "recommended roi" : [1092,575,159,64],
     "action": "Click",
-    "next": "recognizeEnteringTheRoom_Soil",
+    "next": [
+      "recognizeEnteringTheRoom_Soil",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -630,7 +695,8 @@
     "next": [
       "recognizeEnteringTheRoom_1_Soil",
       "recognizeEnteringTheRoom_Soil",
-      "battleVictory_Soil"
+      "battleVictory_Soil",
+      "网络连接断开"
     ],
     "rate_limit": 1000,
     "on_error": "stopapp"
@@ -642,7 +708,8 @@
     "timeout": 900000,
     "next": [
       "battleVictory_Soil",
-      "deathInBattle_Soil"
+      "deathInBattle_Soil",
+      "网络连接断开"
     ],
     "rate_limit": 1500,
     "on_error": "stopapp"
@@ -659,7 +726,8 @@
     "rate_limit": 600,
     "timeout": 20000,
     "next": [
-      "battleConfirmation_Soil"
+      "battleConfirmation_Soil",
+      "网络连接断开"
     ],
     "on_error": "stopapp"
   },
@@ -670,7 +738,8 @@
     "rate_limit": 800,
     "action": "Click",
     "next": [
-      "battleVictory_Soil"
+      "battleVictory_Soil",
+      "网络连接断开"
     ],
     "on_error": "deathInBattle_Soil"
   },
@@ -688,7 +757,8 @@
     "pre_delay": 800,
     "post_delay": 5000,
     "next": [
-      "teamBattleKinnara"
+      "teamBattleKinnara",
+      "网络连接断开"
     ],
     "interrupt": [
       "battleConfirmation_Soil",
@@ -707,7 +777,8 @@
     "target" : [1213,76,45,45],
     "action": "Click",
     "next":[
-      "changeLineup_Wind"
+      "changeLineup_Wind",
+      "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -718,7 +789,10 @@
     "roi" : [5,75,153,47],
     "target" : [77,375,59,50],
     "action": "Click",
-    "next": "dispatchTeam_Wind",
+    "next": [
+      "dispatchTeam_Wind",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -726,7 +800,10 @@
   "dispatchTeam_Wind": {
     "target": [1134,159,52,54],
     "action": "Click",
-    "next": "selectEmpty_Wind",
+    "next": [
+      "selectEmpty_Wind",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -736,7 +813,10 @@
     "expected" : "EMPTY",
     "recommended roi" : [863,434,174,73],
     "action": "Click",
-    "next": "DefaultMecha_Wind",
+    "next": [
+      "DefaultMecha_Wind",
+      "网络连接断开"
+    ],
     "interrupt": [
       "slideToTheRight_Kinnara"
     ],
@@ -748,11 +828,14 @@
     "recognition": "TemplateMatch",
     "green_mask": true,
     "order_by": "Score",
-    "threshold": 0.95,
+    "threshold": 0.8,
     "template": "fullLevelWindPrescription.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
-    "next": "dispatchCombat_Wind",
+    "next": [
+      "dispatchCombat_Wind",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -762,7 +845,10 @@
     "expected" : "出击",
     "recommended roi" : [1092,575,159,64],
     "action": "Click",
-    "next": "recognizeEnteringTheRoom_Wind",
+    "next": [
+      "recognizeEnteringTheRoom_Wind",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -779,7 +865,8 @@
     "next": [
       "recognizeEnteringTheRoom_1_Wind",
       "recognizeEnteringTheRoom_Wind",
-      "battleVictory_Wind"
+      "battleVictory_Wind",
+      "网络连接断开"
     ],
     "rate_limit": 1000,
     "on_error": "stopapp"
@@ -791,7 +878,8 @@
     "timeout": 900000,
     "next": [
       "battleVictory_Wind",
-      "deathInBattle_Wind"
+      "deathInBattle_Wind",
+      "网络连接断开"
     ],
     "rate_limit": 1500,
     "on_error": "stopapp"
@@ -808,7 +896,8 @@
     "rate_limit": 600,
     "timeout": 20000,
     "next": [
-      "battleConfirmation_Wind"
+      "battleConfirmation_Wind",
+      "网络连接断开"
     ],
     "on_error": "stopapp"
   },
@@ -819,7 +908,8 @@
     "rate_limit": 800,
     "action": "Click",
     "next": [
-      "battleVictory_Wind"
+      "battleVictory_Wind",
+      "网络连接断开"
     ],
     "on_error": "deathInBattle_Wind"
   },
@@ -837,7 +927,8 @@
     "pre_delay": 800,
     "post_delay": 5000,
     "next": [
-      "teamBattleKinnara"
+      "teamBattleKinnara",
+      "网络连接断开"
     ],
     "interrupt": [
       "battleConfirmation_Wind",
@@ -856,7 +947,8 @@
     "target" : [1213,76,45,45],
     "action": "Click",
     "next":[
-      "changeLineup_Light"
+      "changeLineup_Light",
+      "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -867,7 +959,10 @@
     "roi" : [5,75,153,47],
     "target" : [79,449,61,50],
     "action": "Click",
-    "next": "dispatchTeam_Light",
+    "next": [
+      "dispatchTeam_Light",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -875,7 +970,10 @@
   "dispatchTeam_Light": {
     "target": [1134,159,52,54],
     "action": "Click",
-    "next": "selectEmpty_Light",
+    "next": [
+      "selectEmpty_Light",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -885,7 +983,10 @@
     "expected" : "EMPTY",
     "recommended roi" : [863,434,174,73],
     "action": "Click",
-    "next": "DefaultMecha_Light",
+    "next": [
+      "DefaultMecha_Light",
+      "网络连接断开"
+    ],
     "interrupt": [
       "slideToTheRight_Kinnara"
     ],
@@ -897,11 +998,14 @@
     "recognition": "TemplateMatch",
     "green_mask": true,
     "order_by": "Score",
-    "threshold": 0.95,
+    "threshold": 0.8,
     "template": "fullLevelKingofLight.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
-    "next": "dispatchCombat_Light",
+    "next": [
+      "dispatchCombat_Light",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -911,7 +1015,10 @@
     "expected" : "出击",
     "recommended roi" : [1092,575,159,64],
     "action": "Click",
-    "next": "recognizeEnteringTheRoom_Light",
+    "next": [
+      "recognizeEnteringTheRoom_Light",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -928,7 +1035,8 @@
     "next": [
       "recognizeEnteringTheRoom_1_Light",
       "recognizeEnteringTheRoom_Light",
-      "battleVictory_Light"
+      "battleVictory_Light",
+      "网络连接断开"
     ],
     "rate_limit": 1000,
     "on_error": "stopapp"
@@ -940,7 +1048,8 @@
     "timeout": 900000,
     "next": [
       "battleVictory_Light",
-      "deathInBattle_Light"
+      "deathInBattle_Light",
+      "网络连接断开"
     ],
     "rate_limit": 1500,
     "on_error": "stopapp"
@@ -957,7 +1066,8 @@
     "rate_limit": 600,
     "timeout": 20000,
     "next": [
-      "battleConfirmation_Light"
+      "battleConfirmation_Light",
+      "网络连接断开"
     ],
     "on_error": "stopapp"
   },
@@ -968,7 +1078,8 @@
     "rate_limit": 800,
     "action": "Click",
     "next": [
-      "battleVictory_Light"
+      "battleVictory_Light",
+      "网络连接断开"
     ],
     "on_error": "deathInBattle_Light"
   },
@@ -986,7 +1097,8 @@
     "pre_delay": 800,
     "post_delay": 5000,
     "next": [
-      "teamBattleKinnara"
+      "teamBattleKinnara",
+      "网络连接断开"
     ],
     "interrupt": [
       "battleConfirmation_Light",
@@ -1005,7 +1117,8 @@
     "target" : [1213,76,45,45],
     "action": "Click",
     "next":[
-      "changeLineup_Dark"
+      "changeLineup_Dark",
+      "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -1016,7 +1129,10 @@
     "roi" : [5,75,153,47],
     "target" : [83,518,55,49],
     "action": "Click",
-    "next": "dispatchTeam_Dark",
+    "next": [
+      "dispatchTeam_Dark",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -1024,7 +1140,10 @@
   "dispatchTeam_Dark": {
     "target": [1134,159,52,54],
     "action": "Click",
-    "next": "selectEmpty_Dark",
+    "next": [
+      "selectEmpty_Dark",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -1034,7 +1153,10 @@
     "expected" : "EMPTY",
     "recommended roi" : [863,434,174,73],
     "action": "Click",
-    "next": "DefaultMecha_Dark",
+    "next": [
+      "DefaultMecha_Dark",
+      "网络连接断开"
+    ],
     "interrupt": [
       "slideToTheRight_Kinnara"
     ],
@@ -1046,11 +1168,14 @@
     "recognition": "TemplateMatch",
     "green_mask": true,
     "order_by": "Score",
-    "threshold": 0.95,
+    "threshold": 0.8,
     "template": "fullLevelDarkKing.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
-    "next": "dispatchCombat_Dark",
+    "next": [
+      "dispatchCombat_Dark",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -1060,7 +1185,10 @@
     "expected" : "出击",
     "recommended roi" : [1092,575,159,64],
     "action": "Click",
-    "next": "recognizeEnteringTheRoom_Dark",
+    "next": [
+      "recognizeEnteringTheRoom_Dark",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -1077,7 +1205,8 @@
     "next": [
       "recognizeEnteringTheRoom_1_Dark",
       "recognizeEnteringTheRoom_Dark",
-      "battleVictory_Dark"
+      "battleVictory_Dark",
+      "网络连接断开"
     ],
     "rate_limit": 1000,
     "on_error": "stopapp"
@@ -1089,7 +1218,8 @@
     "timeout": 900000,
     "next": [
       "battleVictory_Dark",
-      "deathInBattle_Dark"
+      "deathInBattle_Dark",
+      "网络连接断开"
     ],
     "rate_limit": 1500,
     "on_error": "stopapp"
@@ -1106,7 +1236,8 @@
     "rate_limit": 600,
     "timeout": 20000,
     "next": [
-      "battleConfirmation_Dark"
+      "battleConfirmation_Dark",
+      "网络连接断开"
     ],
     "on_error": "stopapp"
   },
@@ -1117,7 +1248,8 @@
     "rate_limit": 800,
     "action": "Click",
     "next": [
-      "battleVictory_Dark"
+      "battleVictory_Dark",
+      "网络连接断开"
     ],
     "on_error": "deathInBattle_Dark"
   },
@@ -1135,7 +1267,8 @@
     "pre_delay": 800,
     "post_delay": 5000,
     "next": [
-      "teamBattleKinnara"
+      "teamBattleKinnara",
+      "网络连接断开"
     ],
     "interrupt": [
       "battleConfirmation_Dark",
@@ -1153,7 +1286,8 @@
     "target" : [1213,76,45,45],
     "action": "Click",
     "next":[
-      "changeLineup_Kinnara"
+      "changeLineup_Kinnara",
+      "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -1164,7 +1298,10 @@
     "roi" : [5,75,153,47],
     "target" : [77,375,59,50],
     "action": "Click",
-    "next": "dispatchTeam_Kinnara",
+    "next": [
+      "dispatchTeam_Kinnara",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -1172,7 +1309,10 @@
   "dispatchTeam_Kinnara": {
     "target": [1140,227,36,47],
     "action": "Click",
-    "next": "selectEmpty_Kinnara",
+    "next": [
+      "selectEmpty_Kinnara",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -1184,7 +1324,8 @@
     "action": "Click",
     "next": "DefaultMecha_Kinnara",
     "interrupt": [
-      "slideToTheRight_Kinnara"
+      "slideToTheRight_Kinnara",
+      "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -1194,7 +1335,7 @@
     "recognition": "TemplateMatch",
     "green_mask": true,
     "order_by": "Score",
-    "threshold": 0.95,
+    "threshold": 0.8,
     "template": "fullLevelWindPrescription.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
@@ -1211,7 +1352,10 @@
     "expected" : "出击",
     "recommended roi" : [1092,575,159,64],
     "action": "Click",
-    "next": "recognizeEnteringTheRoom_Kinnara",
+    "next": [
+      "recognizeEnteringTheRoom_Kinnara",
+      "网络连接断开"
+    ],
     "timeout": 3000,
     "on_error": "stopapp"
   },
@@ -1228,7 +1372,9 @@
     "next": [
       "recognizeEnteringTheRoom_1_Kinnara",
       "recognizeEnteringTheRoom_Kinnara",
-      "battleVictory_Kinnara"
+      "battleVictory_Kinnara",
+      "网络连接断开"
+
     ],
     "rate_limit": 1000,
     "on_error": "stopapp"
@@ -1240,7 +1386,8 @@
     "timeout": 900000,
     "next": [
       "battleVictory_Kinnara",
-      "deathInBattle_Kinnara"
+      "deathInBattle_Kinnara",
+      "网络连接断开"
     ],
     "rate_limit": 1500,
     "on_error": "stopapp"
@@ -1257,7 +1404,8 @@
     "rate_limit": 600,
     "timeout": 20000,
     "next": [
-      "battleConfirmation_Kinnara"
+      "battleConfirmation_Kinnara",
+      "网络连接断开"
     ],
     "on_error": "stopapp"
   },
@@ -1268,7 +1416,8 @@
     "rate_limit": 800,
     "action": "Click",
     "next": [
-      "battleVictory_Kinnara"
+      "battleVictory_Kinnara",
+      "网络连接断开"
     ],
     "on_error": "deathInBattle_Kinnara"
   },
@@ -1286,12 +1435,12 @@
     "pre_delay": 800,
     "post_delay": 5000,
     "next": [
-      "battleConfirmation_Kinnara"
+      "battleConfirmation_Kinnara",
+      "停止"
     ],
     "interrupt": [
       "clickOnTheBlankAreaKinnara",
-      "endTheCampaign",
-      "退出"
+      "endTheCampaign"
     ],
     "on_error": "stopapp"
   }
