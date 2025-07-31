@@ -311,13 +311,42 @@
     "recommended roi" : [863,434,174,73],
     "action": "Click",
     //如果找不到机甲就启用备选方案
-    "next": "DefaultMecha_Fire",
-    "interrupt": [
-      "slideToTheRight_Kinnara",
+    "next": [
+      "DefaultMecha_Fire",
+      "offMecha_Fire",
       "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
+  },
+  //备选方案1
+  "offMecha_Fire": {
+    "recognition": "OCR",
+    "expected" : "选择支援虚数体",
+    "roi" : [511,0,354,150],
+    "pre_delay": 150,
+    "target" : [1213,76,45,45],
+    "action": "Click",
+    "next":[
+      "offChangeLineup_Fire",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "offMecha_Fire"
+  },
+  //备选方案2
+  "offChangeLineup_Fire": {
+    "recognition": "TemplateMatch",
+    "template" : "changeLineup.png",
+    "roi" : [5,75,153,47],
+    "target" : [1228,84,33,29],
+    "action": "Click",
+    "next": [
+      "teamBattleKinnara",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "offChangeLineup_Fire"
   },
   //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
   "DefaultMecha_Fire": {
@@ -479,13 +508,42 @@
     "recommended roi" : [863,434,174,73],
     "action": "Click",
     //如果找不到机甲就启用备选方案
-    "next": "DefaultMecha_Water",
-    "interrupt": [
-      "slideToTheRight_Kinnara",
+    "next": [
+      "DefaultMecha_Water",
+      "offMecha_Water",
       "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
+  },
+  //备选方案1
+  "offMecha_Water": {
+    "recognition": "OCR",
+    "expected" : "选择支援虚数体",
+    "roi" : [511,0,354,150],
+    "pre_delay": 150,
+    "target" : [1213,76,45,45],
+    "action": "Click",
+    "next":[
+      "offChangeLineup_Water",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "offMecha_Water"
+  },
+  //备选方案2
+  "offChangeLineup_Water": {
+    "recognition": "TemplateMatch",
+    "template" : "changeLineup.png",
+    "roi" : [5,75,153,47],
+    "target" : [1228,84,33,29],
+    "action": "Click",
+    "next": [
+      "teamBattleKinnara",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "offChangeLineup_Water"
   },
   //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
   "DefaultMecha_Water": {
@@ -647,13 +705,42 @@
     "recommended roi" : [863,434,174,73],
     "action": "Click",
     //如果找不到机甲就启用备选方案
-    "next": "DefaultMecha_Soil",
-    "interrupt": [
-      "slideToTheRight_Kinnara",
+    "next": [
+      "DefaultMecha_Soil",
+      "offMecha_Soil",
       "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
+  },
+  //备选方案1
+  "offMecha_Soil": {
+    "recognition": "OCR",
+    "expected" : "选择支援虚数体",
+    "roi" : [511,0,354,150],
+    "pre_delay": 150,
+    "target" : [1213,76,45,45],
+    "action": "Click",
+    "next":[
+      "offChangeLineup_Soil",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "offMecha_Soil"
+  },
+  //备选方案2
+  "offChangeLineup_Soil": {
+    "recognition": "TemplateMatch",
+    "template" : "changeLineup.png",
+    "roi" : [5,75,153,47],
+    "target" : [1228,84,33,29],
+    "action": "Click",
+    "next": [
+      "teamBattleKinnara",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "offChangeLineup_Soil"
   },
   //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
   "DefaultMecha_Soil": {
@@ -817,13 +904,40 @@
     //如果找不到机甲就启用备选方案
     "next": [
       "DefaultMecha_Wind",
+      "offMecha_Wind",
       "网络连接断开"
-    ],
-    "interrupt": [
-      "slideToTheRight_Kinnara"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
+  },
+  //备选方案1
+  "offMecha_Wind": {
+    "recognition": "OCR",
+    "expected" : "选择支援虚数体",
+    "roi" : [511,0,354,150],
+    "pre_delay": 150,
+    "target" : [1213,76,45,45],
+    "action": "Click",
+    "next":[
+      "offChangeLineup_Wind",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "offMecha_Wind"
+  },
+  //备选方案2
+  "offChangeLineup_Wind": {
+    "recognition": "TemplateMatch",
+    "template" : "changeLineup.png",
+    "roi" : [5,75,153,47],
+    "target" : [1228,84,33,29],
+    "action": "Click",
+    "next": [
+      "teamBattleKinnara",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "offChangeLineup_Wind"
   },
   //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
   "DefaultMecha_Wind": {
@@ -987,13 +1101,40 @@
     //如果找不到机甲就启用备选方案
     "next": [
       "DefaultMecha_Light",
+      "offMecha_Light",
       "网络连接断开"
-    ],
-    "interrupt": [
-      "slideToTheRight_Kinnara"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
+  },
+  //备选方案1
+  "offMecha_Light": {
+    "recognition": "OCR",
+    "expected" : "选择支援虚数体",
+    "roi" : [511,0,354,150],
+    "pre_delay": 150,
+    "target" : [1213,76,45,45],
+    "action": "Click",
+    "next":[
+      "offChangeLineup_Light",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "offMecha_Light"
+  },
+  //备选方案2
+  "offChangeLineup_Light": {
+    "recognition": "TemplateMatch",
+    "template" : "changeLineup.png",
+    "roi" : [5,75,153,47],
+    "target" : [1228,84,33,29],
+    "action": "Click",
+    "next": [
+      "teamBattleKinnara",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "offChangeLineup_Light"
   },
   //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
   "DefaultMecha_Light": {
@@ -1157,6 +1298,7 @@
     //如果找不到机甲就启用备选方案
     "next": [
       "DefaultMecha_Dark",
+      "offMecha_Dark",
       "网络连接断开"
     ],
     "interrupt": [
@@ -1164,6 +1306,35 @@
     ],
     "timeout": 3000,
     "on_error": "stopapp"
+  },
+  //备选方案1
+  "offMecha_Dark": {
+    "recognition": "OCR",
+    "expected" : "选择支援虚数体",
+    "roi" : [511,0,354,150],
+    "pre_delay": 150,
+    "target" : [1213,76,45,45],
+    "action": "Click",
+    "next":[
+      "offChangeLineup_Dark",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "offMecha_Dark"
+  },
+  //备选方案2
+  "offChangeLineup_Dark": {
+    "recognition": "TemplateMatch",
+    "template" : "changeLineup.png",
+    "roi" : [5,75,153,47],
+    "target" : [1228,84,33,29],
+    "action": "Click",
+    "next": [
+      "teamBattleKinnara",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "offChangeLineup_Dark"
   },
   //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
   "DefaultMecha_Dark": {
@@ -1324,13 +1495,42 @@
     "recommended roi" : [863,434,174,73],
     "action": "Click",
     //如果找不到机甲就启用备选方案
-    "next": "DefaultMecha_Kinnara",
-    "interrupt": [
-      "slideToTheRight_Kinnara",
+    "next": [
+      "DefaultMecha_Kinnara",
+      "offMecha_Kinnara",
       "网络连接断开"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
+  },
+  //备选方案1
+  "offMecha_Kinnara": {
+    "recognition": "OCR",
+    "expected" : "选择支援虚数体",
+    "roi" : [511,0,354,150],
+    "pre_delay": 150,
+    "target" : [1213,76,45,45],
+    "action": "Click",
+    "next":[
+      "offChangeLineup_Kinnara",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "offMecha_Kinnara"
+  },
+  //备选方案2
+  "offChangeLineup_Kinnara": {
+    "recognition": "TemplateMatch",
+    "template" : "changeLineup.png",
+    "roi" : [5,75,153,47],
+    "target" : [1228,84,33,29],
+    "action": "Click",
+    "next": [
+      "teamBattleKinnara",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "offChangeLineup_Kinnara"
   },
   //第四步，点击出战后进入虚数体选择界面。有满破王甲150，高破王甲150，满破有方甲150，高破方甲130
   "DefaultMecha_Kinnara": {
@@ -1376,7 +1576,6 @@
       "recognizeEnteringTheRoom_Kinnara",
       "battleVictory_Kinnara",
       "网络连接断开"
-
     ],
     "rate_limit": 1000,
     "on_error": "stopapp"
