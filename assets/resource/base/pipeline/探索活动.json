@@ -224,16 +224,19 @@
     "action": "Click",
     "post_wait_freezes": 300,
     "next": [
-      "器灵讨伐书_奖励_一键领取",
-      "停止"
-    ],
-    "interrupt": [
-      "ts点击空白处"
+      "ts点击空白处2"
     ],
     "pre_delay": 150,
     "post_delay": 150,
     "timeout": 2000,
     "on_error": "stopapp"
+  },
+  "ts点击空白处2": {
+    "recognition": "OCR",
+    "expected": "空白",
+    "action": "Click",
+    "roi" : [550,603,164,71],
+    "next": "停止"
   },
   "ts点击空白处": {
     "recognition": "OCR",
