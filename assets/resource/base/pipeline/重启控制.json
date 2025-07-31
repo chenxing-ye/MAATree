@@ -196,6 +196,6 @@
         ],
         "timeout": 8000,
         "next": "主页检测",
-        "on_error": "stopapp"
+        "on_error": "返回主页检测"
     }
 }
