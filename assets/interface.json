@@ -149,6 +149,7 @@
                 "等待进入": {
                     "next":[
                         "主页检测",
+                        "clickJoinTheBattle",
                         "teamBattleKinnara",
                         "recognizeEnteringTheRoom_Fire",
                         "recognizeEnteringTheRoom_1_Fire"

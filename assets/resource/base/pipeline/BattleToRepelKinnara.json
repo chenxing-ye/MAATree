@@ -4,6 +4,7 @@
       "Kinnara_detectionHome",
       "返回主页检测",
       "teamBattleKinnara",
+      "clickJoinTheBattle",
       "recognizeEnteringTheRoom_1_Fire",
       "网络连接断开"
     ],
@@ -260,10 +261,7 @@
       327,
       1,
       1
-    ],
-    "post_delay": 1000,
-    "duration": 500,
-    "timeout": 1000
+    ]
   },
 
   //------------出战队伍设置火属性--------------
@@ -280,7 +278,7 @@
       "网络连接断开"
     ],
     "timeout": 3000,
-    "on_error": "stopapp"
+    "on_error": "offDefaultMecha_Fire"
   },
   "changeLineup_Fire": {
     "recognition": "TemplateMatch",
@@ -312,6 +310,7 @@
     "expected" : "EMPTY",
     "recommended roi" : [863,434,174,73],
     "action": "Click",
+    //如果找不到机甲就启用备选方案
     "next": "DefaultMecha_Fire",
     "interrupt": [
       "slideToTheRight_Kinnara",
@@ -447,7 +446,7 @@
       "网络连接断开"
     ],
     "timeout": 3000,
-    "on_error": "stopapp"
+    "on_error": "offDefaultMecha_Water"
   },
   "changeLineup_Water": {
     "recognition": "TemplateMatch",
@@ -479,6 +478,7 @@
     "expected" : "EMPTY",
     "recommended roi" : [863,434,174,73],
     "action": "Click",
+    //如果找不到机甲就启用备选方案
     "next": "DefaultMecha_Water",
     "interrupt": [
       "slideToTheRight_Kinnara",
@@ -614,7 +614,7 @@
       "网络连接断开"
     ],
     "timeout": 3000,
-    "on_error": "stopapp"
+    "on_error": "offDefaultMecha_Soil"
   },
   "changeLineup_Soil": {
     "recognition": "TemplateMatch",
@@ -646,6 +646,7 @@
     "expected" : "EMPTY",
     "recommended roi" : [863,434,174,73],
     "action": "Click",
+    //如果找不到机甲就启用备选方案
     "next": "DefaultMecha_Soil",
     "interrupt": [
       "slideToTheRight_Kinnara",
@@ -781,7 +782,7 @@
       "网络连接断开"
     ],
     "timeout": 3000,
-    "on_error": "stopapp"
+    "on_error": "offDefaultMecha_Wind"
   },
   "changeLineup_Wind": {
     "recognition": "TemplateMatch",
@@ -813,6 +814,7 @@
     "expected" : "EMPTY",
     "recommended roi" : [863,434,174,73],
     "action": "Click",
+    //如果找不到机甲就启用备选方案
     "next": [
       "DefaultMecha_Wind",
       "网络连接断开"
@@ -950,7 +952,7 @@
       "网络连接断开"
     ],
     "timeout": 3000,
-    "on_error": "stopapp"
+    "on_error": "offDefaultMecha_Light"
   },
   "changeLineup_Light": {
     "recognition": "TemplateMatch",
@@ -982,6 +984,7 @@
     "expected" : "EMPTY",
     "recommended roi" : [863,434,174,73],
     "action": "Click",
+    //如果找不到机甲就启用备选方案
     "next": [
       "DefaultMecha_Light",
       "网络连接断开"
@@ -1119,7 +1122,7 @@
       "网络连接断开"
     ],
     "timeout": 3000,
-    "on_error": "stopapp"
+    "on_error": "offDefaultMecha_Dark"
   },
   "changeLineup_Dark": {
     "recognition": "TemplateMatch",
@@ -1151,6 +1154,7 @@
     "expected" : "EMPTY",
     "recommended roi" : [863,434,174,73],
     "action": "Click",
+    //如果找不到机甲就启用备选方案
     "next": [
       "DefaultMecha_Dark",
       "网络连接断开"
@@ -1287,7 +1291,7 @@
       "网络连接断开"
     ],
     "timeout": 3000,
-    "on_error": "stopapp"
+    "on_error": "offDefaultMecha_Kinnara"
   },
   "changeLineup_Kinnara": {
     "recognition": "TemplateMatch",
@@ -1319,6 +1323,7 @@
     "expected" : "EMPTY",
     "recommended roi" : [863,434,174,73],
     "action": "Click",
+    //如果找不到机甲就启用备选方案
     "next": "DefaultMecha_Kinnara",
     "interrupt": [
       "slideToTheRight_Kinnara",
