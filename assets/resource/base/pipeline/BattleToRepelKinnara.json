@@ -2,9 +2,9 @@
   "startAutoKinnara": {
     "next": [
       "Kinnara_detectionHome",
+      "clickJoinTheBattle",
       "返回主页检测",
       "teamBattleKinnara",
-      "clickJoinTheBattle",
       "recognizeEnteringTheRoom_1_Fire",
       "网络连接断开"
     ],
