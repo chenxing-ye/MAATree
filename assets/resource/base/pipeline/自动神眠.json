@@ -128,27 +128,17 @@
         "post_delay": 600,
         "next": [
             "懊悔的新生",
+            "褪色的罪人",
             "罪人_天使"
         ],
         "timeout": 3000,
         "on_error": "stopapp"
     },
     "懊悔的新生": {
-        "recognition": "OCR",
-        "expected": "新生",
-        "roi": [
-            4,
-            364,
-            977,
-            174
-        ],
+        "recognition": "TemplateMatch",
+        "template" : "懊悔的新生.png",
+        "roi" : [21,132,1213,495],
         "action": "Click",
-        "target_offset": [
-            -40,
-            -40,
-            1,
-            1
-        ],
         "enabled": false,
         "post_delay": 500,
         "next": "选择难度90级_新生",
@@ -302,6 +292,94 @@
         "pre_delay": 400,
         "post_delay": 1000,
         "next": "停止",
+        "timeout": 3000,
+        "on_error": "stopapp"
+    },
+    "褪色的罪人": {
+        "recognition": "TemplateMatch",
+        "template" : "褪色的罪人.png",
+        "roi" : [67,233,1082,384],
+        "action": "Click",
+        "enabled": false,
+        "next": "选择难度_褪色的罪人",
+        "pre_delay": 400,
+        "post_delay": 400,
+        "timeout": 3000,
+        "on_error": "stopapp"
+    },
+    "选择难度_褪色的罪人": {
+        // 100级 "roi" : [796,124,42,60]
+        // 120级"roi" : [800,234,36,56]
+        // 150级 "roi" : [800,349,36,45]
+        // 160级 "roi" : [801,457,35,55]
+        "doc": "160级",
+        "target": [801,457,35,55],
+        "action": "Click",
+        "next": "扫荡_褪色的罪人",
+        "pre_delay": 400,
+        "post_delay": 400,
+        "timeout": 3000,
+        "on_error": "stopapp"
+    },
+    "扫荡_褪色的罪人": {
+        "recognition": "OCR",
+        "expected": "扫荡",
+        "roi": [
+            866,
+            592,
+            171,
+            114
+        ],
+        "action": "Click",
+        "post_delay": 300,
+        "next": [
+            "扫荡_褪色的罪人_确定",
+            "所需材料不足_褪色的罪人"
+        ],
+        "timeout": 3000,
+        "on_error": "stopapp"
+    },
+    "扫荡_褪色的罪人_确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            535,
+            423,
+            207,
+            109
+        ],
+        "action": "Click",
+        "post_delay": 300,
+        "next": "扫荡_褪色的罪人_等待完成",
+        "timeout": 80000,
+        "on_error": "stopapp"
+    },
+    "扫荡_褪色的罪人_等待完成": {
+        "recognition": "OCR",
+        "expected": "确认",
+        "roi": [
+            791,
+            612,
+            224,
+            107
+        ],
+        "action": "Click",
+        "pre_delay": 400,
+        "post_delay": 1000,
+        "next": "停止",
+        "timeout": 3000,
+        "on_error": "stopapp"
+    },
+    "所需材料不足_褪色的罪人": {
+        "recognition": "OCR",
+        "expected": "所需材料",
+        "roi": [
+            508,
+            319,
+            259,
+            76
+        ],
+        "next": "懊悔的新生",
         "timeout": 3000,
         "on_error": "stopapp"
     },
