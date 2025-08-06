@@ -11,12 +11,7 @@
         "recognition": "TemplateMatch",
         "template": "任务.png",
         "action": "Click",
-        "roi": [
-            927,
-            639,
-            75,
-            45
-        ],
+        "roi" : [449,640,139,71],
         "next": [
             "检查是否需领取",
             "检测助战任务是否完成2",
@@ -79,7 +74,7 @@
             102,
             660
         ],
-        "next": "退出_助战",
+        "next": "停止",
         "timeout": 4000,
         "on_error": "stopapp"
     },
