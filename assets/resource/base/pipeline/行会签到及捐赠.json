@@ -14,49 +14,19 @@
         "pre_delay": 10,
         "post_delay": 10,
         "next": [
-            "判断是否需捐赠",
+            "点击行会",
             "停止"
         ],
         "timeout": 3000,
         "on_error": "stopapp"
     },
-    "判断是否需捐赠": {
-        "recognition": "ColorMatch",
-        "roi": [
-            63,
-            387,
-            11,
-            11
-        ],
-        "upper": [
-            255,
-            160,
-            100
-        ],
-        "lower": [
-            230,
-            0,
-            0
-        ],
-        "post_delay": 100,
-        "pre_delay": 100,
-        "next": "点击行会",
-        "timeout": 3000,
-        "on_error": "stopapp"
-    },
     "点击行会": {
         "recognition": "TemplateMatch",
-        "template": "主页出击.png",
-        "roi" : [866,430,394,184],
+        "template" : "工会.png",
+        "roi" : [320,634,157,80],
         "action": "Click",
         "pre_delay": 100,
         "post_delay": 800,
-        "target": [
-            38,
-            401,
-            17,
-            13
-        ],
         "next": [
             "等待进入行会"
         ],
