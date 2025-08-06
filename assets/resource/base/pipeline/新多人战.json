@@ -10,12 +10,7 @@
     "加入战斗": {
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
-        "roi": [
-            1031,
-            325,
-            119,
-            54
-        ],
+        "roi" : [866,430,394,184],
         "action": "Click",
         "target": [
             845,

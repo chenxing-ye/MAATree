@@ -17,12 +17,7 @@
   "Kinnara_detectionHome": {
     "recognition": "TemplateMatch",
     "template": "主页出击.png",
-    "roi": [
-      1031,
-      325,
-      119,
-      54
-    ],
+    "roi" : [866,430,394,184],
     "next": [
       "clickHighDifficulty",
       "teamBattleKinnara",

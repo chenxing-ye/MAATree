@@ -10,12 +10,7 @@
     "yq检测是否在主页": {
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
-        "roi": [
-            1031,
-            325,
-            119,
-            54
-        ],
+        "roi" : [866,430,394,184],
         "timeout": 300000,
         "rate_limit": 1500,
         "on_error": "停止",
@@ -27,12 +22,7 @@
     "检测是否在主页0": {
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
-        "roi": [
-            1031,
-            325,
-            119,
-            54
-        ],
+        "roi" : [866,430,394,184],
         "inverse": true,
         "next": "stopapp"
     },

@@ -10,12 +10,7 @@
   "探索活动领取": {
     "recognition": "TemplateMatch",
     "template": "主页出击.png",
-    "roi": [
-      1031,
-      325,
-      119,
-      54
-    ],
+    "roi" : [866,430,394,184],
     "pre_delay": 100,
     "post_delay": 100,
     "next": [

@@ -13,12 +13,7 @@
     "确认是否在主页_扫荡一次素材关卡": {
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
-        "roi": [
-            1031,
-            325,
-            119,
-            54
-        ],
+        "roi" : [866,430,394,184],
         "action": "Click",
         "next": [
             "点击素材"

@@ -169,12 +169,7 @@
     "主页检测": {
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
-        "roi": [
-            1031,
-            325,
-            119,
-            54
-        ],
+        "roi" : [866,430,394,184],
         "interrupt": [
             "取消",
             "点击空白处关闭",
