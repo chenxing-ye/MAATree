@@ -25,22 +25,10 @@
     },
     "判断是否需领取": {
         "recognition": "ColorMatch",
-        "roi": [
-            301,
-            19,
-            12,
-            21
-        ],
-        "upper": [
-            255,
-            100,
-            100
-        ],
-        "lower": [
-            230,
-            0,
-            0
-        ],
+        "method" : 4,
+        "roi" : [581,23,25,26],
+        "upper" : [255,167,150],
+        "lower" : [117,102,76],
         "post_delay": 10,
         "pre_delay": 10,
         "next": "点击邮件",
@@ -49,17 +37,11 @@
     },
     "点击邮件": {
         "recognition": "TemplateMatch",
-        "template": "主页出击.png",
-        "roi" : [866,430,394,184],
+        "template" : "邮件.png",
+        "roi" : [400,14,215,56],
         "action": "Click",
         "pre_delay": 10,
         "post_delay": 10,
-        "target": [
-            287,
-            33,
-            12,
-            16
-        ],
         "next": [
             "一键领取_邮件"
         ],
