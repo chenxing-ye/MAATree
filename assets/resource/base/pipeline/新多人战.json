@@ -9,15 +9,9 @@
     },
     "加入战斗": {
         "recognition": "TemplateMatch",
-        "template": "主页出击.png",
+        "template" : "联机战斗.png",
         "roi" : [866,430,394,184],
         "action": "Click",
-        "target": [
-            845,
-            285,
-            52,
-            54
-        ],
         "next": [
             "点击自动战斗",
             "切换到中途模式"
