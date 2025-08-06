@@ -23,7 +23,8 @@
   "点击探索活动": {
     "recognition": "TemplateMatch",
     "template" : "探索活动.png",
-    "roi" : [681,98,576,65],
+    "roi" : [624,57,637,89],
+    "threshold": 0.9,
     "action": "Click",
     "next": "点击探求者之书",
     "pre_delay": 350,
