@@ -15,7 +15,8 @@
           "点击每日物资"
         ],
         "interrupt":"wz向上滑动",
-        "roi" : [828,628,104,73],
+        "roi" : [5,135,236,297],
+        "threshold": 0.8,
         "action": "Click",
         "pre_delay": 300,
         "post_delay": 300,
