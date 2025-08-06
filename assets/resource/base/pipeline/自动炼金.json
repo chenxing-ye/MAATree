@@ -76,12 +76,7 @@
         "template": "工坊.png",
         "action": "Click",
         "pre_delay": 500,
-        "roi": [
-            841,
-            605,
-            438,
-            110
-        ],
+        "roi" : [40,640,178,76],
         "timeout": 3000,
         "post_delay": 700,
         "on_error": "stopapp",
