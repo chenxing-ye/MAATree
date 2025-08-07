@@ -58,7 +58,7 @@
         "inverse": true,
         "post_delay": 1000,
         "pre_delay": 1000,
-        "next": "主页出击",
+        "next": "主页检测",
         "on_error": [
             "stopapp",
             "等待进入0"
@@ -166,6 +166,18 @@
         "package": "com.orlesh.yjzs",
         "next": "start"
     },
+    "礼包检测": {
+        "recognition": "TemplateMatch",
+        "template" : "主页礼包.png",
+        "roi" : [14,156,171,176],
+        "interrupt": [
+            "取消",
+            "点击空白处关闭",
+            "领取物资",
+            "关闭页面1",
+            "关闭周历"
+        ]
+    },
     "主页检测": {
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
@@ -176,6 +188,9 @@
             "领取物资",
             "关闭页面1",
             "关闭周历"
+        ],
+        "next": [
+            "礼包检测"
         ],
         "on_error": "stopapp"
     },
