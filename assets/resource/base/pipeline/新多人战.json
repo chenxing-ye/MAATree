@@ -10,7 +10,7 @@
     "加入战斗": {
         "recognition": "TemplateMatch",
         "template" : "联机战斗.png",
-        "roi" : [866,430,394,184],
+        "roi" : [847,299,415,346],
         "action": "Click",
         "next": [
             "点击自动战斗",

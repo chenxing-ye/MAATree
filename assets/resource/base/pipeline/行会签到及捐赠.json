@@ -10,7 +10,7 @@
     "确认是否在主页_捐赠": {
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
-        "roi" : [866,430,394,184],
+        "roi" : [847,299,415,346],
         "pre_delay": 10,
         "post_delay": 10,
         "next": [
