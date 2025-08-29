@@ -128,7 +128,7 @@
     },
     "关闭页面1": {
         "recognition": "TemplateMatch",
-        "template": "x.png",
+        "template": "X.png",
         "timeout": 3000,
         "action": "Click",
         "post_delay": 800
@@ -180,8 +180,10 @@
     },
     "主页检测": {
         "recognition": "TemplateMatch",
-        "template": "主页出击.png",
-        "roi" : [847,299,415,346],
+//        "template": "主页出击.png",
+//        "roi" : [847,299,415,346],
+        "template" : "主页礼包.png",
+        "roi" : [3,116,248,292],
         "interrupt": [
             "取消",
             "点击空白处关闭",
