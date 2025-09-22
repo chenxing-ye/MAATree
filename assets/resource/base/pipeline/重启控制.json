@@ -68,7 +68,8 @@
             "点击空白处关闭",
             "领取物资",
             "关闭页面1",
-            "关闭周历"
+            "关闭周历",
+            "紧那罗结束讨伐"
         ]
     },
     "重试": {
@@ -133,10 +134,15 @@
         "action": "Click",
         "post_delay": 800
     },
-    "关闭周历":{
+    "关闭周历": {
         "recognition": "TemplateMatch",
-        "template" : "关闭周历.png",
-        "roi" : [1108,18,75,66],
+        "template": "关闭周历.png",
+        "roi": [
+            1108,
+            18,
+            75,
+            66
+        ],
         "timeout": 3000,
         "action": "Click",
         "post_delay": 800
@@ -169,13 +175,19 @@
     "主页检测": {
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
-        "roi" : [866,430,394,184],
+        "roi": [
+            866,
+            430,
+            394,
+            184
+        ],
         "interrupt": [
             "取消",
             "点击空白处关闭",
             "领取物资",
             "关闭页面1",
-            "关闭周历"
+            "关闭周历",
+            "紧那罗结束讨伐"
         ],
         "on_error": "stopapp"
     },
@@ -192,5 +204,16 @@
         "timeout": 8000,
         "next": "主页检测",
         "on_error": "返回主页检测"
+    },
+    "紧那罗结束讨伐": {
+        "recognition": "TemplateMatch",
+        "template": "kinnara/紧那罗结束讨伐__1110_631_104_25__1060_581_204_125.png",
+        "roi": [
+            1110,
+            631,
+            104,
+            25
+        ],
+        "action": "Click"
     }
 }
