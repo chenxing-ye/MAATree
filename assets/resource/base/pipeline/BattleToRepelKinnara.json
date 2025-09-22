@@ -17,7 +17,12 @@
   "Kinnara_detectionHome": {
     "recognition": "TemplateMatch",
     "template": "主页出击.png",
-    "roi" : [866,430,394,184],
+    "roi": [
+      866,
+      430,
+      394,
+      184
+    ],
     "next": [
       "clickHighDifficulty",
       "teamBattleKinnara",
@@ -27,10 +32,15 @@
     "timeout": 3000,
     "on_error": "stopapp"
   },
-  "clickHighDifficulty":{
+  "clickHighDifficulty": {
     "recognition": "OCR",
     "expected": "高难",
-    "roi" : [1169,84,96,59],
+    "roi": [
+      1169,
+      84,
+      96,
+      59
+    ],
     "action": "Click",
     "next": [
       "clickKinnara",
@@ -43,8 +53,13 @@
   },
   "clickKinnara": {
     "recognition": "TemplateMatch",
-    "template" : "Kinnara.png",
-    "roi" : [16,261,480,323],
+    "template": "Kinnara.png",
+    "roi": [
+      16,
+      261,
+      480,
+      323
+    ],
     "action": "Click",
     "next": [
       "clickJoinTheBattle",
@@ -56,8 +71,13 @@
   },
   "clickJoinTheBattle": {
     "recognition": "OCR",
-    "expected" : "加入讨伐队",
-    "roi" : [833,594,198,84],
+    "expected": "加入讨伐队",
+    "roi": [
+      833,
+      594,
+      198,
+      84
+    ],
     "action": "Click",
     //两种情况:1找不到队伍一直转圈圈。2找到队伍直接进入队伍
     "next": [
@@ -72,25 +92,40 @@
   //等待
   "quickJoinWaiting": {
     "recognition": "OCR",
-    "expected" : "正在寻找",
-    "roi" : [531,395,214,64],
+    "expected": "正在寻找",
+    "roi": [
+      531,
+      395,
+      214,
+      64
+    ],
     "next": [
       "quickJoinWaiting",
       "clickToPrepare",
       "quickJoinFailure",
       "网络连接断开"
     ],
-    "rate_limit": 800,
+    "post_delay": 1000,
     "timeout": 35000,
     "on_error": "stopapp"
   },
   //失败
   "quickJoinFailure": {
     "recognition": "OCR",
-    "expected" : "未找到房间",
-    "roi" : [475,370,290,67],
+    "expected": "未找到房间",
+    "roi": [
+      475,
+      370,
+      290,
+      67
+    ],
     "action": "Click",
-    "target" : [453,470,85,40],
+    "target": [
+      453,
+      470,
+      85,
+      40
+    ],
     "next": [
       "clickJoinTheBattle",
       "网络连接断开"
@@ -100,8 +135,13 @@
   },
   "clickToPrepare": {
     "recognition": "OCR",
-    "expected" : "准备",
-    "roi" : [558,556,156,65],
+    "expected": "准备",
+    "roi": [
+      558,
+      556,
+      156,
+      65
+    ],
     "action": "Click",
     //考虑野队特殊性如果被踢掉队伍进入重新循环
     "next": [
@@ -114,21 +154,32 @@
   },
   "cancelPreparation": {
     "recognition": "OCR",
-    "expected" : "取消准备",
-    "roi" : [549,556,170,60],
-    "next":[
+    "expected": "取消准备",
+    "roi": [
+      549,
+      556,
+      170,
+      60
+    ],
+    "next": [
       "cancelPreparation",
       "teamBattleKinnara",
       "clickJoinTheBattle",
       "网络连接断开"
     ],
+    "post_delay": 1000,
     "timeout": 4000,
     "on_error": "stopapp"
   },
   "teamBattleKinnara": {
     "recognition": "TemplateMatch",
-    "template" : "团队主界面.png",
-    "recommended roi" : [427,161,423,391],
+    "template": "团队主界面.png",
+    "recommended roi": [
+      427,
+      161,
+      423,
+      391
+    ],
     "next": [
       "Envoy_one",
       "Envoy_two",
@@ -145,8 +196,13 @@
   "Envoy_one": {
     "recognition": "TemplateMatch",
     "threshold": 0.95,
-    "template" : "水使节.png",
-    "recommended roi" : [828,564,103,89],
+    "template": "水使节.png",
+    "recommended roi": [
+      828,
+      564,
+      103,
+      89
+    ],
     "action": "Click",
     "next": [
       "offDefaultMecha_Soil"
@@ -156,8 +212,13 @@
   "Envoy_two": {
     "recognition": "TemplateMatch",
     "threshold": 0.95,
-    "template" : "地使节.png",
-    "recommended roi" : [346,563,96,90],
+    "template": "地使节.png",
+    "recommended roi": [
+      346,
+      563,
+      96,
+      90
+    ],
     "action": "Click",
     "next": [
       "offDefaultMecha_Wind"
@@ -168,8 +229,13 @@
   "Envoy_three": {
     "recognition": "TemplateMatch",
     "threshold": 0.95,
-    "template" : "风使节.png",
-    "recommended roi" : [260,328,97,86],
+    "template": "风使节.png",
+    "recommended roi": [
+      260,
+      328,
+      97,
+      86
+    ],
     "action": "Click",
     "next": [
       "offDefaultMecha_Fire"
@@ -180,8 +246,13 @@
   "Envoy_four": {
     "recognition": "TemplateMatch",
     "threshold": 0.95,
-    "template" : "光使节.png",
-    "recommended roi" : [353,56,95,88],
+    "template": "光使节.png",
+    "recommended roi": [
+      353,
+      56,
+      95,
+      88
+    ],
     "action": "Click",
     "next": [
       "offDefaultMecha_Dark"
@@ -192,8 +263,13 @@
   "Envoy_five": {
     "recognition": "TemplateMatch",
     "threshold": 0.95,
-    "template" : "暗使节.png",
-    "recommended roi" : [833,56,98,87],
+    "template": "暗使节.png",
+    "recommended roi": [
+      833,
+      56,
+      98,
+      87
+    ],
     "action": "Click",
     "next": [
       "offDefaultMecha_Light"
@@ -204,8 +280,13 @@
   "Envoy_six": {
     "recognition": "TemplateMatch",
     "threshold": 0.95,
-    "template" : "火使节.png",
-    "recommended roi" : [923,323,98,101],
+    "template": "火使节.png",
+    "recommended roi": [
+      923,
+      323,
+      98,
+      101
+    ],
     "action": "Click",
     "next": [
       "offDefaultMecha_Water"
@@ -216,33 +297,45 @@
   "Envoy_seven": {
     "recognition": "TemplateMatch",
     "threshold": 0.95,
-    "template" : "紧那罗本体.png",
+    "template": "紧那罗本体.png",
     "next": [
       "offDefaultMecha_Kinnara",
       "网络连接断开"
     ],
-    "recommended roi" : [574,300,125,117],
+    "recommended roi": [
+      574,
+      300,
+      125,
+      117
+    ],
     "action": "Click",
     "timeout": 4000,
     "on_error": "stopapp"
   },
-
   "clickOnTheBlankAreaKinnara": {
     "recognition": "OCR",
     "expected": "空白",
     "action": "Click",
-    "roi" : [539,587,224,107],
+    "roi": [
+      539,
+      587,
+      224,
+      107
+    ],
     "next": "endTheCampaign"
   },
-
   "endTheCampaign": {
     "recognition": "OCR",
-    "expected" : "结束讨伐",
+    "expected": "结束讨伐",
     "action": "Click",
-    "roi" : [1084,609,146,68],
+    "roi": [
+      1084,
+      609,
+      146,
+      68
+    ],
     "next": "停止"
   },
-
   "slideToTheRight_Kinnara": {
     "action": "Swipe",
     "begin": [
@@ -258,17 +351,26 @@
       1
     ]
   },
-
   //------------出战队伍设置火属性--------------
   //第一步，点击出战默认会进入虚数体界面要关掉
   "offDefaultMecha_Fire": {
     "recognition": "OCR",
-    "expected" : "选择支援虚数体",
-    "roi" : [511,0,354,150],
+    "expected": "选择支援虚数体",
+    "roi": [
+      511,
+      0,
+      354,
+      150
+    ],
     "pre_delay": 150,
-    "target" : [1213,76,45,45],
+    "target": [
+      1213,
+      76,
+      45,
+      45
+    ],
     "action": "Click",
-    "next":[
+    "next": [
       "changeLineup_Fire",
       "网络连接断开"
     ],
@@ -277,9 +379,19 @@
   },
   "changeLineup_Fire": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
-    "roi" : [5,75,153,47],
-    "target" : [82,160,53,58],
+    "template": "changeLineup.png",
+    "roi": [
+      5,
+      75,
+      153,
+      47
+    ],
+    "target": [
+      82,
+      160,
+      53,
+      58
+    ],
     "action": "Click",
     "next": [
       "dispatchTeam_Fire",
@@ -290,7 +402,12 @@
   },
   //第二步，选择出战属性有1~6个队伍
   "dispatchTeam_Fire": {
-    "target": [1134,159,52,54],
+    "target": [
+      1134,
+      159,
+      52,
+      54
+    ],
     "action": "Click",
     "next": [
       "selectEmpty_Fire",
@@ -302,8 +419,13 @@
   //第三步，选择完成后，检测支援虚数体栏位是否为"EMPT"。
   "selectEmpty_Fire": {
     "recognition": "OCR",
-    "expected" : "EMPTY",
-    "recommended roi" : [863,434,174,73],
+    "expected": "EMPTY",
+    "recommended roi": [
+      863,
+      434,
+      174,
+      73
+    ],
     "action": "Click",
     //如果找不到机甲就启用备选方案
     "next": [
@@ -317,12 +439,22 @@
   //备选方案1
   "offMecha_Fire": {
     "recognition": "OCR",
-    "expected" : "选择支援虚数体",
-    "roi" : [511,0,354,150],
+    "expected": "选择支援虚数体",
+    "roi": [
+      511,
+      0,
+      354,
+      150
+    ],
     "pre_delay": 150,
-    "target" : [1213,76,45,45],
+    "target": [
+      1213,
+      76,
+      45,
+      45
+    ],
     "action": "Click",
-    "next":[
+    "next": [
       "offChangeLineup_Fire",
       "网络连接断开"
     ],
@@ -332,9 +464,19 @@
   //备选方案2
   "offChangeLineup_Fire": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
-    "roi" : [5,75,153,47],
-    "target" : [1228,84,33,29],
+    "template": "changeLineup.png",
+    "roi": [
+      5,
+      75,
+      153,
+      47
+    ],
+    "target": [
+      1228,
+      84,
+      33,
+      29
+    ],
     "action": "Click",
     "next": [
       "teamBattleKinnara",
@@ -350,8 +492,13 @@
     "order_by": "Score",
     "threshold": 0.8,
     "template": "fullLevelEarthworkPrescription.png",
-    "roi" : [149,138,1052,267],
-    "action" : "Click",
+    "roi": [
+      149,
+      138,
+      1052,
+      267
+    ],
+    "action": "Click",
     "next": [
       "dispatchCombat_Fire",
       "网络连接断开"
@@ -362,8 +509,13 @@
   //第五步，全部确认好之后点击出战
   "dispatchCombat_Fire": {
     "recognition": "OCR",
-    "expected" : "出击",
-    "recommended roi" : [1092,575,159,64],
+    "expected": "出击",
+    "recommended roi": [
+      1092,
+      575,
+      159,
+      64
+    ],
     "action": "Click",
     "next": [
       "recognizeEnteringTheRoom_Fire",
@@ -393,8 +545,13 @@
   },
   "recognizeEnteringTheRoom_1_Fire": {
     "recognition": "OCR",
-    "expected" : "回合",
-    "roi" : [0,4,91,54],
+    "expected": "回合",
+    "roi": [
+      0,
+      4,
+      91,
+      54
+    ],
     "timeout": 900000,
     "next": [
       "battleVictory_Fire",
@@ -455,17 +612,26 @@
     ],
     "on_error": "stopapp"
   },
-
   //------------出战队伍设置水--------------
   //第一步，点击出战默认会进入虚数体界面要关掉
   "offDefaultMecha_Water": {
     "recognition": "OCR",
-    "expected" : "选择支援虚数体",
-    "roi" : [511,0,354,150],
+    "expected": "选择支援虚数体",
+    "roi": [
+      511,
+      0,
+      354,
+      150
+    ],
     "pre_delay": 150,
-    "target" : [1213,76,45,45],
+    "target": [
+      1213,
+      76,
+      45,
+      45
+    ],
     "action": "Click",
-    "next":[
+    "next": [
       "changeLineup_Water",
       "网络连接断开"
     ],
@@ -474,9 +640,19 @@
   },
   "changeLineup_Water": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
-    "roi" : [5,75,153,47],
-    "target" : [81,237,57,55],
+    "template": "changeLineup.png",
+    "roi": [
+      5,
+      75,
+      153,
+      47
+    ],
+    "target": [
+      81,
+      237,
+      57,
+      55
+    ],
     "action": "Click",
     "next": [
       "dispatchTeam_Water",
@@ -487,7 +663,12 @@
   },
   //第二步，选择出战属性有1~6个队伍
   "dispatchTeam_Water": {
-    "target": [1134,159,52,54],
+    "target": [
+      1134,
+      159,
+      52,
+      54
+    ],
     "action": "Click",
     "next": [
       "selectEmpty_Water",
@@ -499,8 +680,13 @@
   //第三步，选择完成后，检测支援虚数体栏位是否为"EMPT"。
   "selectEmpty_Water": {
     "recognition": "OCR",
-    "expected" : "EMPTY",
-    "recommended roi" : [863,434,174,73],
+    "expected": "EMPTY",
+    "recommended roi": [
+      863,
+      434,
+      174,
+      73
+    ],
     "action": "Click",
     //如果找不到机甲就启用备选方案
     "next": [
@@ -514,12 +700,22 @@
   //备选方案1
   "offMecha_Water": {
     "recognition": "OCR",
-    "expected" : "选择支援虚数体",
-    "roi" : [511,0,354,150],
+    "expected": "选择支援虚数体",
+    "roi": [
+      511,
+      0,
+      354,
+      150
+    ],
     "pre_delay": 150,
-    "target" : [1213,76,45,45],
+    "target": [
+      1213,
+      76,
+      45,
+      45
+    ],
     "action": "Click",
-    "next":[
+    "next": [
       "offChangeLineup_Water",
       "网络连接断开"
     ],
@@ -529,9 +725,19 @@
   //备选方案2
   "offChangeLineup_Water": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
-    "roi" : [5,75,153,47],
-    "target" : [1228,84,33,29],
+    "template": "changeLineup.png",
+    "roi": [
+      5,
+      75,
+      153,
+      47
+    ],
+    "target": [
+      1228,
+      84,
+      33,
+      29
+    ],
     "action": "Click",
     "next": [
       "teamBattleKinnara",
@@ -547,8 +753,13 @@
     "order_by": "Score",
     "threshold": 0.8,
     "template": "seniorWaterKing.png",
-    "roi" : [149,138,1052,267],
-    "action" : "Click",
+    "roi": [
+      149,
+      138,
+      1052,
+      267
+    ],
+    "action": "Click",
     "next": [
       "dispatchCombat_Water",
       "网络连接断开"
@@ -559,8 +770,13 @@
   //第五步，全部确认好之后点击出战
   "dispatchCombat_Water": {
     "recognition": "OCR",
-    "expected" : "出击",
-    "recommended roi" : [1092,575,159,64],
+    "expected": "出击",
+    "recommended roi": [
+      1092,
+      575,
+      159,
+      64
+    ],
     "action": "Click",
     "next": [
       "recognizeEnteringTheRoom_Water",
@@ -590,8 +806,13 @@
   },
   "recognizeEnteringTheRoom_1_Water": {
     "recognition": "OCR",
-    "expected" : "回合",
-    "roi" : [0,4,91,54],
+    "expected": "回合",
+    "roi": [
+      0,
+      4,
+      91,
+      54
+    ],
     "timeout": 900000,
     "next": [
       "battleVictory_Water",
@@ -652,17 +873,26 @@
     ],
     "on_error": "stopapp"
   },
-
   //------------出战队伍设置土--------------
   //第一步，点击出战默认会进入虚数体界面要关掉
   "offDefaultMecha_Soil": {
     "recognition": "OCR",
-    "expected" : "选择支援虚数体",
-    "roi" : [511,0,354,150],
+    "expected": "选择支援虚数体",
+    "roi": [
+      511,
+      0,
+      354,
+      150
+    ],
     "pre_delay": 150,
-    "target" : [1213,76,45,45],
+    "target": [
+      1213,
+      76,
+      45,
+      45
+    ],
     "action": "Click",
-    "next":[
+    "next": [
       "changeLineup_Soil",
       "网络连接断开"
     ],
@@ -671,9 +901,19 @@
   },
   "changeLineup_Soil": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
-    "roi" : [5,75,153,47],
-    "target" : [78,308,62,51],
+    "template": "changeLineup.png",
+    "roi": [
+      5,
+      75,
+      153,
+      47
+    ],
+    "target": [
+      78,
+      308,
+      62,
+      51
+    ],
     "action": "Click",
     "next": [
       "dispatchTeam_Soil",
@@ -684,7 +924,12 @@
   },
   //第二步，选择出战属性有1~6个队伍
   "dispatchTeam_Soil": {
-    "target": [1134,159,52,54],
+    "target": [
+      1134,
+      159,
+      52,
+      54
+    ],
     "action": "Click",
     "next": [
       "selectEmpty_Soil",
@@ -696,8 +941,13 @@
   //第三步，选择完成后，检测支援虚数体栏位是否为"EMPT"。
   "selectEmpty_Soil": {
     "recognition": "OCR",
-    "expected" : "EMPTY",
-    "recommended roi" : [863,434,174,73],
+    "expected": "EMPTY",
+    "recommended roi": [
+      863,
+      434,
+      174,
+      73
+    ],
     "action": "Click",
     //如果找不到机甲就启用备选方案
     "next": [
@@ -711,12 +961,22 @@
   //备选方案1
   "offMecha_Soil": {
     "recognition": "OCR",
-    "expected" : "选择支援虚数体",
-    "roi" : [511,0,354,150],
+    "expected": "选择支援虚数体",
+    "roi": [
+      511,
+      0,
+      354,
+      150
+    ],
     "pre_delay": 150,
-    "target" : [1213,76,45,45],
+    "target": [
+      1213,
+      76,
+      45,
+      45
+    ],
     "action": "Click",
-    "next":[
+    "next": [
       "offChangeLineup_Soil",
       "网络连接断开"
     ],
@@ -726,9 +986,19 @@
   //备选方案2
   "offChangeLineup_Soil": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
-    "roi" : [5,75,153,47],
-    "target" : [1228,84,33,29],
+    "template": "changeLineup.png",
+    "roi": [
+      5,
+      75,
+      153,
+      47
+    ],
+    "target": [
+      1228,
+      84,
+      33,
+      29
+    ],
     "action": "Click",
     "next": [
       "teamBattleKinnara",
@@ -744,8 +1014,13 @@
     "order_by": "Score",
     "threshold": 0.8,
     "template": "fullLevelEarthKing.png",
-    "roi" : [149,138,1052,267],
-    "action" : "Click",
+    "roi": [
+      149,
+      138,
+      1052,
+      267
+    ],
+    "action": "Click",
     "next": [
       "dispatchCombat_Soil",
       "网络连接断开"
@@ -756,8 +1031,13 @@
   //第五步，全部确认好之后点击出战
   "dispatchCombat_Soil": {
     "recognition": "OCR",
-    "expected" : "出击",
-    "recommended roi" : [1092,575,159,64],
+    "expected": "出击",
+    "recommended roi": [
+      1092,
+      575,
+      159,
+      64
+    ],
     "action": "Click",
     "next": [
       "recognizeEnteringTheRoom_Soil",
@@ -787,8 +1067,13 @@
   },
   "recognizeEnteringTheRoom_1_Soil": {
     "recognition": "OCR",
-    "expected" : "回合",
-    "roi" : [0,4,91,54],
+    "expected": "回合",
+    "roi": [
+      0,
+      4,
+      91,
+      54
+    ],
     "timeout": 900000,
     "next": [
       "battleVictory_Soil",
@@ -849,17 +1134,26 @@
     ],
     "on_error": "stopapp"
   },
-
   //------------出战队伍设置风--------------
   //第一步，点击出战默认会进入虚数体界面要关掉
   "offDefaultMecha_Wind": {
     "recognition": "OCR",
-    "expected" : "选择支援虚数体",
-    "roi" : [511,0,354,150],
+    "expected": "选择支援虚数体",
+    "roi": [
+      511,
+      0,
+      354,
+      150
+    ],
     "pre_delay": 150,
-    "target" : [1213,76,45,45],
+    "target": [
+      1213,
+      76,
+      45,
+      45
+    ],
     "action": "Click",
-    "next":[
+    "next": [
       "changeLineup_Wind",
       "网络连接断开"
     ],
@@ -868,9 +1162,19 @@
   },
   "changeLineup_Wind": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
-    "roi" : [5,75,153,47],
-    "target" : [77,375,59,50],
+    "template": "changeLineup.png",
+    "roi": [
+      5,
+      75,
+      153,
+      47
+    ],
+    "target": [
+      77,
+      375,
+      59,
+      50
+    ],
     "action": "Click",
     "next": [
       "dispatchTeam_Wind",
@@ -881,7 +1185,12 @@
   },
   //第二步，选择出战属性有1~6个队伍
   "dispatchTeam_Wind": {
-    "target": [1134,159,52,54],
+    "target": [
+      1134,
+      159,
+      52,
+      54
+    ],
     "action": "Click",
     "next": [
       "selectEmpty_Wind",
@@ -893,8 +1202,13 @@
   //第三步，选择完成后，检测支援虚数体栏位是否为"EMPT"。
   "selectEmpty_Wind": {
     "recognition": "OCR",
-    "expected" : "EMPTY",
-    "recommended roi" : [863,434,174,73],
+    "expected": "EMPTY",
+    "recommended roi": [
+      863,
+      434,
+      174,
+      73
+    ],
     "action": "Click",
     //如果找不到机甲就启用备选方案
     "next": [
@@ -908,12 +1222,22 @@
   //备选方案1
   "offMecha_Wind": {
     "recognition": "OCR",
-    "expected" : "选择支援虚数体",
-    "roi" : [511,0,354,150],
+    "expected": "选择支援虚数体",
+    "roi": [
+      511,
+      0,
+      354,
+      150
+    ],
     "pre_delay": 150,
-    "target" : [1213,76,45,45],
+    "target": [
+      1213,
+      76,
+      45,
+      45
+    ],
     "action": "Click",
-    "next":[
+    "next": [
       "offChangeLineup_Wind",
       "网络连接断开"
     ],
@@ -923,9 +1247,19 @@
   //备选方案2
   "offChangeLineup_Wind": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
-    "roi" : [5,75,153,47],
-    "target" : [1228,84,33,29],
+    "template": "changeLineup.png",
+    "roi": [
+      5,
+      75,
+      153,
+      47
+    ],
+    "target": [
+      1228,
+      84,
+      33,
+      29
+    ],
     "action": "Click",
     "next": [
       "teamBattleKinnara",
@@ -941,8 +1275,13 @@
     "order_by": "Score",
     "threshold": 0.8,
     "template": "fullLevelWindPrescription.png",
-    "roi" : [149,138,1052,267],
-    "action" : "Click",
+    "roi": [
+      149,
+      138,
+      1052,
+      267
+    ],
+    "action": "Click",
     "next": [
       "dispatchCombat_Wind",
       "网络连接断开"
@@ -953,8 +1292,13 @@
   //第五步，全部确认好之后点击出战
   "dispatchCombat_Wind": {
     "recognition": "OCR",
-    "expected" : "出击",
-    "recommended roi" : [1092,575,159,64],
+    "expected": "出击",
+    "recommended roi": [
+      1092,
+      575,
+      159,
+      64
+    ],
     "action": "Click",
     "next": [
       "recognizeEnteringTheRoom_Wind",
@@ -984,8 +1328,13 @@
   },
   "recognizeEnteringTheRoom_1_Wind": {
     "recognition": "OCR",
-    "expected" : "回合",
-    "roi" : [0,4,91,54],
+    "expected": "回合",
+    "roi": [
+      0,
+      4,
+      91,
+      54
+    ],
     "timeout": 900000,
     "next": [
       "battleVictory_Wind",
@@ -1046,17 +1395,26 @@
     ],
     "on_error": "stopapp"
   },
-
   //------------出战队伍设置光--------------
   //第一步，点击出战默认会进入虚数体界面要关掉
   "offDefaultMecha_Light": {
     "recognition": "OCR",
-    "expected" : "选择支援虚数体",
-    "roi" : [511,0,354,150],
+    "expected": "选择支援虚数体",
+    "roi": [
+      511,
+      0,
+      354,
+      150
+    ],
     "pre_delay": 150,
-    "target" : [1213,76,45,45],
+    "target": [
+      1213,
+      76,
+      45,
+      45
+    ],
     "action": "Click",
-    "next":[
+    "next": [
       "changeLineup_Light",
       "网络连接断开"
     ],
@@ -1065,9 +1423,19 @@
   },
   "changeLineup_Light": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
-    "roi" : [5,75,153,47],
-    "target" : [79,449,61,50],
+    "template": "changeLineup.png",
+    "roi": [
+      5,
+      75,
+      153,
+      47
+    ],
+    "target": [
+      79,
+      449,
+      61,
+      50
+    ],
     "action": "Click",
     "next": [
       "dispatchTeam_Light",
@@ -1078,7 +1446,12 @@
   },
   //第二步，选择出战属性有1~6个队伍
   "dispatchTeam_Light": {
-    "target": [1134,159,52,54],
+    "target": [
+      1134,
+      159,
+      52,
+      54
+    ],
     "action": "Click",
     "next": [
       "selectEmpty_Light",
@@ -1090,8 +1463,13 @@
   //第三步，选择完成后，检测支援虚数体栏位是否为"EMPT"。
   "selectEmpty_Light": {
     "recognition": "OCR",
-    "expected" : "EMPTY",
-    "recommended roi" : [863,434,174,73],
+    "expected": "EMPTY",
+    "recommended roi": [
+      863,
+      434,
+      174,
+      73
+    ],
     "action": "Click",
     //如果找不到机甲就启用备选方案
     "next": [
@@ -1105,12 +1483,22 @@
   //备选方案1
   "offMecha_Light": {
     "recognition": "OCR",
-    "expected" : "选择支援虚数体",
-    "roi" : [511,0,354,150],
+    "expected": "选择支援虚数体",
+    "roi": [
+      511,
+      0,
+      354,
+      150
+    ],
     "pre_delay": 150,
-    "target" : [1213,76,45,45],
+    "target": [
+      1213,
+      76,
+      45,
+      45
+    ],
     "action": "Click",
-    "next":[
+    "next": [
       "offChangeLineup_Light",
       "网络连接断开"
     ],
@@ -1120,9 +1508,19 @@
   //备选方案2
   "offChangeLineup_Light": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
-    "roi" : [5,75,153,47],
-    "target" : [1228,84,33,29],
+    "template": "changeLineup.png",
+    "roi": [
+      5,
+      75,
+      153,
+      47
+    ],
+    "target": [
+      1228,
+      84,
+      33,
+      29
+    ],
     "action": "Click",
     "next": [
       "teamBattleKinnara",
@@ -1138,8 +1536,13 @@
     "order_by": "Score",
     "threshold": 0.8,
     "template": "fullLevelKingofLight.png",
-    "roi" : [149,138,1052,267],
-    "action" : "Click",
+    "roi": [
+      149,
+      138,
+      1052,
+      267
+    ],
+    "action": "Click",
     "next": [
       "dispatchCombat_Light",
       "网络连接断开"
@@ -1150,8 +1553,13 @@
   //第五步，全部确认好之后点击出战
   "dispatchCombat_Light": {
     "recognition": "OCR",
-    "expected" : "出击",
-    "recommended roi" : [1092,575,159,64],
+    "expected": "出击",
+    "recommended roi": [
+      1092,
+      575,
+      159,
+      64
+    ],
     "action": "Click",
     "next": [
       "recognizeEnteringTheRoom_Light",
@@ -1181,8 +1589,13 @@
   },
   "recognizeEnteringTheRoom_1_Light": {
     "recognition": "OCR",
-    "expected" : "回合",
-    "roi" : [0,4,91,54],
+    "expected": "回合",
+    "roi": [
+      0,
+      4,
+      91,
+      54
+    ],
     "timeout": 900000,
     "next": [
       "battleVictory_Light",
@@ -1243,17 +1656,26 @@
     ],
     "on_error": "stopapp"
   },
-
   //------------出战队伍设置暗--------------
   //第一步，点击出战默认会进入虚数体界面要关掉
   "offDefaultMecha_Dark": {
     "recognition": "OCR",
-    "expected" : "选择支援虚数体",
-    "roi" : [511,0,354,150],
+    "expected": "选择支援虚数体",
+    "roi": [
+      511,
+      0,
+      354,
+      150
+    ],
     "pre_delay": 150,
-    "target" : [1213,76,45,45],
+    "target": [
+      1213,
+      76,
+      45,
+      45
+    ],
     "action": "Click",
-    "next":[
+    "next": [
       "changeLineup_Dark",
       "网络连接断开"
     ],
@@ -1262,9 +1684,19 @@
   },
   "changeLineup_Dark": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
-    "roi" : [5,75,153,47],
-    "target" : [83,518,55,49],
+    "template": "changeLineup.png",
+    "roi": [
+      5,
+      75,
+      153,
+      47
+    ],
+    "target": [
+      83,
+      518,
+      55,
+      49
+    ],
     "action": "Click",
     "next": [
       "dispatchTeam_Dark",
@@ -1275,7 +1707,12 @@
   },
   //第二步，选择出战属性有1~6个队伍
   "dispatchTeam_Dark": {
-    "target": [1134,159,52,54],
+    "target": [
+      1134,
+      159,
+      52,
+      54
+    ],
     "action": "Click",
     "next": [
       "selectEmpty_Dark",
@@ -1287,8 +1724,13 @@
   //第三步，选择完成后，检测支援虚数体栏位是否为"EMPT"。
   "selectEmpty_Dark": {
     "recognition": "OCR",
-    "expected" : "EMPTY",
-    "recommended roi" : [863,434,174,73],
+    "expected": "EMPTY",
+    "recommended roi": [
+      863,
+      434,
+      174,
+      73
+    ],
     "action": "Click",
     //如果找不到机甲就启用备选方案
     "next": [
@@ -1305,12 +1747,22 @@
   //备选方案1
   "offMecha_Dark": {
     "recognition": "OCR",
-    "expected" : "选择支援虚数体",
-    "roi" : [511,0,354,150],
+    "expected": "选择支援虚数体",
+    "roi": [
+      511,
+      0,
+      354,
+      150
+    ],
     "pre_delay": 150,
-    "target" : [1213,76,45,45],
+    "target": [
+      1213,
+      76,
+      45,
+      45
+    ],
     "action": "Click",
-    "next":[
+    "next": [
       "offChangeLineup_Dark",
       "网络连接断开"
     ],
@@ -1320,9 +1772,19 @@
   //备选方案2
   "offChangeLineup_Dark": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
-    "roi" : [5,75,153,47],
-    "target" : [1228,84,33,29],
+    "template": "changeLineup.png",
+    "roi": [
+      5,
+      75,
+      153,
+      47
+    ],
+    "target": [
+      1228,
+      84,
+      33,
+      29
+    ],
     "action": "Click",
     "next": [
       "teamBattleKinnara",
@@ -1338,8 +1800,13 @@
     "order_by": "Score",
     "threshold": 0.8,
     "template": "fullLevelDarkKing.png",
-    "roi" : [149,138,1052,267],
-    "action" : "Click",
+    "roi": [
+      149,
+      138,
+      1052,
+      267
+    ],
+    "action": "Click",
     "next": [
       "dispatchCombat_Dark",
       "网络连接断开"
@@ -1350,8 +1817,13 @@
   //第五步，全部确认好之后点击出战
   "dispatchCombat_Dark": {
     "recognition": "OCR",
-    "expected" : "出击",
-    "recommended roi" : [1092,575,159,64],
+    "expected": "出击",
+    "recommended roi": [
+      1092,
+      575,
+      159,
+      64
+    ],
     "action": "Click",
     "next": [
       "recognizeEnteringTheRoom_Dark",
@@ -1374,6 +1846,7 @@
       "recognizeEnteringTheRoom_1_Dark",
       "recognizeEnteringTheRoom_Dark",
       "battleVictory_Dark",
+      "battleDefeat_Dark",
       "网络连接断开"
     ],
     "rate_limit": 1000,
@@ -1381,11 +1854,17 @@
   },
   "recognizeEnteringTheRoom_1_Dark": {
     "recognition": "OCR",
-    "expected" : "回合",
-    "roi" : [0,4,91,54],
+    "expected": "回合",
+    "roi": [
+      0,
+      4,
+      91,
+      54
+    ],
     "timeout": 900000,
     "next": [
       "battleVictory_Dark",
+      "battleDefeat_Dark",
       "deathInBattle_Dark",
       "网络连接断开"
     ],
@@ -1409,6 +1888,24 @@
     ],
     "on_error": "stopapp"
   },
+  "battleDefeat_Dark": {
+    "recognition": "TemplateMatch",
+    "template": "kinnara/紧那罗战斗失败__402_136_453_116__352_86_553_216.png",
+    "roi": [
+      402,
+      136,
+      453,
+      116
+    ],
+    "rate_limit": 600,
+    "action": "Click",
+    "pre_delay": 800,
+    "next": [
+      "teamBattleKinnara",
+      "网络连接断开"
+    ],
+    "on_error": "stopapp"
+  },
   "deathInBattle_Dark": {
     "recognition": "TemplateMatch",
     "template": "取消.png",
@@ -1417,6 +1914,7 @@
     "action": "Click",
     "next": [
       "battleVictory_Dark",
+      "battleDefeat_Dark",
       "网络连接断开"
     ],
     "on_error": "deathInBattle_Dark"
@@ -1443,16 +1941,25 @@
     ],
     "on_error": "stopapp"
   },
-
   //------------紧那罗本体出战队伍设置--------------
   "offDefaultMecha_Kinnara": {
     "recognition": "OCR",
-    "expected" : "选择支援虚数体",
-    "roi" : [511,0,354,150],
+    "expected": "选择支援虚数体",
+    "roi": [
+      511,
+      0,
+      354,
+      150
+    ],
     "pre_delay": 150,
-    "target" : [1213,76,45,45],
+    "target": [
+      1213,
+      76,
+      45,
+      45
+    ],
     "action": "Click",
-    "next":[
+    "next": [
       "changeLineup_Kinnara",
       "网络连接断开"
     ],
@@ -1461,9 +1968,19 @@
   },
   "changeLineup_Kinnara": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
-    "roi" : [5,75,153,47],
-    "target" : [77,375,59,50],
+    "template": "changeLineup.png",
+    "roi": [
+      5,
+      75,
+      153,
+      47
+    ],
+    "target": [
+      77,
+      375,
+      59,
+      50
+    ],
     "action": "Click",
     "next": [
       "dispatchTeam_Kinnara",
@@ -1474,7 +1991,12 @@
   },
   //第二步，选择出战属性有1~6个队伍
   "dispatchTeam_Kinnara": {
-    "target": [1140,227,36,47],
+    "target": [
+      1140,
+      227,
+      36,
+      47
+    ],
     "action": "Click",
     "next": [
       "selectEmpty_Kinnara",
@@ -1486,8 +2008,13 @@
   //第三步，选择完成后，检测支援虚数体栏位是否为"EMPT"。
   "selectEmpty_Kinnara": {
     "recognition": "OCR",
-    "expected" : "EMPTY",
-    "recommended roi" : [863,434,174,73],
+    "expected": "EMPTY",
+    "recommended roi": [
+      863,
+      434,
+      174,
+      73
+    ],
     "action": "Click",
     //如果找不到机甲就启用备选方案
     "next": [
@@ -1501,12 +2028,22 @@
   //备选方案1
   "offMecha_Kinnara": {
     "recognition": "OCR",
-    "expected" : "选择支援虚数体",
-    "roi" : [511,0,354,150],
+    "expected": "选择支援虚数体",
+    "roi": [
+      511,
+      0,
+      354,
+      150
+    ],
     "pre_delay": 150,
-    "target" : [1213,76,45,45],
+    "target": [
+      1213,
+      76,
+      45,
+      45
+    ],
     "action": "Click",
-    "next":[
+    "next": [
       "offChangeLineup_Kinnara",
       "网络连接断开"
     ],
@@ -1516,9 +2053,19 @@
   //备选方案2
   "offChangeLineup_Kinnara": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
-    "roi" : [5,75,153,47],
-    "target" : [1228,84,33,29],
+    "template": "changeLineup.png",
+    "roi": [
+      5,
+      75,
+      153,
+      47
+    ],
+    "target": [
+      1228,
+      84,
+      33,
+      29
+    ],
     "action": "Click",
     "next": [
       "teamBattleKinnara",
@@ -1534,8 +2081,13 @@
     "order_by": "Score",
     "threshold": 0.8,
     "template": "fullLevelWindPrescription.png",
-    "roi" : [149,138,1052,267],
-    "action" : "Click",
+    "roi": [
+      149,
+      138,
+      1052,
+      267
+    ],
+    "action": "Click",
     "next": [
       "dispatchCombat_Kinnara",
       "网络连接断开"
@@ -1546,8 +2098,13 @@
   //第五步，全部确认好之后点击出战
   "dispatchCombat_Kinnara": {
     "recognition": "OCR",
-    "expected" : "出击",
-    "recommended roi" : [1092,575,159,64],
+    "expected": "出击",
+    "recommended roi": [
+      1092,
+      575,
+      159,
+      64
+    ],
     "action": "Click",
     "next": [
       "recognizeEnteringTheRoom_Kinnara",
@@ -1570,6 +2127,7 @@
       "recognizeEnteringTheRoom_1_Kinnara",
       "recognizeEnteringTheRoom_Kinnara",
       "battleVictory_Kinnara",
+      "battleTimeout_Kinnara",
       "网络连接断开"
     ],
     "rate_limit": 1000,
@@ -1577,12 +2135,18 @@
   },
   "recognizeEnteringTheRoom_1_Kinnara": {
     "recognition": "OCR",
-    "expected" : "回合",
-    "roi" : [0,4,91,54],
+    "expected": "回合",
+    "roi": [
+      0,
+      4,
+      91,
+      54
+    ],
     "timeout": 900000,
     "next": [
       "battleVictory_Kinnara",
       "deathInBattle_Kinnara",
+      "battleTimeout_Kinnara",
       "网络连接断开"
     ],
     "rate_limit": 1500,
@@ -1613,7 +2177,23 @@
     "action": "Click",
     "next": [
       "battleVictory_Kinnara",
+      "battleTimeout_Kinnara",
       "网络连接断开"
+    ],
+    "on_error": "deathInBattle_Kinnara"
+  },
+  "battleTimeout_Kinnara": {
+    //紧那罗超时会直接回到紧那罗讨伐主界面
+    "recognition": "OCR",
+    "expected": [
+      "加入讨伐队",
+      "讨伐"
+    ],
+    "roi": [
+      874,
+      625,
+      118,
+      33
     ],
     "on_error": "deathInBattle_Kinnara"
   },
