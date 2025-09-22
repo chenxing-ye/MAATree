@@ -9,7 +9,12 @@
     "zx识别是否在主页": {
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
-        "roi" : [866,430,394,184],
+        "roi": [
+            866,
+            430,
+            394,
+            184
+        ],
         "next": "zx识别主线1",
         "post_delay": 500,
         "action": "Click",
@@ -153,7 +158,12 @@
     "zx进入补体页面": {
         "recognition": "OCR",
         "expected": "道具回复",
-        "roi" : [563,581,153,39],
+        "roi": [
+            563,
+            581,
+            153,
+            39
+        ],
         "next": [
             "检测体力是否为两位数_否",
             "检测体力是否为两位数_是"
@@ -164,7 +174,12 @@
     "检测体力是否为两位数_是": {
         "recognition": "OCR",
         "expected": "^([1-9]|[1-9]\\\\d|[1-4]\\\\d{2})$",
-        "roi" : [606,395,81,58],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
         "inverse": true,
         "next": [
             "小红瓶",
@@ -178,7 +193,12 @@
     "检测体力是否为两位数_否": {
         "recognition": "OCR",
         "expected": "^[5-9]\\d{2}$",
-        "roi" : [606,395,81,58],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
         "post_wait_freezes": 150,
         "next": [
             "检测补体1(使用)",
@@ -194,7 +214,12 @@
     "大红瓶": {
         "recognition": "TemplateMatch",
         "template": "大红瓶.png",
-        "roi" : [513,235,172,92],
+        "roi": [
+            513,
+            235,
+            172,
+            92
+        ],
         "next": "补体2",
         "timeout": 3000,
         "on_error": "停止"
@@ -202,8 +227,18 @@
     "小红瓶": {
         "recognition": "TemplateMatch",
         "template": "小红瓶.png",
-        "roi" : [600,235,151,92],
-        "target" : [656,263,31,62],
+        "roi": [
+            600,
+            235,
+            151,
+            92
+        ],
+        "target": [
+            656,
+            263,
+            31,
+            62
+        ],
         "action": "Click",
         "next": "小红瓶补体1",
         "timeout": 3000,
@@ -212,8 +247,18 @@
     "补体2": {
         "recognition": "OCR",
         "expected": "^5\\d{2}$",
-        "roi" : [606,395,81,58],
-        "target" : [584,262,36,63],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
+        "target": [
+            584,
+            262,
+            36,
+            63
+        ],
         "action": "Click",
         "timeout": 500,
         "inverse": true,
@@ -225,8 +270,18 @@
     "补体3": {
         "recognition": "OCR",
         "expected": "^5\\d{2}$",
-        "roi" : [606,395,81,58],
-        "target" : [584,262,36,63],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
+        "target": [
+            584,
+            262,
+            36,
+            63
+        ],
         "action": "Click",
         "timeout": 500,
         "inverse": true,
@@ -238,8 +293,18 @@
     "补体4": {
         "recognition": "OCR",
         "expected": "^5\\d{2}$",
-        "roi" : [606,395,81,58],
-        "target" : [584,262,36,63],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
+        "target": [
+            584,
+            262,
+            36,
+            63
+        ],
         "action": "Click",
         "timeout": 500,
         "inverse": true,
@@ -251,8 +316,18 @@
     "补体5": {
         "recognition": "OCR",
         "expected": "^5\\d{2}$",
-        "roi" : [606,395,81,58],
-        "target" : [584,262,36,63],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
+        "target": [
+            584,
+            262,
+            36,
+            63
+        ],
         "action": "Click",
         "timeout": 800,
         "inverse": true,
@@ -264,8 +339,18 @@
     "小红瓶补体1": {
         "recognition": "OCR",
         "expected": "^5\\d{2}$",
-        "roi" : [606,395,81,58],
-        "target" : [656,263,31,62],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
+        "target": [
+            656,
+            263,
+            31,
+            62
+        ],
         "action": "Click",
         "timeout": 500,
         "inverse": true,
@@ -277,8 +362,18 @@
     "小红瓶补体2": {
         "recognition": "OCR",
         "expected": "^5\\d{2}$",
-        "roi" : [606,395,81,58],
-        "target" : [656,263,31,62],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
+        "target": [
+            656,
+            263,
+            31,
+            62
+        ],
         "action": "Click",
         "timeout": 500,
         "inverse": true,
@@ -290,8 +385,18 @@
     "小红瓶补体3": {
         "recognition": "OCR",
         "expected": "^5\\d{2}$",
-        "roi" : [606,395,81,58],
-        "target" : [656,263,31,62],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
+        "target": [
+            656,
+            263,
+            31,
+            62
+        ],
         "action": "Click",
         "timeout": 500,
         "inverse": true,
@@ -303,8 +408,18 @@
     "小红瓶补体4": {
         "recognition": "OCR",
         "expected": "^5\\d{2}$",
-        "roi" : [606,395,81,58],
-        "target" : [656,263,31,62],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
+        "target": [
+            656,
+            263,
+            31,
+            62
+        ],
         "action": "Click",
         "timeout": 500,
         "inverse": true,
@@ -316,8 +431,18 @@
     "小红瓶补体5": {
         "recognition": "OCR",
         "expected": "^5\\d{2}$",
-        "roi" : [606,395,81,58],
-        "target" : [656,263,31,62],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
+        "target": [
+            656,
+            263,
+            31,
+            62
+        ],
         "action": "Click",
         "timeout": 500,
         "inverse": true,
@@ -329,8 +454,18 @@
     "小红瓶补体6": {
         "recognition": "OCR",
         "expected": "^5\\d{2}$",
-        "roi" : [606,395,81,58],
-        "target" : [656,263,31,62],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
+        "target": [
+            656,
+            263,
+            31,
+            62
+        ],
         "action": "Click",
         "timeout": 500,
         "inverse": true,
@@ -342,8 +477,18 @@
     "小红瓶补体7": {
         "recognition": "OCR",
         "expected": "^5\\d{2}$",
-        "roi" : [606,395,81,58],
-        "target" : [656,263,31,62],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
+        "target": [
+            656,
+            263,
+            31,
+            62
+        ],
         "action": "Click",
         "timeout": 500,
         "inverse": true,
@@ -355,8 +500,18 @@
     "小红瓶补体8": {
         "recognition": "OCR",
         "expected": "^5\\d{2}$",
-        "roi" : [606,395,81,58],
-        "target" : [656,263,31,62],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
+        "target": [
+            656,
+            263,
+            31,
+            62
+        ],
         "action": "Click",
         "timeout": 500,
         "inverse": true,
@@ -368,8 +523,18 @@
     "小红瓶补体9": {
         "recognition": "OCR",
         "expected": "^5\\d{2}$",
-        "roi" : [606,395,81,58],
-        "target" : [656,263,31,62],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
+        "target": [
+            656,
+            263,
+            31,
+            62
+        ],
         "action": "Click",
         "timeout": 800,
         "inverse": true,
@@ -394,7 +559,12 @@
     "检测补体1(使用)": {
         "recognition": "OCR",
         "expected": "^5\\d{2}$",
-        "roi" : [606,395,81,58],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
         "next": "补体力后的点击",
         "action": "Click",
         "target": [
@@ -410,7 +580,12 @@
     "检测补体2(超出)": {
         "recognition": "OCR",
         "expected": "^([6-9]\\d{2})$",
-        "roi" : [606,395,81,58],
+        "roi": [
+            606,
+            395,
+            81,
+            58
+        ],
         "next": "zx一键扫荡",
         "action": "Click",
         "target": [
@@ -548,5 +723,76 @@
         "focus": true,
         "focus_tip_color": "Blue",
         "focus_tip": "未找到体力药"
+    },
+    "扫荡元素之芯": {
+        "recognition": "OCR",
+        "expected": [
+            "CLEAR",
+            "EAR"
+        ],
+        "roi": [
+            576,
+            318,
+            223,
+            112
+        ],
+        "next": [
+            "元素之芯点击扫荡"
+        ],
+        "action": "Click",
+        "post_delay": 500,
+        "timeout": 3000
+    },
+    "元素之芯点击扫荡": {
+        "recognition": "OCR",
+        "expected": "扫荡",
+        "roi": [
+            909,
+            623,
+            83,
+            50
+        ],
+        "next": [
+            "元素之芯确定扫荡",
+            "元素之芯已扫荡"
+        ],
+        "action": "Click",
+        "post_delay": 500,
+        "timeout": 3000
+    },
+    "元素之芯确定扫荡": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            607,
+            465,
+            60,
+            34
+        ],
+        "next": [
+            "zx扫荡完成"
+        ],
+        "action": "Click",
+        "post_delay": 500,
+        "timeout": 3000
+    },
+    "元素之芯已扫荡": {
+        "recognition": "OCR",
+        "expected": [
+            "次数"
+        ],
+        "roi": [
+            543,
+            342,
+            199,
+            41
+        ],
+        "next": [
+            "zx识别结束",
+            "zx下一章"
+        ],
+        "action": "Click",
+        "post_delay": 500,
+        "timeout": 3000
     }
 }
