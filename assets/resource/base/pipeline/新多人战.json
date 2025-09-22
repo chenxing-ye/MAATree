@@ -9,8 +9,13 @@
     },
     "加入战斗": {
         "recognition": "TemplateMatch",
-        "template" : "联机战斗.png",
-        "roi" : [866,430,394,184],
+        "template": "联机战斗.png",
+        "roi": [
+            866,
+            430,
+            394,
+            184
+        ],
         "action": "Click",
         "next": [
             "点击自动战斗",
@@ -37,7 +42,12 @@
         "recognition": "TemplateMatch",
         "template": "自动战斗.png",
         "action": "Click",
-        "roi" : [151,221,152,160],
+        "roi": [
+            151,
+            221,
+            152,
+            160
+        ],
         "next": [
             "打开off",
             "点击连战设置"
@@ -73,7 +83,8 @@
             75
         ],
         "next": [
-            "点击连战次数"
+            "点击连战次数",
+            "点击连战设置"
         ],
         "timeout": 3000,
         "on_error": "stopapp"
@@ -411,7 +422,6 @@
         "pre_delay": 10,
         "duration": 1700
     },
-
     "选择关卡1_0": {
         "recognition": "OCR",
         "expected": "特异点讨伐战\\[真源",
@@ -771,10 +781,10 @@
         "expected": "300",
         "enabled": false,
         "roi": [
-            579,
-            29,
-            121,
-            57
+            600,
+            48,
+            86,
+            22
         ],
         "next": [
             "限次_战斗确认",
@@ -795,7 +805,7 @@
         "rate_limit": 600,
         "timeout": 10000,
         "next": [
-            "xdr战斗确认"
+            "限次_战斗确认"
         ],
         "on_error": "停止"
     },

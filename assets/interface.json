@@ -147,7 +147,7 @@
             "entry": "startAutoKinnara",
             "pipeline_override": {
                 "等待进入": {
-                    "next":[
+                    "next": [
                         "主页检测",
                         "clickJoinTheBattle",
                         "teamBattleKinnara",
@@ -295,7 +295,12 @@
                             ]
                         },
                         "选择难度_褪色的罪人": {
-                            "roi" : [796,124,42,60]
+                            "roi": [
+                                796,
+                                124,
+                                42,
+                                60
+                            ]
                         },
                         "褪色的罪人": {
                             "enabled": true
@@ -319,7 +324,12 @@
                             ]
                         },
                         "选择难度_褪色的罪人": {
-                            "roi" : [800,234,36,56]
+                            "roi": [
+                                800,
+                                234,
+                                36,
+                                56
+                            ]
                         },
                         "褪色的罪人": {
                             "enabled": true
@@ -343,7 +353,12 @@
                             ]
                         },
                         "选择难度_褪色的罪人": {
-                            "roi" : [800,349,36,45]
+                            "roi": [
+                                800,
+                                349,
+                                36,
+                                45
+                            ]
                         },
                         "褪色的罪人": {
                             "enabled": true
@@ -367,7 +382,12 @@
                             ]
                         },
                         "选择难度_褪色的罪人": {
-                            "roi" : [801,457,35,55]
+                            "roi": [
+                                801,
+                                457,
+                                35,
+                                55
+                            ]
                         },
                         "褪色的罪人": {
                             "enabled": true
@@ -789,6 +809,18 @@
         },
         "连战次数": {
             "cases": [
+                {
+                    "name": "6次(日常)",
+                    "pipeline_override": {
+                        "输入连战次数": {
+                            "input_text": "6"
+                        },
+                        "识别是否到达限定次数": {
+                            "expected": "6",
+                            "enabled": true
+                        }
+                    }
+                },
                 {
                     "name": "10次",
                     "pipeline_override": {
@@ -1434,7 +1466,7 @@
                             "next": "主页检测"
                         },
                         "选择关卡1_0": {
-                            "expected" : "虚数体幻想战[真源]"
+                            "expected": "虚数体幻想战[真源]"
                         },
                         "选择关卡1_1": {
                             "template": "普兰.png",
@@ -1463,7 +1495,7 @@
                             "next": "主页检测"
                         },
                         "选择关卡1_0": {
-                            "expected" : "虚数体幻想战[真源]"
+                            "expected": "虚数体幻想战[真源]"
                         },
                         "选择关卡1_1": {
                             "template": "普兰.png",
@@ -1492,7 +1524,7 @@
                             "next": "主页检测"
                         },
                         "选择关卡1_0": {
-                            "expected" : "高难易度挑战"
+                            "expected": "高难易度挑战"
                         },
                         "选择关卡1_1": {
                             "template": "巴力.png"
@@ -1515,7 +1547,7 @@
                             "next": "主页检测"
                         },
                         "选择关卡1_0": {
-                            "expected" : "高难易度挑战"
+                            "expected": "高难易度挑战"
                         },
                         "选择关卡1_1": {
                             "template": "神兰.png"
@@ -2439,7 +2471,6 @@
                         }
                     }
                 }
-
             ]
         },
         "第三优先级关卡": {
@@ -3773,14 +3804,18 @@
                 }
             ]
         },
-
         "(光劫使)出战队伍": {
             "cases": [
                 {
                     "name": "1队",
                     "pipeline_override": {
                         "dispatchTeam_Dark": {
-                            "target": [1134,159,52,54]
+                            "target": [
+                                1134,
+                                159,
+                                52,
+                                54
+                            ]
                         },
                         "enabled": true
                     }
@@ -3789,7 +3824,12 @@
                     "name": "2队",
                     "pipeline_override": {
                         "dispatchTeam_Dark": {
-                            "target": [1140,227,36,47]
+                            "target": [
+                                1140,
+                                227,
+                                36,
+                                47
+                            ]
                         },
                         "enabled": true
                     }
@@ -3798,7 +3838,12 @@
                     "name": "3队",
                     "pipeline_override": {
                         "dispatchTeam_Dark": {
-                            "target" : [1137,287,44,48]
+                            "target": [
+                                1137,
+                                287,
+                                44,
+                                48
+                            ]
                         },
                         "enabled": true
                     }
@@ -3807,7 +3852,12 @@
                     "name": "4队",
                     "pipeline_override": {
                         "dispatchTeam_Dark": {
-                            "target": [1139,350,41,44]
+                            "target": [
+                                1139,
+                                350,
+                                41,
+                                44
+                            ]
                         },
                         "enabled": true
                     }
@@ -3816,7 +3866,12 @@
                     "name": "5队",
                     "pipeline_override": {
                         "dispatchTeam_Dark": {
-                            "target" : [1137,413,43,43]
+                            "target": [
+                                1137,
+                                413,
+                                43,
+                                43
+                            ]
                         },
                         "enabled": true
                     }
@@ -3825,7 +3880,12 @@
                     "name": "6队",
                     "pipeline_override": {
                         "dispatchTeam_Dark": {
-                            "target" : [1138,475,42,42]
+                            "target": [
+                                1138,
+                                475,
+                                42,
+                                42
+                            ]
                         },
                         "enabled": true
                     }
@@ -3878,7 +3938,12 @@
                     "name": "1队",
                     "pipeline_override": {
                         "dispatchTeam_Light": {
-                            "target": [1134,159,52,54]
+                            "target": [
+                                1134,
+                                159,
+                                52,
+                                54
+                            ]
                         },
                         "enabled": true
                     }
@@ -3887,7 +3952,12 @@
                     "name": "2队",
                     "pipeline_override": {
                         "dispatchTeam_Light": {
-                            "target": [1140,227,36,47]
+                            "target": [
+                                1140,
+                                227,
+                                36,
+                                47
+                            ]
                         },
                         "enabled": true
                     }
@@ -3896,7 +3966,12 @@
                     "name": "3队",
                     "pipeline_override": {
                         "dispatchTeam_Light": {
-                            "target" : [1137,287,44,48]
+                            "target": [
+                                1137,
+                                287,
+                                44,
+                                48
+                            ]
                         },
                         "enabled": true
                     }
@@ -3905,7 +3980,12 @@
                     "name": "4队",
                     "pipeline_override": {
                         "dispatchTeam_Light": {
-                            "target": [1139,350,41,44]
+                            "target": [
+                                1139,
+                                350,
+                                41,
+                                44
+                            ]
                         },
                         "enabled": true
                     }
@@ -3914,7 +3994,12 @@
                     "name": "5队",
                     "pipeline_override": {
                         "dispatchTeam_Light": {
-                            "target" : [1137,413,43,43]
+                            "target": [
+                                1137,
+                                413,
+                                43,
+                                43
+                            ]
                         },
                         "enabled": true
                     }
@@ -3923,7 +4008,12 @@
                     "name": "6队",
                     "pipeline_override": {
                         "dispatchTeam_Light": {
-                            "target" : [1138,475,42,42]
+                            "target": [
+                                1138,
+                                475,
+                                42,
+                                42
+                            ]
                         },
                         "enabled": true
                     }
@@ -3976,7 +4066,12 @@
                     "name": "1队",
                     "pipeline_override": {
                         "dispatchTeam_Water": {
-                            "target": [1134,159,52,54]
+                            "target": [
+                                1134,
+                                159,
+                                52,
+                                54
+                            ]
                         },
                         "enabled": true
                     }
@@ -3985,7 +4080,12 @@
                     "name": "2队",
                     "pipeline_override": {
                         "dispatchTeam_Water": {
-                            "target": [1140,227,36,47]
+                            "target": [
+                                1140,
+                                227,
+                                36,
+                                47
+                            ]
                         },
                         "enabled": true
                     }
@@ -3994,7 +4094,12 @@
                     "name": "3队",
                     "pipeline_override": {
                         "dispatchTeam_Water": {
-                            "target" : [1137,287,44,48]
+                            "target": [
+                                1137,
+                                287,
+                                44,
+                                48
+                            ]
                         },
                         "enabled": true
                     }
@@ -4003,7 +4108,12 @@
                     "name": "4队",
                     "pipeline_override": {
                         "dispatchTeam_Water": {
-                            "target": [1139,350,41,44]
+                            "target": [
+                                1139,
+                                350,
+                                41,
+                                44
+                            ]
                         },
                         "enabled": true
                     }
@@ -4012,7 +4122,12 @@
                     "name": "5队",
                     "pipeline_override": {
                         "dispatchTeam_Water": {
-                            "target" : [1137,413,43,43]
+                            "target": [
+                                1137,
+                                413,
+                                43,
+                                43
+                            ]
                         },
                         "enabled": true
                     }
@@ -4021,7 +4136,12 @@
                     "name": "6队",
                     "pipeline_override": {
                         "dispatchTeam_Water": {
-                            "target" : [1138,475,42,42]
+                            "target": [
+                                1138,
+                                475,
+                                42,
+                                42
+                            ]
                         },
                         "enabled": true
                     }
@@ -4074,7 +4194,12 @@
                     "name": "1队",
                     "pipeline_override": {
                         "dispatchTeam_Soil": {
-                            "target": [1134,159,52,54]
+                            "target": [
+                                1134,
+                                159,
+                                52,
+                                54
+                            ]
                         },
                         "enabled": true
                     }
@@ -4083,7 +4208,12 @@
                     "name": "2队",
                     "pipeline_override": {
                         "dispatchTeam_Soil": {
-                            "target": [1140,227,36,47]
+                            "target": [
+                                1140,
+                                227,
+                                36,
+                                47
+                            ]
                         },
                         "enabled": true
                     }
@@ -4092,7 +4222,12 @@
                     "name": "3队",
                     "pipeline_override": {
                         "dispatchTeam_Soil": {
-                            "target" : [1137,287,44,48]
+                            "target": [
+                                1137,
+                                287,
+                                44,
+                                48
+                            ]
                         },
                         "enabled": true
                     }
@@ -4101,7 +4236,12 @@
                     "name": "4队",
                     "pipeline_override": {
                         "dispatchTeam_Soil": {
-                            "target": [1139,350,41,44]
+                            "target": [
+                                1139,
+                                350,
+                                41,
+                                44
+                            ]
                         },
                         "enabled": true
                     }
@@ -4110,7 +4250,12 @@
                     "name": "5队",
                     "pipeline_override": {
                         "dispatchTeam_Soil": {
-                            "target" : [1137,413,43,43]
+                            "target": [
+                                1137,
+                                413,
+                                43,
+                                43
+                            ]
                         },
                         "enabled": true
                     }
@@ -4119,7 +4264,12 @@
                     "name": "6队",
                     "pipeline_override": {
                         "dispatchTeam_Soil": {
-                            "target" : [1138,475,42,42]
+                            "target": [
+                                1138,
+                                475,
+                                42,
+                                42
+                            ]
                         },
                         "enabled": true
                     }
@@ -4172,7 +4322,12 @@
                     "name": "1队",
                     "pipeline_override": {
                         "dispatchTeam_Wind": {
-                            "target": [1134,159,52,54]
+                            "target": [
+                                1134,
+                                159,
+                                52,
+                                54
+                            ]
                         },
                         "enabled": true
                     }
@@ -4181,7 +4336,12 @@
                     "name": "2队",
                     "pipeline_override": {
                         "dispatchTeam_Wind": {
-                            "target": [1140,227,36,47]
+                            "target": [
+                                1140,
+                                227,
+                                36,
+                                47
+                            ]
                         },
                         "enabled": true
                     }
@@ -4190,7 +4350,12 @@
                     "name": "3队",
                     "pipeline_override": {
                         "dispatchTeam_Wind": {
-                            "target" : [1137,287,44,48]
+                            "target": [
+                                1137,
+                                287,
+                                44,
+                                48
+                            ]
                         },
                         "enabled": true
                     }
@@ -4199,7 +4364,12 @@
                     "name": "4队",
                     "pipeline_override": {
                         "dispatchTeam_Wind": {
-                            "target": [1139,350,41,44]
+                            "target": [
+                                1139,
+                                350,
+                                41,
+                                44
+                            ]
                         },
                         "enabled": true
                     }
@@ -4208,7 +4378,12 @@
                     "name": "5队",
                     "pipeline_override": {
                         "dispatchTeam_Wind": {
-                            "target" : [1137,413,43,43]
+                            "target": [
+                                1137,
+                                413,
+                                43,
+                                43
+                            ]
                         },
                         "enabled": true
                     }
@@ -4217,7 +4392,12 @@
                     "name": "6队",
                     "pipeline_override": {
                         "dispatchTeam_Wind": {
-                            "target" : [1138,475,42,42]
+                            "target": [
+                                1138,
+                                475,
+                                42,
+                                42
+                            ]
                         },
                         "enabled": true
                     }
@@ -4270,7 +4450,12 @@
                     "name": "1队",
                     "pipeline_override": {
                         "dispatchTeam_Fire": {
-                            "target": [1134,159,52,54]
+                            "target": [
+                                1134,
+                                159,
+                                52,
+                                54
+                            ]
                         },
                         "enabled": true
                     }
@@ -4279,7 +4464,12 @@
                     "name": "2队",
                     "pipeline_override": {
                         "dispatchTeam_Fire": {
-                            "target": [1140,227,36,47]
+                            "target": [
+                                1140,
+                                227,
+                                36,
+                                47
+                            ]
                         },
                         "enabled": true
                     }
@@ -4288,7 +4478,12 @@
                     "name": "3队",
                     "pipeline_override": {
                         "dispatchTeam_Fire": {
-                            "target" : [1137,287,44,48]
+                            "target": [
+                                1137,
+                                287,
+                                44,
+                                48
+                            ]
                         },
                         "enabled": true
                     }
@@ -4297,7 +4492,12 @@
                     "name": "4队",
                     "pipeline_override": {
                         "dispatchTeam_Fire": {
-                            "target": [1139,350,41,44]
+                            "target": [
+                                1139,
+                                350,
+                                41,
+                                44
+                            ]
                         },
                         "enabled": true
                     }
@@ -4306,7 +4506,12 @@
                     "name": "5队",
                     "pipeline_override": {
                         "dispatchTeam_Fire": {
-                            "target" : [1137,413,43,43]
+                            "target": [
+                                1137,
+                                413,
+                                43,
+                                43
+                            ]
                         },
                         "enabled": true
                     }
@@ -4315,7 +4520,12 @@
                     "name": "6队",
                     "pipeline_override": {
                         "dispatchTeam_Fire": {
-                            "target" : [1138,475,42,42]
+                            "target": [
+                                1138,
+                                475,
+                                42,
+                                42
+                            ]
                         },
                         "enabled": true
                     }
@@ -4368,7 +4578,12 @@
                     "name": "火队",
                     "pipeline_override": {
                         "changeLineup_Kinnara": {
-                            "target" : [82,160,53,58]
+                            "target": [
+                                82,
+                                160,
+                                53,
+                                58
+                            ]
                         },
                         "enabled": true
                     }
@@ -4377,7 +4592,12 @@
                     "name": "水队",
                     "pipeline_override": {
                         "changeLineup_Kinnara": {
-                            "target" : [81,237,57,55]
+                            "target": [
+                                81,
+                                237,
+                                57,
+                                55
+                            ]
                         },
                         "enabled": true
                     }
@@ -4386,7 +4606,12 @@
                     "name": "土队",
                     "pipeline_override": {
                         "changeLineup_Kinnara": {
-                            "target" : [78,308,62,51]
+                            "target": [
+                                78,
+                                308,
+                                62,
+                                51
+                            ]
                         },
                         "enabled": true
                     }
@@ -4395,7 +4620,12 @@
                     "name": "风队",
                     "pipeline_override": {
                         "changeLineup_Kinnara": {
-                            "target" : [77,375,59,50]
+                            "target": [
+                                77,
+                                375,
+                                59,
+                                50
+                            ]
                         },
                         "enabled": true
                     }
@@ -4404,7 +4634,12 @@
                     "name": "光队",
                     "pipeline_override": {
                         "changeLineup_Kinnara": {
-                            "target" : [79,449,61,50]
+                            "target": [
+                                79,
+                                449,
+                                61,
+                                50
+                            ]
                         },
                         "enabled": true
                     }
@@ -4413,7 +4648,12 @@
                     "name": "暗队",
                     "pipeline_override": {
                         "changeLineup_Kinnara": {
-                            "target" : [83,518,55,49]
+                            "target": [
+                                83,
+                                518,
+                                55,
+                                49
+                            ]
                         },
                         "enabled": true
                     }
@@ -4426,7 +4666,12 @@
                     "name": "1队",
                     "pipeline_override": {
                         "dispatchTeam_Kinnara": {
-                            "target": [1134,159,52,54]
+                            "target": [
+                                1134,
+                                159,
+                                52,
+                                54
+                            ]
                         },
                         "enabled": true
                     }
@@ -4435,7 +4680,12 @@
                     "name": "2队",
                     "pipeline_override": {
                         "dispatchTeam_Kinnara": {
-                            "target": [1140,227,36,47]
+                            "target": [
+                                1140,
+                                227,
+                                36,
+                                47
+                            ]
                         },
                         "enabled": true
                     }
@@ -4444,7 +4694,12 @@
                     "name": "3队",
                     "pipeline_override": {
                         "dispatchTeam_Kinnara": {
-                            "target" : [1137,287,44,48]
+                            "target": [
+                                1137,
+                                287,
+                                44,
+                                48
+                            ]
                         },
                         "enabled": true
                     }
@@ -4453,7 +4708,12 @@
                     "name": "4队",
                     "pipeline_override": {
                         "dispatchTeam_Kinnara": {
-                            "target": [1139,350,41,44]
+                            "target": [
+                                1139,
+                                350,
+                                41,
+                                44
+                            ]
                         },
                         "enabled": true
                     }
@@ -4462,7 +4722,12 @@
                     "name": "5队",
                     "pipeline_override": {
                         "dispatchTeam_Kinnara": {
-                            "target" : [1137,413,43,43]
+                            "target": [
+                                1137,
+                                413,
+                                43,
+                                43
+                            ]
                         },
                         "enabled": true
                     }
@@ -4471,7 +4736,12 @@
                     "name": "6队",
                     "pipeline_override": {
                         "dispatchTeam_Kinnara": {
-                            "target" : [1138,475,42,42]
+                            "target": [
+                                1138,
+                                475,
+                                42,
+                                42
+                            ]
                         },
                         "enabled": true
                     }
@@ -4704,43 +4974,73 @@
                     "name": "光->顺时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "template": "光使节.png",
+                            "recommended roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "template": "暗使节.png",
+                            "recommended roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "template": "火使节.png",
+                            "recommended roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
-                              "offDefaultMecha_Water"
+                                "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "template": "水使节.png",
+                            "recommended roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "template": "地使节.png",
+                            "recommended roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "template": "风使节.png",
+                            "recommended roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
@@ -4752,43 +5052,73 @@
                     "name": "光->逆时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "template": "光使节.png",
+                            "recommended roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "template": "风使节.png",
+                            "recommended roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "template": "地使节.png",
+                            "recommended roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "template": "水使节.png",
+                            "recommended roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "template": "火使节.png",
+                            "recommended roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
-                              "offDefaultMecha_Water"
+                                "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "template": "暗使节.png",
+                            "recommended roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
@@ -4800,43 +5130,73 @@
                     "name": "暗->顺时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "template": "暗使节.png",
+                            "recommended roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "template": "火使节.png",
+                            "recommended roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
-                              "offDefaultMecha_Water"
+                                "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "template": "水使节.png",
+                            "recommended roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "template": "地使节.png",
+                            "recommended roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "template": "风使节.png",
+                            "recommended roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "template": "光使节.png",
+                            "recommended roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
@@ -4848,45 +5208,75 @@
                     "name": "暗->逆时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "template": "暗使节.png",
+                            "recommended roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "template": "光使节.png",
+                            "recommended roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "template": "风使节.png",
+                            "recommended roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "template": "地使节.png",
+                            "recommended roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "template": "水使节.png",
+                            "recommended roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "template": "火使节.png",
+                            "recommended roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
-                              "offDefaultMecha_Water"
+                                "offDefaultMecha_Water"
                             ]
                         },
                         "enabled": true
@@ -4896,43 +5286,73 @@
                     "name": "火->顺时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "template": "火使节.png",
+                            "recommended roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
-                              "offDefaultMecha_Water"
+                                "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "template": "水使节.png",
+                            "recommended roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "template": "地使节.png",
+                            "recommended roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "template": "风使节.png",
+                            "recommended roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "template": "光使节.png",
+                            "recommended roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "template": "暗使节.png",
+                            "recommended roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
@@ -4944,43 +5364,73 @@
                     "name": "火->逆时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "template": "火使节.png",
+                            "recommended roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
-                              "offDefaultMecha_Water"
+                                "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "template": "暗使节.png",
+                            "recommended roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "template": "光使节.png",
+                            "recommended roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "template": "风使节.png",
+                            "recommended roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "template": "地使节.png",
+                            "recommended roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "template": "水使节.png",
+                            "recommended roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
@@ -4992,45 +5442,75 @@
                     "name": "水->顺时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "template": "水使节.png",
+                            "recommended roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "template": "地使节.png",
+                            "recommended roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "template": "风使节.png",
+                            "recommended roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "template": "光使节.png",
+                            "recommended roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "template": "暗使节.png",
+                            "recommended roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "template": "火使节.png",
+                            "recommended roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
-                              "offDefaultMecha_Water"
+                                "offDefaultMecha_Water"
                             ]
                         },
                         "enabled": true
@@ -5040,43 +5520,73 @@
                     "name": "水->逆时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "template": "水使节.png",
+                            "recommended roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "template": "火使节.png",
+                            "recommended roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
-                              "offDefaultMecha_Water"
+                                "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "template": "暗使节.png",
+                            "recommended roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "template": "光使节.png",
+                            "recommended roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "template": "风使节.png",
+                            "recommended roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "template": "地使节.png",
+                            "recommended roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
@@ -5088,43 +5598,73 @@
                     "name": "土->顺时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "template": "地使节.png",
+                            "recommended roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "template": "风使节.png",
+                            "recommended roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "template": "光使节.png",
+                            "recommended roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "template": "暗使节.png",
+                            "recommended roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "template": "火使节.png",
+                            "recommended roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
-                              "offDefaultMecha_Water"
+                                "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "template": "水使节.png",
+                            "recommended roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
@@ -5136,43 +5676,73 @@
                     "name": "土->逆时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "template": "地使节.png",
+                            "recommended roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "template": "水使节.png",
+                            "recommended roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "template": "火使节.png",
+                            "recommended roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
-                              "offDefaultMecha_Water"
+                                "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "template": "暗使节.png",
+                            "recommended roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "template": "光使节.png",
+                            "recommended roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "template": "风使节.png",
+                            "recommended roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
@@ -5180,48 +5750,77 @@
                         "enabled": true
                     }
                 },
-
                 {
                     "name": "风->顺时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "template": "风使节.png",
+                            "recommended roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "template": "光使节.png",
+                            "recommended roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "template": "暗使节.png",
+                            "recommended roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "template": "火使节.png",
+                            "recommended roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
-                              "offDefaultMecha_Water"
+                                "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "template": "水使节.png",
+                            "recommended roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "template": "地使节.png",
+                            "recommended roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
@@ -5233,43 +5832,73 @@
                     "name": "风->逆时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "template": "风使节.png",
+                            "recommended roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "template": "地使节.png",
+                            "recommended roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "template": "水使节.png",
+                            "recommended roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "template": "火使节.png",
+                            "recommended roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
-                              "offDefaultMecha_Water"
+                                "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "template": "暗使节.png",
+                            "recommended roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "template": "光使节.png",
+                            "recommended roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
