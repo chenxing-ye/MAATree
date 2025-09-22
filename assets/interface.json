@@ -175,6 +175,17 @@
             "repeatable": false
         },
         {
+            "name": "限时活动日常(星降序言)",
+            "entry": "ActivityDaily",
+            "pipeline_override": {
+                "EnterDungeonMain": {
+                    "next": [
+                        "EnterStarFall"
+                    ]
+                }
+            }
+        },
+        {
             "name": "自动助战任务(+领取每日奖励)",
             "entry": "助战任务开始",
             "pipeline_override": {

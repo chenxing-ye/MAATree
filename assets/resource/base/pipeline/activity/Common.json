@@ -1,0 +1,118 @@
+{
+    "ActivityDaily": {
+        "next": [
+            "EnterDungeonMain"
+        ],
+        "interrupt": [
+            "返回主界面"
+        ]
+    },
+    "EnterDungeonMain": {
+        "recognition": "TemplateMatch",
+        "template": "主页出击.png",
+        "roi": [
+            866,
+            430,
+            394,
+            184
+        ],
+        "action": "Click",
+        "interrupt": [
+            "ClickLimit"
+        ]
+    },
+    "ClickLimit": {
+        "recognition": "OCR",
+        "expected": "限时",
+        "roi": [
+            619,
+            102,
+            57,
+            28
+        ],
+        "action": "Click"
+    },
+    "ActivyDungeonBattling": {
+        "recognition": "OCR",
+        "expected": "回合",
+        "roi": [
+            12,
+            16,
+            41,
+            27
+        ],
+        "action": "Click",
+        "post_delay": 3000
+    },
+    "ActivyDungeonSelectAssist": {
+        "recognition": "TemplateMatch",
+        "template": "activity/common/出击__1168_589_66_37__1118_539_162_137.png",
+        "roi": [
+            596,
+            60,
+            175,
+            29
+        ],
+        "next": [
+            "ActivyDungeonSelectAssist1"
+        ]
+    },
+    "ActivyDungeonSelectAssist1": {
+        "target": [
+            263,
+            367,
+            21,
+            17
+        ],
+        "action": "Click",
+        "next": [
+            "ActivyDungeonSelectAssist2"
+        ]
+    },
+    "ActivyDungeonSelectAssist2": {
+        "recognition": "TemplateMatch",
+        "template": "activity/common/出击__1168_589_66_37__1118_539_162_137.png",
+        "roi": [
+            1168,
+            589,
+            66,
+            37
+        ],
+        "action": "Click"
+    },
+    "ActivyShopSwipLeft": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    889,
+                    333,
+                    26,
+                    31
+                ],
+                "end": [
+                    406,
+                    337,
+                    27,
+                    27
+                ],
+                "duration": 1000
+            }
+        }
+    },
+    "ActivyClickBlackClose": {
+        "recognition": "OCR",
+        "expected": [
+            "点击",
+            "空白",
+            "关闭"
+        ],
+        "roi": [
+            576,
+            621,
+            131,
+            33
+        ],
+        "action": "Click"
+    }
+}

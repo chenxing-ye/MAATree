@@ -1,0 +1,424 @@
+{
+    "EnterStarFall": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/星降序言__96_450_220_79__46_400_320_179.png",
+        "roi": [
+            96,
+            450,
+            220,
+            79
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallMain"
+        ]
+    },
+    "StarFallMain": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/星降序言主界面__782_95_377_120__732_45_477_220.png",
+        "roi": [
+            782,
+            95,
+            377,
+            120
+        ],
+        "action": "Click",
+        "next": [
+            "EnterStarFallDungeon"
+        ]
+    },
+    "EnterStarFallDungeon": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/副本入口__789_323_169_64__739_273_269_164.png",
+        "roi": [
+            789,
+            323,
+            169,
+            64
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallDungeonMain"
+        ]
+    },
+    "StarFallDungeonMain": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/返回副本主界面__441_377_267_48__391_327_367_148.png",
+        "roi": [
+            441,
+            377,
+            267,
+            48
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallSoloHard"
+        ],
+        "interrupt": [
+            "StarFallSoloMultiSwitch"
+        ]
+    },
+    "StarFallSoloMultiSwitch": {
+        "recognition": "OCR",
+        "expected": [
+            "单人",
+            "单",
+            "人"
+        ],
+        "roi": [
+            541,
+            635,
+            56,
+            35
+        ],
+        "action": "Click"
+    },
+    "StarFallSoloHard": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/单人困难__1017_388_78_56__967_338_178_156.png",
+        "roi": [
+            1017,
+            388,
+            78,
+            56
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallSoloPrepare"
+        ]
+    },
+    "StarFallSoloPrepare": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/副本开启挑战__1023_615_168_63__973_565_268_155.png",
+        "roi": [
+            1023,
+            615,
+            168,
+            63
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallSoloFinish",
+            "StarFallSoloPrepare"
+        ],
+        "interrupt": [
+            "ActivyDungeonSelectAssist",
+            "ActivyDungeonBattling",
+            "StarFallAddAP"
+        ]
+    },
+    "StarFallAddAP": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/体力药使用__779_407_45_30__729_357_145_130.png",
+        "roi": [
+            779,
+            407,
+            455,
+            30
+        ],
+        "action": "Click"
+    },
+    "StarFallSoloFinish": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/战斗结束返回__1153_650_59_38__1103_600_159_120.png",
+        "roi": [
+            1153,
+            650,
+            59,
+            38
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallMultiHard",
+            "StarFallSoloFinish"
+        ],
+        "interrupt": [
+            "StarFallSoloMultiSwitch"
+        ]
+    },
+    "StarFallMultiHard": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/多人困难__1098_280_72_53__1048_230_172_153.png",
+        "roi": [
+            1098,
+            280,
+            72,
+            53
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallMultiPrepare"
+        ]
+    },
+    "StarFallMultiPrepare": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/副本开启挑战__1023_615_168_63__973_565_268_155.png",
+        "roi": [
+            1023,
+            615,
+            168,
+            63
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallCreateRoom"
+        ]
+    },
+    "StarFallCreateRoom": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/创建招募__1026_662_84_26__976_612_184_108.png",
+        "roi": [
+            1026,
+            662,
+            84,
+            26
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallCreateRoomOK"
+        ]
+    },
+    "StarFallCreateRoomOK": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/创建房间确定__755_586_56_36__705_536_156_136.png",
+        "roi": [
+            755,
+            586,
+            56,
+            36
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallMultiAddBP"
+        ]
+    },
+    "StarFallMultiAddBP": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/加体力__1226_25_39_32__1176_0_104_107.png",
+        "roi": [
+            1226,
+            25,
+            39,
+            32
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallMultiAddBPOK"
+        ]
+    },
+    "StarFallMultiAddBPOK": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/体力药使用__779_407_45_30__729_357_145_130.png",
+        "roi": [
+            779,
+            407,
+            455,
+            30
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallMultiStart"
+        ]
+    },
+    "StarFallMultiStart": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/房间内出击__1149_649_55_38__1099_599_155_121.png",
+        "roi": [
+            1149,
+            649,
+            55,
+            38
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallMultiFinish",
+            "StarFallMultiStart"
+        ],
+        "interrupt": [
+            "ActivyDungeonSelectAssist",
+            "ActivyDungeonBattling"
+        ]
+    },
+    "StarFallMultiFinish": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/活动多人战斗结束退出房间__1129_654_103_33__1079_604_201_116.png",
+        "roi": [
+            1129,
+            654,
+            103,
+            33
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallMultiReturn",
+            "StarFallMultiFinish"
+        ]
+    },
+    "StarFallMultiReturn": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/返回上一级按钮__26_17_68_49__0_0_144_116.png",
+        "roi": [
+            26,
+            17,
+            68,
+            49
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallDungeonMain1"
+        ]
+    },
+    "StarFallDungeonMain1": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/返回副本主界面__441_377_267_48__391_327_367_148.png",
+        "roi": [
+            441,
+            377,
+            267,
+            48
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallShop"
+        ]
+    },
+    "StarFallShop": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/活动商店__60_329_129_39__10_279_229_139.png",
+        "roi": [
+            60,
+            329,
+            129,
+            39
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallShopSecond"
+        ]
+    },
+    "StarFallShopSecond": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/流星集市__837_614_113_35__787_564_213_135.png",
+        "roi": [
+            837,
+            614,
+            113,
+            35
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallShopBuyGold"
+        ],
+        "interrupt": [
+            "ActivyShopSwipLeft"
+        ]
+    },
+    "StarFallShopBuyGold": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/活动商店金币__1102_427_109_71__1052_377_209_171.png",
+        "roi": [
+            621,
+            145,
+            658,
+            419
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallShopBuyGoldOK"
+        ]
+    },
+    "StarFallShopBuyGoldOK": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/活动商店金币确认购买__794_594_53_31__744_544_153_131.png",
+        "roi": [
+            794,
+            594,
+            53,
+            31
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": [
+            "StarFallShopReturn"
+        ],
+        "interrupt": [
+            "ActivyClickBlackClose"
+        ]
+    },
+    "StarFallShopReturn": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/返回上一级按钮__26_17_68_49__0_0_144_116.png",
+        "roi": [
+            26,
+            17,
+            68,
+            49
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallTask"
+        ]
+    },
+    "StarFallTask": {
+        "recognition": "TemplateMatch",
+        "template": "activity/starFall/活动任务__62_229_128_42__12_179_228_142.png",
+        "roi": [
+            62,
+            229,
+            128,
+            42
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallTaskGain",
+            "StarFallTaskCant"
+        ]
+    },
+    "StarFallTaskGain": {
+        "recognition": "ColorMatch",
+        "lower": [
+            250,
+            250,
+            250
+        ],
+        "upper": [
+            255,
+            255,
+            255
+        ],
+        "roi": [
+            67,
+            302,
+            4,
+            3
+        ],
+        "action": "Click",
+        "next": [
+            "StarFallTaskGain",
+            "StarFallTaskCant"
+        ],
+        "interrupt": [
+            "ActivyClickBlackClose"
+        ]
+    },
+    "StarFallTaskCant": {
+        "recognition": "ColorMatch",
+        "lower": [
+            104,
+            105,
+            108
+        ],
+        "upper": [
+            106,
+            107,
+            110
+        ],
+        "roi": [
+            67,
+            302,
+            4,
+            3
+        ],
+        "action": "Click"
+    }
+}

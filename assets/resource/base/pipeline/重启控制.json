@@ -215,5 +215,31 @@
             25
         ],
         "action": "Click"
+    },
+    "返回主界面": {
+        "next": [
+            "主页检测"
+        ],
+        "interrupt": [
+            "返回主页按钮",
+            "取消",
+            "点击空白处关闭",
+            "领取物资",
+            "关闭页面1",
+            "关闭周历",
+            "紧那罗结束讨伐"
+        ],
+        "on_error": "stopapp"
+    },
+    "返回主页按钮": {
+        "recognition": "TemplateMatch",
+        "template": "返回主页.png",
+        "action": "Click",
+        "roi": [
+            0,
+            0,
+            245,
+            74
+        ]
     }
 }
