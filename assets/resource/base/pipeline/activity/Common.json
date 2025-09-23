@@ -46,7 +46,7 @@
     },
     "ActivyDungeonSelectAssist": {
         "recognition": "TemplateMatch",
-        "template": "activity/common/出击__1168_589_66_37__1118_539_162_137.png",
+        "template": "activity/common/选择支援虚数体界面__596_60_175_29__546_10_275_129.png",
         "roi": [
             596,
             60,
