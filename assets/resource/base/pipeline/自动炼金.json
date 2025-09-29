@@ -73,10 +73,15 @@
     },
     "点击工坊": {
         "recognition": "TemplateMatch",
-        "template": "工坊.png",
+        "template": "Main/工坊__116_651_93_37__66_601_193_119.png",
         "action": "Click",
         "pre_delay": 500,
-        "roi" : [40,640,178,76],
+        "roi": [
+            116,
+            651,
+            93,
+            37
+        ],
         "timeout": 3000,
         "post_delay": 700,
         "on_error": "stopapp",
@@ -597,6 +602,24 @@
         ],
         "interrupt": "lc点击空白处"
     },
+    "一键炼成_珍品熔炼_清空选择": {
+        // 增加清空选择，否则自动选择偶尔会浪费半格
+        "recognition": "TemplateMatch",
+        "template": "Alchemy/炼金清空选择__701_26_76_28__651_0_176_104.png",
+        "roi": [
+            701,
+            26,
+            76,
+            28
+        ],
+        "action": "Click",
+        "timeout": 3000,
+        "on_error": "stopapp",
+        "next": [
+            "一键炼成_珍品熔炼_一键选择"
+        ],
+        "interrupt": "lc点击空白处"
+    },
     "一键炼成_珍品熔炼_炼成": {
         "recognition": "OCR",
         "expected": "炼成",
@@ -612,7 +635,7 @@
         "post_delay": 1500,
         "on_error": "stopapp",
         "next": [
-            "一键炼成_珍品熔炼_一键选择"
+            "一键炼成_珍品熔炼_清空选择"
         ],
         "interrupt": "lc点击空白处"
     },
@@ -709,7 +732,12 @@
     "一键炼成_常规奥秘_异种核心_材料1": {
         "recognition": "TemplateMatch",
         "template": "异种核心-火.png",
-        "roi" : [44,91,720,303],
+        "roi": [
+            44,
+            91,
+            720,
+            303
+        ],
         "action": "Click",
         "pre_delay": 100,
         "post_delay": 300,
@@ -819,7 +847,12 @@
     "一键炼成_常规奥秘_奥秘精粹_材料1": {
         "recognition": "TemplateMatch",
         "template": "奥秘精粹.png",
-        "roi" : [44,91,720,303],
+        "roi": [
+            44,
+            91,
+            720,
+            303
+        ],
         "action": "Click",
         "pre_delay": 100,
         "post_delay": 300,
@@ -1019,7 +1052,12 @@
     "一键炼成_常规奥秘_奇元八面体_材料1": {
         "recognition": "TemplateMatch",
         "template": "奇元八面体-火.png",
-        "roi" : [44,91,720,303],
+        "roi": [
+            44,
+            91,
+            720,
+            303
+        ],
         "action": "Click",
         "pre_delay": 100,
         "post_delay": 300,
@@ -1130,7 +1168,12 @@
     "一键炼成_常规奥秘_奥秘因子_材料1": {
         "recognition": "TemplateMatch",
         "template": "奥秘因子.png",
-        "roi" : [44,91,720,303],
+        "roi": [
+            44,
+            91,
+            720,
+            303
+        ],
         "action": "Click",
         "pre_delay": 100,
         "post_delay": 300,
@@ -1298,5 +1341,4 @@
             93
         ]
     }
-
 }

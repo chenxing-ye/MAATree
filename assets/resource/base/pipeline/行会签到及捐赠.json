@@ -10,7 +10,12 @@
     "确认是否在主页_捐赠": {
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
-        "roi" : [866,430,394,184],
+        "roi": [
+            866,
+            430,
+            394,
+            184
+        ],
         "pre_delay": 10,
         "post_delay": 10,
         "next": [
@@ -22,8 +27,13 @@
     },
     "点击行会": {
         "recognition": "TemplateMatch",
-        "template" : "工会.png",
-        "roi" : [320,634,157,80],
+        "template": "Guild/工会__366_662_52_19__316_612_152_108.png",
+        "roi": [
+            366,
+            662,
+            52,
+            19
+        ],
         "action": "Click",
         "pre_delay": 100,
         "post_delay": 800,
