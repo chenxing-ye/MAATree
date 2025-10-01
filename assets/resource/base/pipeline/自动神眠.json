@@ -24,6 +24,7 @@
             "返回主页检测"
         ],
         "interrupt": [
+            "扫荡结果确认",
             "退出"
         ],
         "timeout": 3000,
@@ -32,7 +33,12 @@
     "确认是否在主页_自动神眠": {
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
-        "roi" : [866,430,394,184],
+        "roi": [
+            866,
+            430,
+            394,
+            184
+        ],
         "action": "Click",
         "next": [
             "点击神眠之地",
@@ -131,8 +137,13 @@
     },
     "懊悔的新生": {
         "recognition": "TemplateMatch",
-        "template" : "懊悔的新生.png",
-        "roi" : [21,132,1213,495],
+        "template": "懊悔的新生.png",
+        "roi": [
+            21,
+            132,
+            1213,
+            495
+        ],
         "action": "Click",
         "enabled": false,
         "post_delay": 500,
@@ -292,8 +303,13 @@
     },
     "褪色的罪人": {
         "recognition": "TemplateMatch",
-        "template" : "褪色的罪人.png",
-        "roi" : [67,233,1082,384],
+        "template": "褪色的罪人.png",
+        "roi": [
+            67,
+            233,
+            1082,
+            384
+        ],
         "action": "Click",
         "enabled": false,
         "next": "选择难度_褪色的罪人",
@@ -308,7 +324,12 @@
         // 150级 "roi" : [800,349,36,45]
         // 160级 "roi" : [801,457,35,55]
         "doc": "160级",
-        "target": [801,457,35,55],
+        "target": [
+            801,
+            457,
+            35,
+            55
+        ],
         "action": "Click",
         "next": "扫荡_褪色的罪人",
         "pre_delay": 400,
@@ -715,6 +736,17 @@
         "next": [
             "识别到返回__神眠_结束",
             "停止"
+        ]
+    },
+    "扫荡结果确认": {
+        "recognition": "TemplateMatch",
+        "template": "GoldSleep/扫荡结果确认__856_654_77_41__806_604_177_116.png",
+        "action": "Click",
+        "roi": [
+            856,
+            654,
+            77,
+            41
         ]
     }
 }
