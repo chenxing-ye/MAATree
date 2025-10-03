@@ -10,7 +10,10 @@
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
         "roi" : [847,299,415,346],
-        "next": "zx识别主线1",
+        "next": [
+            "zx识别主线1",
+            "zx识别是否在主页"
+        ],
         "post_delay": 500,
         "action": "Click",
         "timeout": 3000,
@@ -144,7 +147,8 @@
             49
         ],
         "next": [
-            "zx进入补体页面"
+            "zx进入补体页面",
+            "检测补体0"
         ],
         "action": "Click",
         "timeout": 3000,
@@ -548,5 +552,101 @@
         "focus": true,
         "focus_tip_color": "Blue",
         "focus_tip": "未找到体力药"
+    },
+    "扫荡极难材料": {
+        "recognition": "TemplateMatch",
+        "template": "Story/极难深空之钥__524_218_20_21__474_168_120_121.png",
+        "threshold": 0.95,
+        "roi": [
+            221,
+            190,
+            757,
+            381
+        ],
+        "next": [
+            "极难材料点击扫荡",
+            "扫荡极难材料"
+        ],
+        "action": "Click",
+        "post_delay": 500,
+        "timeout": 3000
+    },
+    "极难材料点击扫荡": {
+        "recognition": "OCR",
+        "expected": "扫荡",
+        "roi": [
+            909,
+            623,
+            83,
+            50
+        ],
+        "next": [
+            "极难材料确定扫荡",
+            "极难材料已扫荡"
+        ],
+        "action": "Click",
+        "post_delay": 500,
+        "timeout": 3000
+    },
+    "极难材料确定扫荡": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            607,
+            465,
+            60,
+            34
+        ],
+        "next": [
+            "zx扫荡完成"
+        ],
+        "action": "Click",
+        "post_delay": 500,
+        "timeout": 3000
+    },
+    "极难材料已扫荡": {
+        "recognition": "OCR",
+        "expected": [
+            "次数"
+        ],
+        "roi": [
+            543,
+            342,
+            199,
+            41
+        ],
+        "next": [
+            "zx识别结束",
+            "zx下一章"
+        ],
+        "action": "Click",
+        "post_delay": 500,
+        "timeout": 3000
+    },
+    "体力判定足够": {
+        "recognition": "OCR",
+        "expected": "^([3-9]\\d|[1-9]\\d{2})$",
+        "roi": [
+            1134,
+            32,
+            47,
+            28
+        ],
+        "next": [
+            "扫荡极难材料"
+        ]
+    },
+    "体力判定不足": {
+        "recognition": "OCR",
+        "expected": "^([0-9]|[1-2]\\d)$",
+        "roi": [
+            1133,
+            30,
+            48,
+            34
+        ],
+        "next": [
+            "检测补体0"
+        ]
     }
 }
