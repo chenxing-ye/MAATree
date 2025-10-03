@@ -14,7 +14,8 @@
         "action": "Click",
         "next": [
             "点击自动战斗",
-            "切换到中途模式"
+            "切换到中途模式",
+            "加入战斗"
         ],
         "timeout": 3000,
         "on_error": "stopapp"
