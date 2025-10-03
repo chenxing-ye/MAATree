@@ -1374,6 +1374,7 @@
       "recognizeEnteringTheRoom_1_Dark",
       "recognizeEnteringTheRoom_Dark",
       "battleVictory_Dark",
+      "battleDefeat_Dark",
       "网络连接断开"
     ],
     "rate_limit": 1000,
@@ -1386,6 +1387,7 @@
     "timeout": 900000,
     "next": [
       "battleVictory_Dark",
+      "battleDefeat_Dark",
       "deathInBattle_Dark",
       "网络连接断开"
     ],
@@ -1409,6 +1411,24 @@
     ],
     "on_error": "stopapp"
   },
+  "battleDefeat_Dark": {
+    "recognition": "TemplateMatch",
+    "template": "Kinnara/紧那罗战斗失败__402_136_453_116__352_86_553_216.png",
+    "roi": [
+      402,
+      136,
+      453,
+      116
+    ],
+    "rate_limit": 600,
+    "action": "Click",
+    "pre_delay": 800,
+    "next": [
+      "teamBattleKinnara",
+      "网络连接断开"
+    ],
+    "on_error": "stopapp"
+  },
   "deathInBattle_Dark": {
     "recognition": "TemplateMatch",
     "template": "取消.png",
@@ -1417,6 +1437,7 @@
     "action": "Click",
     "next": [
       "battleVictory_Dark",
+      "battleDefeat_Dark",
       "网络连接断开"
     ],
     "on_error": "deathInBattle_Dark"
@@ -1570,6 +1591,7 @@
       "recognizeEnteringTheRoom_1_Kinnara",
       "recognizeEnteringTheRoom_Kinnara",
       "battleVictory_Kinnara",
+      "battleTimeout_Kinnara",
       "网络连接断开"
     ],
     "rate_limit": 1000,
@@ -1583,6 +1605,7 @@
     "next": [
       "battleVictory_Kinnara",
       "deathInBattle_Kinnara",
+      "battleTimeout_Kinnara",
       "网络连接断开"
     ],
     "rate_limit": 1500,
@@ -1613,7 +1636,23 @@
     "action": "Click",
     "next": [
       "battleVictory_Kinnara",
+      "battleTimeout_Kinnara",
       "网络连接断开"
+    ],
+    "on_error": "deathInBattle_Kinnara"
+  },
+  "battleTimeout_Kinnara": {
+    //紧那罗超时会直接回到紧那罗讨伐主界面
+    "recognition": "OCR",
+    "expected": [
+      "加入讨伐队",
+      "讨伐"
+    ],
+    "roi": [
+      874,
+      625,
+      118,
+      33
     ],
     "on_error": "deathInBattle_Kinnara"
   },
