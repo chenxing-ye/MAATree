@@ -68,7 +68,8 @@
             "点击空白处关闭",
             "领取物资",
             "关闭页面1",
-            "关闭周历"
+            "关闭周历",
+            "KinnaraFinishBatttle"
         ]
     },
     "重试": {
@@ -169,13 +170,19 @@
     "礼包检测": {
         "recognition": "TemplateMatch",
         "template" : "主页礼包.png",
-        "roi" : [14,156,171,176],
+        "roi": [
+            12,
+            110,
+            151,
+            391
+        ],
         "interrupt": [
             "取消",
             "点击空白处关闭",
             "领取物资",
             "关闭页面1",
-            "关闭周历"
+            "关闭周历",
+            "KinnaraFinishBatttle"
         ]
     },
     "主页检测": {
@@ -183,13 +190,19 @@
 //        "template": "主页出击.png",
 //        "roi" : [847,299,415,346],
         "template" : "主页礼包.png",
-        "roi" : [3,116,248,292],
+        "roi": [
+            12,
+            110,
+            151,
+            391
+        ],
         "interrupt": [
             "取消",
             "点击空白处关闭",
             "领取物资",
             "关闭页面1",
-            "关闭周历"
+            "关闭周历",
+            "KinnaraFinishBatttle"
         ],
         "next": [
             "礼包检测"
@@ -209,5 +222,53 @@
         "timeout": 8000,
         "next": "主页检测",
         "on_error": "返回主页检测"
+    },
+    "KinnaraFinishBatttle": {
+        "recognition": "TemplateMatch",
+        "template": "Kinnara/紧那罗结束讨伐__1110_631_104_25__1060_581_204_125.png",
+        "roi": [
+            1110,
+            631,
+            104,
+            25
+        ],
+        "action": "Click"
+    },
+    "ReturnMain": {
+        "next": [
+            "MainFlag"
+        ],
+        "interrupt": [
+            "ReturnMainButton",
+            "取消",
+            "点击空白处关闭",
+            "领取物资",
+            "关闭页面1",
+            "关闭周历",
+            "KinnaraFinishBatttle"
+        ],
+        "on_error": "stopapp"
+    },
+    "ReturnMainButton": {
+        "recognition": "TemplateMatch",
+        "template": "Common/返回主界面按钮__118_25_37_30__68_0_137_105.png",
+        "action": "Click",
+        "roi": [
+            118,
+            25,
+            37,
+            30
+        ]
+    },
+    "MainFlag": {
+        "recognition": "TemplateMatch",
+        "template": "Main/主界面标识__1028_461_79_82__978_411_179_182.png",
+        "action": "Click",
+        "roi": [
+            1028,
+            461,
+            79,
+            82
+        ]
     }
 }
