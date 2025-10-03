@@ -1,0 +1,137 @@
+{
+    "MaterailSweep": {
+        "next": [
+            "MaterailMain",
+            "EnterDungeonMain"
+        ],
+        "interrupt": [
+            "ReturnMain"
+        ]
+    },
+    "ClickMaterail": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    330,
+                    100,
+                    59,
+                    30
+                ],
+                "expected": "素材"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "SelectMaterailFirst"
+        ],
+        "interrupt": [
+            "SelectMaterailSwipeLeft"
+        ]
+    },
+    "SelectMaterailFirst": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    56,
+                    499,
+                    1152,
+                    40
+                ],
+                "template": "MaterailSweep/束身修行__144_503_101_33__94_453_201_133.png"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "SelectMaterailSecond"
+        ]
+    },
+    "SelectMaterailSecond": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    8,
+                    185,
+                    1240,
+                    352
+                ],
+                "template": "MaterailSweep/训练特级__613_483_92_40__563_433_192_140.png",
+                "threshold": 0.9
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "MaterailMain",
+            "SelectMaterailSecond"
+        ]
+    },
+    "MaterailMain": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    877,
+                    111,
+                    146,
+                    52
+                ],
+                "expected": "战斗训练"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "AddBPButton"
+        ]
+    },
+    "SelectMaterailSwipeLeft": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    889,
+                    333,
+                    26,
+                    31
+                ],
+                "end": [
+                    406,
+                    337,
+                    27,
+                    27
+                ],
+                "duration": 1000
+            }
+        }
+    },
+    "SelectMaterailSwipeRight": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "end": [
+                    889,
+                    333,
+                    26,
+                    31
+                ],
+                "begin": [
+                    406,
+                    337,
+                    27,
+                    27
+                ],
+                "duration": 1000
+            }
+        }
+    }
+}

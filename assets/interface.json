@@ -100,6 +100,27 @@
             "repeatable": false
         },
         {
+            "name": "素材关卡扫荡",
+            "entry": "MaterailSweep",
+            "pipeline_override": {
+                "AddBPConfirm": {
+                    "next": "Sweep"
+                },
+                "AddBPClose": {
+                    "next": "Sweep"
+                },
+                "EnterDungeonMain": {
+                    "next": "ClickMaterail"
+                }
+            },
+            "option": [
+                "素材关卡选择",
+                "素材关卡每轮体力"
+            ],
+            "repeatable": true,
+            "repeat_count": 1
+        },
+        {
             "name": "行会签到及捐赠",
             "entry": "开始行会签到及捐赠",
             "pipeline_override": {
@@ -789,6 +810,18 @@
         },
         "连战次数": {
             "cases": [
+                {
+                    "name": "6次(日常)",
+                    "pipeline_override": {
+                        "输入连战次数": {
+                            "input_text": "6"
+                        },
+                        "识别是否到达限定次数": {
+                            "expected": "6",
+                            "enabled": true
+                        }
+                    }
+                },
                 {
                     "name": "10次",
                     "pipeline_override": {
@@ -5275,6 +5308,317 @@
                             ]
                         },
                         "enabled": true
+                    }
+                }
+            ]
+        },
+        "素材关卡选择": {
+            "cases": [
+                {
+                    "name": "武备特级",
+                    "pipeline_override": {
+                        "SelectMaterailFirst": {
+                            "template": "MaterailSweep/束身修行__144_503_101_33__94_453_201_133.png"
+                        },
+                        "SelectMaterailSecond": {
+                            "template": "MaterailSweep/武备特级__613_244_90_37__563_194_190_137.png"
+                        },
+                        "MaterailMain": {
+                            "expected": "武备整顿"
+                        }
+                    }
+                },
+                {
+                    "name": "训练特级",
+                    "pipeline_override": {
+                        "SelectMaterailFirst": {
+                            "template": "MaterailSweep/束身修行__144_503_101_33__94_453_201_133.png"
+                        },
+                        "SelectMaterailSecond": {
+                            "template": "MaterailSweep/训练特级__613_483_92_40__563_433_192_140.png"
+                        },
+                        "MaterailMain": {
+                            "expected": "战斗训练"
+                        }
+                    }
+                },
+                {
+                    "name": "雾水特级",
+                    "pipeline_override": {
+                        "SelectMaterailFirst": {
+                            "template": "MaterailSweep/炽焰雾水__752_505_105_33__702_455_205_133.png"
+                        },
+                        "SelectMaterailSecond": {
+                            "template": "MaterailSweep/雾水特级__808_246_96_33__758_196_196_133.png"
+                        },
+                        "MaterailMain": {
+                            "expected": "雾水遗迹"
+                        }
+                    }
+                },
+                {
+                    "name": "炽焰特级",
+                    "pipeline_override": {
+                        "SelectMaterailFirst": {
+                            "template": "MaterailSweep/炽焰雾水__752_505_105_33__702_455_205_133.png"
+                        },
+                        "SelectMaterailSecond": {
+                            "template": "MaterailSweep/炽焰特级__810_481_86_38__760_431_186_138.png"
+                        },
+                        "MaterailMain": {
+                            "expected": "炽焰遗迹"
+                        }
+                    }
+                },
+                {
+                    "name": "崭岩特级",
+                    "pipeline_override": {
+                        "SelectMaterailFirst": {
+                            "template": "MaterailSweep/崭岩驰风__741_503_101_32__691_453_201_132.png"
+                        },
+                        "SelectMaterailSecond": {
+                            "template": "MaterailSweep/崭岩特级__809_485_90_36__759_435_190_136.png"
+                        },
+                        "MaterailMain": {
+                            "expected": "崭岩遗迹"
+                        }
+                    }
+                },
+                {
+                    "name": "驰风特级",
+                    "pipeline_override": {
+                        "SelectMaterailFirst": {
+                            "template": "MaterailSweep/崭岩驰风__741_503_101_32__691_453_201_132.png"
+                        },
+                        "SelectMaterailSecond": {
+                            "template": "MaterailSweep/驰风特级__812_242_84_41__762_192_184_141.png"
+                        },
+                        "MaterailMain": {
+                            "expected": "驰风遗迹"
+                        }
+                    }
+                },
+                {
+                    "name": "迷暗特级",
+                    "pipeline_override": {
+                        "SelectMaterailFirst": {
+                            "template": "MaterailSweep/胧光迷暗__1043_504_104_33__993_454_204_133.png"
+                        },
+                        "SelectMaterailSecond": {
+                            "template": "MaterailSweep/迷暗特级__809_243_89_39__759_193_189_139.png"
+                        },
+                        "MaterailMain": {
+                            "expected": "迷暗遗迹"
+                        }
+                    }
+                },
+                {
+                    "name": "胧光特级",
+                    "pipeline_override": {
+                        "SelectMaterailFirst": {
+                            "template": "MaterailSweep/胧光迷暗__1043_504_104_33__993_454_204_133.png"
+                        },
+                        "SelectMaterailSecond": {
+                            "template": "MaterailSweep/胧光特级__810_481_88_37__760_431_188_137.png"
+                        },
+                        "MaterailMain": {
+                            "expected": "胧光遗迹"
+                        }
+                    }
+                },
+                {
+                    "name": "苍雷",
+                    "pipeline_override": {
+                        "SelectMaterailFirst": {
+                            "template": "MaterailSweep/职业试炼__449_502_99_34__399_452_199_134.png",
+                            "interrupt": [
+                                "SelectMaterailSwipeRight"
+                            ]
+                        },
+                        "SelectMaterailSecond": {
+                            "template": "MaterailSweep/职业试炼苍雷__287_479_80_44__237_429_180_144.png",
+                            "target_offset": [
+                                -50,
+                                -30,
+                                0,
+                                0
+                            ]
+                        },
+                        "MaterailMain": {
+                            "expected": "职业试炼"
+                        }
+                    }
+                },
+                {
+                    "name": "刃舞",
+                    "pipeline_override": {
+                        "SelectMaterailFirst": {
+                            "template": "MaterailSweep/职业试炼__449_502_99_34__399_452_199_134.png"
+                        },
+                        "SelectMaterailSecond": {
+                            "template": "MaterailSweep/职业试炼刃舞__497_475_80_44__447_425_180_144.png",
+                            "target_offset": [
+                                -50,
+                                -30,
+                                0,
+                                0
+                            ]
+                        },
+                        "MaterailMain": {
+                            "expected": "职业试炼"
+                        }
+                    }
+                },
+                {
+                    "name": "送葬",
+                    "pipeline_override": {
+                        "SelectMaterailFirst": {
+                            "template": "MaterailSweep/职业试炼__449_502_99_34__399_452_199_134.png"
+                        },
+                        "SelectMaterailSecond": {
+                            "template": "MaterailSweep/职业试炼送葬__707_476_80_44__657_426_180_144.png",
+                            "target_offset": [
+                                -50,
+                                -30,
+                                0,
+                                0
+                            ]
+                        },
+                        "MaterailMain": {
+                            "expected": "职业试炼"
+                        }
+                    }
+                },
+                {
+                    "name": "颂歌",
+                    "pipeline_override": {
+                        "SelectMaterailFirst": {
+                            "template": "MaterailSweep/职业试炼__449_502_99_34__399_452_199_134.png"
+                        },
+                        "SelectMaterailSecond": {
+                            "template": "MaterailSweep/职业试炼颂歌__917_478_80_44__867_428_180_144.png",
+                            "target_offset": [
+                                -50,
+                                -30,
+                                0,
+                                0
+                            ]
+                        },
+                        "MaterailMain": {
+                            "expected": "职业试炼"
+                        }
+                    }
+                },
+                {
+                    "name": "共鸣",
+                    "pipeline_override": {
+                        "SelectMaterailFirst": {
+                            "template": "MaterailSweep/职业试炼__449_502_99_34__399_452_199_134.png",
+                            "interrupt": [
+                                "SelectMaterailSwipeLeft"
+                            ]
+                        },
+                        "SelectMaterailSecond": {
+                            "template": "MaterailSweep/职业试炼共鸣__1127_478_80_44__1077_428_180_144.png",
+                            "target_offset": [
+                                -50,
+                                -30,
+                                0,
+                                0
+                            ]
+                        },
+                        "MaterailMain": {
+                            "expected": "职业试炼"
+                        }
+                    }
+                }
+            ]
+        },
+        "素材关卡每轮体力": {
+            "cases": [
+                {
+                    "name": "500",
+                    "pipeline_override": {
+                        "CheckBPON": {
+                            "expected": "^([5-9]\\d{2})$"
+                        },
+                        "CheckBPOFF": {
+                            "expected": "^([0-9]|[1-9]\\d|[1-4]\\d{2})$"
+                        },
+                        "CheckAddBPON": {
+                            "expected": "^([5-9]\\d{2})$"
+                        },
+                        "CheckAddBPOFF": {
+                            "expected": "^([0-9]|[1-9]\\d|[1-4]\\d{2})$"
+                        }
+                    }
+                },
+                {
+                    "name": "600",
+                    "pipeline_override": {
+                        "CheckBPON": {
+                            "expected": "^([6-9]\\d{2})$"
+                        },
+                        "CheckBPOFF": {
+                            "expected": "^([0-9]|[1-9]\\d|[1-5]\\d{2})$"
+                        },
+                        "CheckAddBPON": {
+                            "expected": "^([6-9]\\d{2})$"
+                        },
+                        "CheckAddBPOFF": {
+                            "expected": "^([0-9]|[1-9]\\d|[1-5]\\d{2})$"
+                        }
+                    }
+                },
+                {
+                    "name": "700",
+                    "pipeline_override": {
+                        "CheckBPON": {
+                            "expected": "^([7-9]\\d{2})$"
+                        },
+                        "CheckBPOFF": {
+                            "expected": "^([0-9]|[1-9]\\d|[1-6]\\d{2})$"
+                        },
+                        "CheckAddBPON": {
+                            "expected": "^([7-9]\\d{2})$"
+                        },
+                        "CheckAddBPOFF": {
+                            "expected": "^([0-9]|[1-9]\\d|[1-6]\\d{2})$"
+                        }
+                    }
+                },
+                {
+                    "name": "800",
+                    "pipeline_override": {
+                        "CheckBPON": {
+                            "expected": "^([8-9]\\d{2})$"
+                        },
+                        "CheckBPOFF": {
+                            "expected": "^([0-9]|[1-9]\\d|[1-7]\\d{2})$"
+                        },
+                        "CheckAddBPON": {
+                            "expected": "^([8-9]\\d{2})$"
+                        },
+                        "CheckAddBPOFF": {
+                            "expected": "^([0-9]|[1-9]\\d|[1-7]\\d{2})$"
+                        }
+                    }
+                },
+                {
+                    "name": "900",
+                    "pipeline_override": {
+                        "CheckBPON": {
+                            "expected": "^(9\\d{2})$"
+                        },
+                        "CheckBPOFF": {
+                            "expected": "^([0-9]|[1-9]\\d|[1-8]\\d{2})$"
+                        },
+                        "CheckAddBPON": {
+                            "expected": "^(9\\d{2})$"
+                        },
+                        "CheckAddBPOFF": {
+                            "expected": "^([0-9]|[1-9]\\d|[1-8]\\d{2})$"
+                        }
                     }
                 }
             ]
