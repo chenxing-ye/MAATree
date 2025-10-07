@@ -4,21 +4,7 @@
             "EnterDungeonMain"
         ],
         "interrupt": [
-            "返回主界面"
-        ]
-    },
-    "EnterDungeonMain": {
-        "recognition": "TemplateMatch",
-        "template": "主页出击.png",
-        "roi": [
-            866,
-            430,
-            394,
-            184
-        ],
-        "action": "Click",
-        "interrupt": [
-            "ClickLimit"
+            "ReturnMain"
         ]
     },
     "ClickLimit": {

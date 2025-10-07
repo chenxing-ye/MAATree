@@ -11,10 +11,10 @@
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
         "roi": [
-            866,
-            430,
-            394,
-            184
+            847,
+            299,
+            415,
+            346
         ],
         "pre_delay": 10,
         "post_delay": 10,

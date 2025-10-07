@@ -18,10 +18,10 @@
     "recognition": "TemplateMatch",
     "template": "主页出击.png",
     "roi": [
-      866,
-      430,
-      394,
-      184
+      847,
+      299,
+      415,
+      346
     ],
     "next": [
       "clickHighDifficulty",
@@ -1890,7 +1890,7 @@
   },
   "battleDefeat_Dark": {
     "recognition": "TemplateMatch",
-    "template": "kinnara/紧那罗战斗失败__402_136_453_116__352_86_553_216.png",
+    "template": "Kinnara/紧那罗战斗失败__402_136_453_116__352_86_553_216.png",
     "roi": [
       402,
       136,

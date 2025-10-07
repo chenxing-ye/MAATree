@@ -24,7 +24,7 @@
             "返回主页检测"
         ],
         "interrupt": [
-            "扫荡结果确认",
+            "扫荡_神眠_等待完成",
             "退出"
         ],
         "timeout": 3000,
@@ -34,10 +34,10 @@
         "recognition": "TemplateMatch",
         "template": "主页出击.png",
         "roi": [
-            866,
-            430,
-            394,
-            184
+            847,
+            299,
+            415,
+            346
         ],
         "action": "Click",
         "next": [

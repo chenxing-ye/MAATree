@@ -13,7 +13,7 @@
   "detectionHome": {
     "recognition": "TemplateMatch",
     "template": "主页出击.png",
-    "roi" : [866,430,394,184],
+    "roi" : [847,299,415,346],
     "action": "Click",
     "next": [
       "clickTaoyuanTownship",
