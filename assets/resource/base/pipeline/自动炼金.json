@@ -637,7 +637,35 @@
         "next": [
             "一键炼成_珍品熔炼_清空选择"
         ],
-        "interrupt": "lc点击空白处"
+        "interrupt": [
+            "lc点击空白处",
+            "一键炼成_珍品熔炼_关闭提示勾选"
+        ]
+    },
+    "一键炼成_珍品熔炼_关闭提示勾选": {
+        "recognition": "TemplateMatch",
+        "template": "Alchemy/炼成提示今日不再显示__543_415_23_23__493_365_123_123.png",
+        "roi": [
+            543,
+            415,
+            23,
+            23
+        ],
+        "action": "Click",
+        "next": [
+            "一键炼成_珍品熔炼_关闭提示确认"
+        ]
+    },
+    "一键炼成_珍品熔炼_关闭提示确认": {
+        "recognition": "TemplateMatch",
+        "template": "Alchemy/炼成提示确定__754_468_63_37__704_418_163_137.png",
+        "roi": [
+            754,
+            468,
+            63,
+            37
+        ],
+        "action": "Click"
     },
     "一键炼成_珍品熔炼_全部炼完": {
         "recognition": "ColorMatch",
