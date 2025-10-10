@@ -9,7 +9,7 @@
     },
     "yq检测是否在主页": {
         "recognition": "TemplateMatch",
-        "template": "主页出击.png",
+        "template": "Common/主页出击.png",
         "roi" : [847,299,415,346],
         "timeout": 300000,
         "rate_limit": 1500,
@@ -21,14 +21,14 @@
     },
     "检测是否在主页0": {
         "recognition": "TemplateMatch",
-        "template": "主页出击.png",
+        "template": "Common/主页出击.png",
         "roi" : [847,299,415,346],
         "inverse": true,
         "next": "stopapp"
     },
     "yq等待邀请请求": {
         "recognition": "TemplateMatch",
-        "template": "邀请请求.png",
+        "template": "Multi/邀请请求.png",
         "action": "Click",
         "target": [
             416,
@@ -60,7 +60,7 @@
     },
     "byq等人到齐0.5": {
         "recognition": "TemplateMatch",
-        "template": "邀请空位.png",
+        "template": "Multi/邀请空位.png",
         "roi": [
             1080,
             196,
@@ -82,7 +82,7 @@
     },
     "byq等人到齐1": {
         "recognition": "TemplateMatch",
-        "template": "邀请空位.png",
+        "template": "Multi/邀请空位.png",
         "roi": [
             1080,
             196,
@@ -114,7 +114,7 @@
     },
     "byq退出房间": {
         "recognition": "TemplateMatch",
-        "template": "退出.png",
+        "template": "StartUp/退出.png",
         "action": "Click",
         "post_delay": 500,
         "next": [
@@ -140,7 +140,7 @@
     },
     "结束检测": {
         "recognition": "TemplateMatch",
-        "template": "返回主页.png",
+        "template": "StartUp/返回主页.png",
         "roi": [
             7,
             11,

@@ -8,7 +8,7 @@
     },
     "zx识别是否在主页": {
         "recognition": "TemplateMatch",
-        "template": "主页出击.png",
+        "template": "Common/主页出击.png",
         "roi": [
             847,
             299,
@@ -26,7 +26,7 @@
     },
     "zx返回主页_主线": {
         "recognition": "TemplateMatch",
-        "template": "返回主页.png",
+        "template": "StartUp/返回主页.png",
         "post_delay": 500,
         "action": "Click"
     },
@@ -93,7 +93,7 @@
     },
     "zx识别第一章": {
         "recognition": "TemplateMatch",
-        "template": "第一章.png",
+        "template": "Story/第一章.png",
         "next": "zx点击难度",
         "post_delay": 500,
         "action": "Click",
@@ -144,7 +144,7 @@
     },
     "检测补体0": {
         "recognition": "TemplateMatch",
-        "template": "补体力按钮.png",
+        "template": "Common/补体力按钮.png",
         "roi": [
             1219,
             23,
@@ -217,7 +217,7 @@
     },
     "大红瓶": {
         "recognition": "TemplateMatch",
-        "template": "大红瓶.png",
+        "template": "Common/大红瓶.png",
         "roi": [
             513,
             235,
@@ -230,7 +230,7 @@
     },
     "小红瓶": {
         "recognition": "TemplateMatch",
-        "template": "小红瓶.png",
+        "template": "Common/小红瓶.png",
         "roi": [
             600,
             235,
@@ -604,7 +604,7 @@
     },
     "补体力后的点击": {
         "recognition": "TemplateMatch",
-        "template": "补体力点击.png",
+        "template": "Common/补体力点击.png",
         "roi": [
             617,
             303,
@@ -673,7 +673,7 @@
     },
     "zx叉": {
         "recognition": "TemplateMatch",
-        "template": "x.png",
+        "template": "StartUp/X.png",
         "next": [
             "zx识别结束",
             "zx下一章"
@@ -715,7 +715,7 @@
     },
     "zx下一章": {
         "recognition": "TemplateMatch",
-        "template": "主线下一章.png",
+        "template": "Story/主线下一章.png",
         "next": "检测补体0",
         "action": "Click",
         "post_delay": 500,

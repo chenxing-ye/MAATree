@@ -9,7 +9,7 @@
   },
   "探索活动领取": {
     "recognition": "TemplateMatch",
-    "template": "主页出击.png",
+    "template": "Common/主页出击.png",
     "roi": [
       847,
       299,
@@ -27,7 +27,7 @@
   },
   "点击探索活动": {
     "recognition": "TemplateMatch",
-    "template": "探索活动.png",
+    "template": "Task/探索活动.png",
     "roi": [
       624,
       57,

@@ -12,7 +12,7 @@
   },
   "detectionHome": {
     "recognition": "TemplateMatch",
-    "template": "主页出击.png",
+    "template": "Common/主页出击.png",
     "roi" : [847,299,415,346],
     "action": "Click",
     "next": [
@@ -24,7 +24,7 @@
   },
   "clickTaoyuanTownship": {
     "recognition": "TemplateMatch",
-    "template": "桃源乡.png",
+    "template": "GoldAbyss/桃源乡.png",
     "roi" : [23,438,1240,180],
     "action": "Click",
     "next": [
@@ -50,7 +50,7 @@
   },
   "lostItem": {
     "recognition": "TemplateMatch",
-    "template": "迷失之物-火.png",
+    "template": "GoldAbyss/迷失之物-火.png",
     "roi" : [78,232,1184,227],
     "action": "Click",
     "next": "lostItem_1",
@@ -127,7 +127,7 @@
   },
   "LostThings": {
     "recognition": "TemplateMatch",
-    "template": "遗落之物-火.png",
+    "template": "GoldAbyss/遗落之物-火.png",
     "roi" : [78,232,1184,227],
     "action": "Click",
     "next": "LostThings_1",
@@ -193,7 +193,7 @@
   },
   "theMasterOfTaoyuan": {
     "recognition": "TemplateMatch",
-    "template": "朱雀.png",
+    "template": "GoldAbyss/朱雀.png",
     "roi" : [78,232,1184,227],
     "action": "Click",
     "next": "theMasterOfTaoyuan_Difficulty",
@@ -314,7 +314,7 @@
   },
   "supplementary_sap_Plus": {
     "recognition": "TemplateMatch",
-    "template": "补体力按钮.png",
+    "template": "Common/补体力按钮.png",
     "roi": [
       722,
       3,

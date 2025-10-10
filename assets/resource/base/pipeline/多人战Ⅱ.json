@@ -10,7 +10,7 @@
     },
     "主页出击": {
         "recognition": "TemplateMatch",
-        "template": "主页出击.png",
+        "template": "Common/主页出击.png",
         "action": "Click",
         "pre_delay": 500,
         "roi" : [847,299,415,346],
@@ -24,7 +24,7 @@
     },
     "返回主页": {
         "recognition": "TemplateMatch",
-        "template": "返回主页.png",
+        "template": "StartUp/返回主页.png",
         "roi": [
             1,
             0,
@@ -42,7 +42,7 @@
     },
     "返回主页0": {
         "recognition": "TemplateMatch",
-        "template": "返回主页.png",
+        "template": "StartUp/返回主页.png",
         "action": "Click",
         "roi": [
             7,
@@ -70,7 +70,7 @@
     },
     "多人1": {
         "recognition": "TemplateMatch",
-        "template": "多人1.png",
+        "template": "Multi/多人1.png",
         "action": "Click",
         "roi": [
             874,
@@ -84,7 +84,7 @@
     },
     "多人2": {
         "recognition": "TemplateMatch",
-        "template": "多人2.png",
+        "template": "Multi/多人2.png",
         "action": "Click",
         "roi": [
             1040,
@@ -98,7 +98,7 @@
     },
     "二级菜单": {
         "recognition": "TemplateMatch",
-        "template": "特异点.png",
+        "template": "Multi/特异点.png",
         "action": "Click",
         "post_delay": 1000,
         "roi": [
@@ -113,7 +113,7 @@
     },
     "三级菜单": {
         "recognition": "TemplateMatch",
-        "template": "光龙.png",
+        "template": "Multi/光龙.png",
         "action": "Click",
         "roi": [
             8,
@@ -149,7 +149,7 @@
     },
     "关房门": {
         "recognition": "TemplateMatch",
-        "template": "公开.png",
+        "template": "Multi/公开.png",
         "action": "Click",
         "timeout": 4000,
         "next": "确定",
@@ -190,7 +190,7 @@
     },
     "识别进入房间": {
         "recognition": "TemplateMatch",
-        "template": "加载界面.png",
+        "template": "Common/加载界面.png",
         "roi": [
             373,
             155,
@@ -249,7 +249,7 @@
     },
     "阵亡": {
         "recognition": "TemplateMatch",
-        "template": "取消.png",
+        "template": "Common/取消.png",
         "timeout": 60000,
         "action": "Click",
         "next": [
@@ -259,7 +259,7 @@
     },
     "阵亡0": {
         "recognition": "TemplateMatch",
-        "template": "取消.png",
+        "template": "Common/取消.png",
         "timeout": 4000,
         "action": "Click"
     },
@@ -285,7 +285,7 @@
     },
     "超时跳车0": {
         "recognition": "TemplateMatch",
-        "template": "AUTO.png",
+        "template": "Common/AUTO.png",
         "roi": [
             1141,
             0,
@@ -301,7 +301,7 @@
     },
     "超时跳车1": {
         "recognition": "TemplateMatch",
-        "template": "设置.png",
+        "template": "Multi/设置.png",
         "timeout": 4000,
         "roi": [
             1141,
@@ -318,7 +318,7 @@
     },
     "超时跳车2": {
         "recognition": "TemplateMatch",
-        "template": "战斗撤退.png",
+        "template": "Multi/战斗撤退.png",
         "roi": [
             399,
             419,
@@ -385,7 +385,7 @@
     },
     "属性选择": {
         "recognition": "TemplateMatch",
-        "template": "暗.png",
+        "template": "Team/暗.png",
         "action": "Click",
         "roi": [
             38,
@@ -435,7 +435,7 @@
     },
     "自动战斗": {
         "recognition": "TemplateMatch",
-        "template": "未自动战斗.png",
+        "template": "Multi/未自动战斗.png",
         "action": "Click",
         "pre_delay": 100,
         "target": [
@@ -505,7 +505,7 @@
     },
     "大蓝瓶": {
         "recognition": "TemplateMatch",
-        "template": "大蓝瓶.png",
+        "template": "Common/大蓝瓶.png",
         "action": "Swipe",
         "begin": [
             613,
@@ -526,7 +526,7 @@
     },
     "小蓝瓶": {
         "recognition": "TemplateMatch",
-        "template": "小蓝瓶.png",
+        "template": "Common/小蓝瓶.png",
         "action": "Swipe",
         "begin": [
             666,
@@ -555,7 +555,7 @@
     },
     "点击": {
         "recognition": "TemplateMatch",
-        "template": "补体力点击.png",
+        "template": "Common/补体力点击.png",
         "roi": [
             617,
             303,

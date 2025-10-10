@@ -73,7 +73,7 @@
     },
     "点击工坊": {
         "recognition": "TemplateMatch",
-        "template": "Main/工坊__116_651_93_37__66_601_193_119.png",
+        "template": "Alchemy/工坊.png",
         "action": "Click",
         "pre_delay": 500,
         "roi": [
@@ -89,7 +89,7 @@
     },
     "点击炼成": {
         "recognition": "TemplateMatch",
-        "template": "炼成图标.png",
+        "template": "Alchemy/炼成图标.png",
         "action": "Click",
         "roi": [
             677,
@@ -184,7 +184,7 @@
     },
     "一键炼成_常规熔炼_添加材料": {
         "recognition": "TemplateMatch",
-        "template": "炼成_可放入.png",
+        "template": "Alchemy/炼成_可放入.png",
         "action": "Click",
         "roi": [
             655,
@@ -220,7 +220,7 @@
     "一键炼成_常规熔炼_选择材料_幻象照片2": {
         "recognition": "TemplateMatch",
         "template": [
-            "光幻材料.png"
+            "Alchemy/光幻材料.png"
         ],
         "action": "Click",
         "roi": [
@@ -251,7 +251,7 @@
     "一键炼成_常规熔炼_选择材料_龙照片2": {
         "recognition": "TemplateMatch",
         "template": [
-            "光龙材料.png"
+            "Alchemy/光龙材料.png"
         ],
         "action": "Click",
         "roi": [
@@ -271,7 +271,7 @@
     "一键炼成_常规熔炼_选择材料_龙勋章2": {
         "recognition": "TemplateMatch",
         "template": [
-            "龙勋章.png"
+            "Alchemy/龙勋章.png"
         ],
         "action": "Click",
         "roi": [
@@ -292,7 +292,7 @@
     "一键炼成_常规熔炼_选择材料_强振石2": {
         "recognition": "TemplateMatch",
         "template": [
-            "强振石.png"
+            "Alchemy/强振石.png"
         ],
         "action": "Click",
         "roi": [
@@ -568,7 +568,7 @@
     },
     "珍品熔炼_筛选_等级": {
         "recognition": "TemplateMatch",
-        "template": "炼金筛选.png",
+        "template": "Alchemy/炼金筛选.png",
         "roi": [
             256,
             363,
@@ -582,6 +582,29 @@
         "on_error": "stopapp",
         "next": [
             "珍品熔炼_筛选_等级",
+            "一键炼成_珍品熔炼_一键选择"
+        ],
+        "interrupt": "lc点击确定/确认"
+    },
+    "珍品熔炼_筛选_等级_新": {
+        "recognition": "TemplateMatch",
+        "template": [
+            "Alchemy/奥秘等级6__918_374_59_29__868_324_159_129.png"
+        ],
+        "roi": [
+            256,
+            363,
+            867,
+            49
+        ],
+        "action": "Click",
+        "threshold": 0.95,
+        "pre_delay": 50,
+        "timeout": 3000,
+        "post_delay": 100,
+        "on_error": "stopapp",
+        "next": [
+            "珍品熔炼_筛选_等级_新",
             "一键炼成_珍品熔炼_一键选择"
         ],
         "interrupt": "lc点击确定/确认"
@@ -742,7 +765,7 @@
     },
     "一键炼成_高阶奥秘_添加材料1": {
         "recognition": "TemplateMatch",
-        "template": "炼成_可放入.png",
+        "template": "Alchemy/炼成_可放入.png",
         "action": "Click",
         "roi": [
             655,
@@ -763,7 +786,7 @@
     //开始高级炼金添加材料1----------
     "一键炼成_常规奥秘_异种核心_材料1": {
         "recognition": "TemplateMatch",
-        "template": "异种核心-火.png",
+        "template": "Alchemy/异种核心-火.png",
         "roi": [
             44,
             91,
@@ -836,7 +859,7 @@
     //结束高级炼金添加材料1----------
     "一键炼成_高阶奥秘_添加材料2": {
         "recognition": "TemplateMatch",
-        "template": "炼成_可放入.png",
+        "template": "Alchemy/炼成_可放入.png",
         "action": "Click",
         "roi": [
             655,
@@ -878,7 +901,7 @@
     //开始高级炼金添加材料2----------
     "一键炼成_常规奥秘_奥秘精粹_材料1": {
         "recognition": "TemplateMatch",
-        "template": "奥秘精粹.png",
+        "template": "Alchemy/奥秘精粹.png",
         "roi": [
             44,
             91,
@@ -1076,7 +1099,7 @@
     },
     "一键炼成_常规奥秘_添加材料1": {
         "recognition": "TemplateMatch",
-        "template": "炼成_可放入.png",
+        "template": "Alchemy/炼成_可放入.png",
         "action": "Click",
         "roi": [
             655,
@@ -1097,7 +1120,7 @@
     //开始普通炼金添加材料-------------
     "一键炼成_常规奥秘_奇元八面体_材料1": {
         "recognition": "TemplateMatch",
-        "template": "奇元八面体-火.png",
+        "template": "Alchemy/奇元八面体-火.png",
         "roi": [
             44,
             91,
@@ -1170,7 +1193,7 @@
     //结束普通炼金添加材料--------------
     "一键炼成_常规奥秘_添加材料2": {
         "recognition": "TemplateMatch",
-        "template": "炼成_可放入.png",
+        "template": "Alchemy/炼成_可放入.png",
         "action": "Click",
         "roi": [
             655,
@@ -1213,7 +1236,7 @@
     },
     "一键炼成_常规奥秘_奥秘因子_材料2": {
         "recognition": "TemplateMatch",
-        "template": "奥秘因子.png",
+        "template": "Alchemy/奥秘因子.png",
         "roi": [
             44,
             91,
@@ -1327,7 +1350,20 @@
         ],
         "action": "Click",
         "next": [
+            "一键炼成_常规熔炼_炼成价值不足",
             "一键炼成_常规奥秘_等待结束"
+        ],
+        "timeout": 4000,
+        "on_error": "stopapp"
+    },
+    "一键炼成_常规熔炼_炼成价值不足": {
+        "recognition": "TemplateMatch",
+        "template": "Alchemy/炼成价值不足__552_340_176_39__502_290_276_139.png",
+        "roi": [
+            552,
+            340,
+            176,
+            39
         ],
         "timeout": 4000,
         "on_error": "stopapp"

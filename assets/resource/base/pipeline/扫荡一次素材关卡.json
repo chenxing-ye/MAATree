@@ -12,7 +12,7 @@
     },
     "确认是否在主页_扫荡一次素材关卡": {
         "recognition": "TemplateMatch",
-        "template": "主页出击.png",
+        "template": "Common/主页出击.png",
         "roi" : [847,299,415,346],
         "action": "Click",
         "next": [
@@ -38,7 +38,7 @@
     },
     "点击经验素材本": {
         "recognition": "TemplateMatch",
-        "template": "经验素材本.png",
+        "template": "MaterailSweep/经验素材本.png",
         "roi": [
             59,
             178,
@@ -55,7 +55,7 @@
     },
     "点击训练特级": {
         "recognition": "TemplateMatch",
-        "template": "训练特级.png",
+        "template": "MaterailSweep/训练特级.png",
         "roi": [
             0,
             430,
@@ -91,7 +91,7 @@
     },
     "是否为1次_扫荡一次素材关卡": {
         "recognition": "TemplateMatch",
-        "template": "1次.png",
+        "template": "MaterailSweep/1次.png",
         "roi": [
             609,
             317,
@@ -153,7 +153,7 @@
     },
     "点击武备特级": {
         "recognition": "TemplateMatch",
-        "template" : "武备特技.png",
+        "template": "MaterailSweep/武备特技.png",
         "recommended roi" : [586,179,123,106],
         "action": "Click",
         "threshold": 0.85,
@@ -184,7 +184,7 @@
     },
     "是否为1次_扫荡二次素材关卡": {
         "recognition": "TemplateMatch",
-        "template": "1次.png",
+        "template": "MaterailSweep/1次.png",
         "roi": [
             609,
             317,

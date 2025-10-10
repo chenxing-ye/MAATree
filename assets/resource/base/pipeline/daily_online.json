@@ -1,0 +1,82 @@
+{
+    "DailyOnline": {
+        "next": [
+            "ClickDailyOnline"
+        ],
+        "interrupt": [
+            "ReturnMain"
+        ]
+    },
+    "ClickDailyOnline": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    10,
+                    111,
+                    146,
+                    381
+                ],
+                "template": "DailyOnline/在线按钮__106_129_38_53__56_79_138_153.png"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "DailyOnlineMain"
+        ]
+    },
+    "DailyOnlineMain": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    191,
+                    140,
+                    95,
+                    35
+                ],
+                "expected": [
+                    "在线",
+                    "时长"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "DailyOnlineGain",
+            "MainFlag"
+        ],
+        "interrupt": [
+            "点击空白处关闭"
+        ]
+    },
+    "DailyOnlineGain": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    190,
+                    198,
+                    1090,
+                    335
+                ],
+                "template": [
+                    "DailyOnline/在线奖励领取标识__209_230_33_32__159_180_133_132.png",
+                    "DailyOnline/在线奖励领取标识2__206_467_33_32__156_417_133_132.png"
+                ],
+                "threshold": 0.9
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "DailyOnlineGain",
+            "ReturnMain"
+        ]
+    }
+}

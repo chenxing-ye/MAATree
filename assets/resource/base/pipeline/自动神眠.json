@@ -32,7 +32,7 @@
     },
     "确认是否在主页_自动神眠": {
         "recognition": "TemplateMatch",
-        "template": "主页出击.png",
+        "template": "Common/主页出击.png",
         "roi": [
             847,
             299,
@@ -65,7 +65,7 @@
     },
     "点击神眠之地": {
         "recognition": "TemplateMatch",
-        "template": "神眠之地.png",
+        "template": "GoldSleep/神眠之地.png",
         "roi": [
             4,
             190,
@@ -137,7 +137,7 @@
     },
     "懊悔的新生": {
         "recognition": "TemplateMatch",
-        "template": "懊悔的新生.png",
+        "template": "GoldSleep/懊悔的新生.png",
         "roi": [
             21,
             132,
@@ -205,7 +205,7 @@
     },
     "补充sap_点加号": {
         "recognition": "TemplateMatch",
-        "template": "补体力按钮.png",
+        "template": "Common/补体力按钮.png",
         "roi": [
             722,
             3,
@@ -303,7 +303,7 @@
     },
     "褪色的罪人": {
         "recognition": "TemplateMatch",
-        "template": "褪色的罪人.png",
+        "template": "GoldSleep/褪色的罪人.png",
         "roi": [
             67,
             233,
@@ -470,7 +470,7 @@
     },
     "编队选择后的识别_神眠_打开off": {
         "recognition": "TemplateMatch",
-        "template": "off.png",
+        "template": "Common/off.png",
         "action": "Click",
         "roi": [
             427,
@@ -487,7 +487,7 @@
     },
     "点击连战设置_神眠": {
         "recognition": "TemplateMatch",
-        "template": "连战设置.png",
+        "template": "Common/连战设置.png",
         "action": "Click",
         "roi": [
             761,
@@ -503,7 +503,7 @@
     },
     "点击连战次数_神眠": {
         "recognition": "TemplateMatch",
-        "template": "连战次数界面.png",
+        "template": "Common/连战次数界面.png",
         "action": "Click",
         "roi": [
             521,
@@ -549,7 +549,7 @@
     },
     "关闭自动再战_神眠": {
         "recognition": "TemplateMatch",
-        "template": "已自动再战.png",
+        "template": "GoldSleep/已自动再战.png",
         "roi": [
             472,
             356,
@@ -580,7 +580,7 @@
     },
     "识别进入房间_神眠": {
         "recognition": "TemplateMatch",
-        "template": "加载界面.png",
+        "template": "Common/加载界面.png",
         "roi": [
             373,
             155,
@@ -651,7 +651,7 @@
     },
     "战斗胜利_神眠": {
         "recognition": "TemplateMatch",
-        "template": "战斗胜利.png",
+        "template": "Common/战斗胜利.png",
         "roi": [
             230,
             145,

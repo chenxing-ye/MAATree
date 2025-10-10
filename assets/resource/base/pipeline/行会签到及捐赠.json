@@ -9,7 +9,7 @@
     },
     "确认是否在主页_捐赠": {
         "recognition": "TemplateMatch",
-        "template": "主页出击.png",
+        "template": "Common/主页出击.png",
         "roi": [
             847,
             299,
@@ -27,12 +27,12 @@
     },
     "点击行会": {
         "recognition": "TemplateMatch",
-        "template": "Guild/工会__366_662_52_19__316_612_152_108.png",
+        "template": "Guild/工会.png",
         "roi": [
-            366,
-            662,
-            52,
-            19
+            320,
+            634,
+            157,
+            80
         ],
         "action": "Click",
         "pre_delay": 100,
@@ -45,7 +45,7 @@
     },
     "等待进入行会": {
         "recognition": "TemplateMatch",
-        "template": "行会页面.png",
+        "template": "Guild/行会页面.png",
         "threshold": 0.9,
         "next": [
             "判断是否需签到_行会页面内",
@@ -55,7 +55,7 @@
     },
     "判断是否需签到_行会页面内": {
         "recognition": "TemplateMatch",
-        "template": "红点_捐赠.png",
+        "template": "Guild/红点_捐赠.png",
         "roi": [
             91,
             567,
@@ -82,7 +82,7 @@
     },
     "判断是否需捐赠_行会页面内": {
         "recognition": "TemplateMatch",
-        "template": "红点_捐赠.png",
+        "template": "Guild/红点_捐赠.png",
         "roi": [
             219,
             577,

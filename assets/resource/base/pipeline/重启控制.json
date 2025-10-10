@@ -37,7 +37,7 @@
     },
     "进入": {
         "recognition": "TemplateMatch",
-        "template": "进入.png",
+        "template": "StartUp/进入.png",
         "pre_delay": 1500,
         "action": "Click",
         "timeout": 30000,
@@ -47,14 +47,14 @@
     },
     "等待进入0": {
         "recognition": "TemplateMatch",
-        "template": "标识.png",
+        "template": "StartUp/标识.png",
         "post_delay": 3000,
         "next": "等待进入",
         "on_error": "stopapp"
     },
     "等待进入": {
         "recognition": "TemplateMatch",
-        "template": "标识.png",
+        "template": "StartUp/标识.png",
         "inverse": true,
         "post_delay": 1000,
         "pre_delay": 1000,
@@ -74,7 +74,7 @@
     },
     "重试": {
         "recognition": "TemplateMatch",
-        "template": "重试.png",
+        "template": "StartUp/重试.png",
         "roi": [
             358,
             350,
@@ -85,7 +85,7 @@
     },
     "领取物资": {
         "recognition": "TemplateMatch",
-        "template": "获得物资.png",
+        "template": "StartUp/获得物资.png",
         "roi": [
             468,
             89,
@@ -97,13 +97,16 @@
     },
     "点击空白处关闭": {
         "recognition": "OCR",
-        "expected": "点击空白处",
+        "expected": [
+            "点击空白处",
+            "空白处"
+        ],
         "action": "Click",
         "post_delay": 800
     },
     "退出": {
         "recognition": "TemplateMatch",
-        "template": "退出.png",
+        "template": "StartUp/退出.png",
         "roi": [
             0,
             0,
@@ -116,7 +119,7 @@
     },
     "取消": {
         "recognition": "TemplateMatch",
-        "template": "取消.png",
+        "template": "Common/取消.png",
         "roi": [
             389,
             385,
@@ -129,14 +132,14 @@
     },
     "关闭页面1": {
         "recognition": "TemplateMatch",
-        "template": "X.png",
+        "template": "StartUp/X.png",
         "timeout": 3000,
         "action": "Click",
         "post_delay": 800
     },
     "关闭周历": {
         "recognition": "TemplateMatch",
-        "template": "关闭周历.png",
+        "template": "StartUp/关闭周历.png",
         "roi": [
             1108,
             18,
@@ -174,7 +177,7 @@
     },
     "礼包检测": {
         "recognition": "TemplateMatch",
-        "template": "主页礼包.png",
+        "template": "StartUp/主页礼包.png",
         "roi": [
             12,
             110,
@@ -194,7 +197,7 @@
         "recognition": "TemplateMatch",
         //        "template": "主页出击.png",
         //        "roi" : [847,299,415,346],
-        "template": "主页礼包.png",
+        "template": "StartUp/主页礼包.png",
         "roi": [
             12,
             110,
@@ -216,7 +219,7 @@
     },
     "返回主页检测": {
         "recognition": "TemplateMatch",
-        "template": "返回主页.png",
+        "template": "StartUp/返回主页.png",
         "action": "Click",
         "roi": [
             0,
@@ -268,7 +271,6 @@
     "MainFlag": {
         "recognition": "TemplateMatch",
         "template": "Main/主界面标识__1028_461_79_82__978_411_179_182.png",
-        "action": "Click",
         "roi": [
             1028,
             461,
