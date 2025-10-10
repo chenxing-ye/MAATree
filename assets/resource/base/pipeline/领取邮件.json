@@ -12,7 +12,7 @@
     },
     "确认是否在主页_邮件": {
         "recognition": "TemplateMatch",
-        "template": "主页出击.png",
+        "template": "Common/主页出击.png",
         "roi" : [847,299,415,346],
         "pre_delay": 10,
         "post_delay": 10,
@@ -37,7 +37,7 @@
     },
     "点击邮件": {
         "recognition": "TemplateMatch",
-        "template" : "邮件.png",
+        "template": "Mail/邮件.png",
         "roi" : [400,14,215,56],
         "action": "Click",
         "pre_delay": 10,
@@ -50,7 +50,7 @@
     },
     "一键领取_邮件": {
         "recognition": "TemplateMatch",
-        "template": "一键领取.png",
+        "template": "Mail/一键领取.png",
         "roi": [
             1081,
             0,

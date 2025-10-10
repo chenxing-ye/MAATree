@@ -631,19 +631,19 @@
                         },
                         "一键炼成_常规熔炼_选择材料_龙照片2": {
                             "template": [
-                                "火龙材料.png"
+                                "Alchemy/火龙材料.png"
                             ]
                         },
                         "一键炼成_常规熔炼_选择材料_幻象照片2": {
                             "template": [
-                                "火幻材料.png"
+                                "Alchemy/火幻材料.png"
                             ]
                         },
                         "一键炼成_常规奥秘_奇元八面体_材料1": {
-                            "template": "奇元八面体-火.png"
+                            "template": "Alchemy/奇元八面体-火.png"
                         },
                         "一键炼成_常规奥秘_异种核心_材料1": {
-                            "template": "异种核心-火.png"
+                            "template": "Alchemy/异种核心-火.png"
                         }
                     }
                 },
@@ -655,19 +655,19 @@
                         },
                         "一键炼成_常规熔炼_选择材料_龙照片2": {
                             "template": [
-                                "水龙材料.png"
+                                "Alchemy/水龙材料.png"
                             ]
                         },
                         "一键炼成_常规熔炼_选择材料_幻象照片2": {
                             "template": [
-                                "水幻材料.png"
+                                "Alchemy/水幻材料.png"
                             ]
                         },
                         "一键炼成_常规奥秘_奇元八面体_材料1": {
-                            "template": "奇元八面体-水.png"
+                            "template": "Alchemy/奇元八面体-水.png"
                         },
                         "一键炼成_常规奥秘_异种核心_材料1": {
-                            "template": "异种核心-水.png"
+                            "template": "Alchemy/异种核心-水.png"
                         }
                     }
                 },
@@ -679,19 +679,19 @@
                         },
                         "一键炼成_常规熔炼_选择材料_龙照片2": {
                             "template": [
-                                "土龙材料.png"
+                                "Alchemy/土龙材料.png"
                             ]
                         },
                         "一键炼成_常规熔炼_选择材料_幻象照片2": {
                             "template": [
-                                "土幻材料.png"
+                                "Alchemy/土幻材料.png"
                             ]
                         },
                         "一键炼成_常规奥秘_奇元八面体_材料1": {
-                            "template": "奇元八面体-地.png"
+                            "template": "Alchemy/奇元八面体-地.png"
                         },
                         "一键炼成_常规奥秘_异种核心_材料1": {
-                            "template": "异种核心-地.png"
+                            "template": "Alchemy/异种核心-地.png"
                         }
                     }
                 },
@@ -703,19 +703,19 @@
                         },
                         "一键炼成_常规熔炼_选择材料_龙照片2": {
                             "template": [
-                                "风龙材料.png"
+                                "Alchemy/风龙材料.png"
                             ]
                         },
                         "一键炼成_常规熔炼_选择材料_幻象照片2": {
                             "template": [
-                                "风幻材料.png"
+                                "Alchemy/风幻材料.png"
                             ]
                         },
                         "一键炼成_常规奥秘_奇元八面体_材料1": {
-                            "template": "奇元八面体-风.png"
+                            "template": "Alchemy/奇元八面体-风.png"
                         },
                         "一键炼成_常规奥秘_异种核心_材料1": {
-                            "template": "异种核心-风.png"
+                            "template": "Alchemy/异种核心-风.png"
                         }
                     }
                 },
@@ -727,19 +727,19 @@
                         },
                         "一键炼成_常规熔炼_选择材料_龙照片2": {
                             "template": [
-                                "光龙材料.png"
+                                "Alchemy/光龙材料.png"
                             ]
                         },
                         "一键炼成_常规熔炼_选择材料_幻象照片2": {
                             "template": [
-                                "光幻材料.png"
+                                "Alchemy/光幻材料.png"
                             ]
                         },
                         "一键炼成_常规奥秘_奇元八面体_材料1": {
-                            "template": "奇元八面体-光.png"
+                            "template": "Alchemy/奇元八面体-光.png"
                         },
                         "一键炼成_常规奥秘_异种核心_材料1": {
-                            "template": "异种核心-光.png"
+                            "template": "Alchemy/异种核心-光.png"
                         }
                     }
                 },
@@ -751,19 +751,19 @@
                         },
                         "一键炼成_常规熔炼_选择材料_龙照片2": {
                             "template": [
-                                "暗龙材料.png"
+                                "Alchemy/暗龙材料.png"
                             ]
                         },
                         "一键炼成_常规熔炼_选择材料_幻象照片2": {
                             "template": [
-                                "暗幻材料.png"
+                                "Alchemy/暗幻材料.png"
                             ]
                         },
                         "一键炼成_常规奥秘_奇元八面体_材料1": {
-                            "template": "奇元八面体-暗.png"
+                            "template": "Alchemy/奇元八面体-暗.png"
                         },
                         "一键炼成_常规奥秘_异种核心_材料1": {
-                            "template": "异种核心-暗.png"
+                            "template": "Alchemy/异种核心-暗.png"
                         }
                     }
                 }
@@ -1636,16 +1636,16 @@
                             "on_error": "stopapp"
                         },
                         "检测已选中任务2-否": {
-                            "template": "无设置.png"
+                            "template": "Multi/无设置.png"
                         },
                         "检测已选中任务2-是": {
-                            "template": "无设置.png"
+                            "template": "Multi/无设置.png"
                         },
                         "检测已选中任务3-否": {
-                            "template": "无设置.png"
+                            "template": "Multi/无设置.png"
                         },
                         "检测已选中任务3-是": {
-                            "template": "无设置.png"
+                            "template": "Multi/无设置.png"
                         }
                     }
                 },
@@ -2537,10 +2537,10 @@
                             "on_error": "stopapp"
                         },
                         "检测已选中任务3-否": {
-                            "template": "无设置.png"
+                            "template": "Multi/无设置.png"
                         },
                         "检测已选中任务3-是": {
-                            "template": "无设置.png"
+                            "template": "Multi/无设置.png"
                         }
                     }
                 },
@@ -3576,7 +3576,7 @@
                     "name": "水",
                     "pipeline_override": {
                         "属性选择": {
-                            "template": "水.png"
+                            "template": "Team/水.png"
                         }
                     }
                 },
@@ -3584,7 +3584,7 @@
                     "name": "火",
                     "pipeline_override": {
                         "属性选择": {
-                            "template": "火.png"
+                            "template": "Team/火.png"
                         }
                     }
                 },
@@ -3592,7 +3592,7 @@
                     "name": "风",
                     "pipeline_override": {
                         "属性选择": {
-                            "template": "风.png"
+                            "template": "Team/风.png"
                         }
                     }
                 },
@@ -3600,7 +3600,7 @@
                     "name": "土",
                     "pipeline_override": {
                         "属性选择": {
-                            "template": "土.png"
+                            "template": "Team/土.png"
                         }
                     }
                 },
@@ -3608,7 +3608,7 @@
                     "name": "光",
                     "pipeline_override": {
                         "属性选择": {
-                            "template": "光.png"
+                            "template": "Team/光.png"
                         }
                     }
                 },
@@ -3616,7 +3616,7 @@
                     "name": "暗",
                     "pipeline_override": {
                         "属性选择": {
-                            "template": "暗.png"
+                            "template": "Team/暗.png"
                         }
                     }
                 }
@@ -3651,13 +3651,13 @@
                             "expected": "朱雀"
                         },
                         "lostItem": {
-                            "template": "迷失之物-火.png"
+                            "template": "GoldAbyss/迷失之物-火.png"
                         },
                         "LostThings": {
-                            "template": "遗落之物-火.png"
+                            "template": "GoldAbyss/遗落之物-火.png"
                         },
                         "theMasterOfTaoyuan": {
-                            "template": "朱雀.png"
+                            "template": "GoldAbyss/朱雀.png"
                         }
                     }
                 },
@@ -3668,13 +3668,13 @@
                             "expected": "玄武"
                         },
                         "lostItem": {
-                            "template": "迷失之物-水.png"
+                            "template": "GoldAbyss/迷失之物-水.png"
                         },
                         "LostThings": {
-                            "template": "遗落之物-水.png"
+                            "template": "GoldAbyss/遗落之物-水.png"
                         },
                         "theMasterOfTaoyuan": {
-                            "template": "玄武.png"
+                            "template": "GoldAbyss/玄武.png"
                         }
                     }
                 },
@@ -3685,13 +3685,13 @@
                             "expected": "白虎"
                         },
                         "lostItem": {
-                            "template": "迷失之物-地.png"
+                            "template": "GoldAbyss/迷失之物-地.png"
                         },
                         "LostThings": {
-                            "template": "遗落之物-地.png"
+                            "template": "GoldAbyss/遗落之物-地.png"
                         },
                         "theMasterOfTaoyuan": {
-                            "template": "白虎.png"
+                            "template": "GoldAbyss/白虎.png"
                         }
                     }
                 },
@@ -3702,13 +3702,13 @@
                             "expected": "青龙"
                         },
                         "lostItem": {
-                            "template": "迷失之物-风.png"
+                            "template": "GoldAbyss/迷失之物-风.png"
                         },
                         "LostThings": {
-                            "template": "遗落之物-风.png"
+                            "template": "GoldAbyss/遗落之物-风.png"
                         },
                         "theMasterOfTaoyuan": {
-                            "template": "青龙.png"
+                            "template": "GoldAbyss/青龙.png"
                         }
                     }
                 },
@@ -3719,13 +3719,13 @@
                             "expected": "勾陈"
                         },
                         "lostItem": {
-                            "template": "迷失之物-光.png"
+                            "template": "GoldAbyss/迷失之物-光.png"
                         },
                         "LostThings": {
-                            "template": "遗落之物-光.png"
+                            "template": "GoldAbyss/遗落之物-光.png"
                         },
                         "theMasterOfTaoyuan": {
-                            "template": "勾陈.png"
+                            "template": "GoldAbyss/勾陈.png"
                         }
                     }
                 },
@@ -3736,13 +3736,13 @@
                             "expected": "腾蛇"
                         },
                         "lostItem": {
-                            "template": "迷失之物-暗.png"
+                            "template": "GoldAbyss/迷失之物-暗.png"
                         },
                         "LostThings": {
-                            "template": "遗落之物-暗.png"
+                            "template": "GoldAbyss/遗落之物-暗.png"
                         },
                         "theMasterOfTaoyuan": {
-                            "template": "腾蛇.png"
+                            "template": "GoldAbyss/腾蛇.png"
                         }
                     }
                 }
@@ -3922,7 +3922,7 @@
                     "name": "高配暗王",
                     "pipeline_override": {
                         "DefaultMecha_Dark": {
-                            "template": "seniorDarkKing.png"
+                            "template": "Team/seniorDarkKing.png"
                         },
                         "enabled": true
                     }
@@ -3931,7 +3931,7 @@
                     "name": "终突暗王",
                     "pipeline_override": {
                         "DefaultMecha_Dark": {
-                            "template": "fullLevelDarkKing.png"
+                            "template": "Team/fullLevelDarkKing.png"
                         },
                         "enabled": true
                     }
@@ -3940,7 +3940,7 @@
                     "name": "高配暗方130",
                     "pipeline_override": {
                         "DefaultMecha_Dark": {
-                            "template": "advancedDarkPrescription.png"
+                            "template": "Team/advancedDarkPrescription.png"
                         },
                         "enabled": true
                     }
@@ -3949,7 +3949,7 @@
                     "name": "终突暗方150",
                     "pipeline_override": {
                         "DefaultMecha_Dark": {
-                            "template": "fullLevelDarkPrescription.png"
+                            "template": "Team/fullLevelDarkPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4020,7 +4020,7 @@
                     "name": "高配光王",
                     "pipeline_override": {
                         "DefaultMecha_Light": {
-                            "template": "seniorKingofLight.png"
+                            "template": "Team/seniorKingofLight.png"
                         },
                         "enabled": true
                     }
@@ -4029,7 +4029,7 @@
                     "name": "终突光王",
                     "pipeline_override": {
                         "DefaultMecha_Light": {
-                            "template": "fullLevelKingofLight.png"
+                            "template": "Team/fullLevelKingofLight.png"
                         },
                         "enabled": true
                     }
@@ -4038,7 +4038,7 @@
                     "name": "高配光方130",
                     "pipeline_override": {
                         "DefaultMecha_Light": {
-                            "template": "advancedLightPrescription.png"
+                            "template": "Team/advancedDarkPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4047,7 +4047,7 @@
                     "name": "终突光方150",
                     "pipeline_override": {
                         "DefaultMecha_Light": {
-                            "template": "fullLightPrescription.png"
+                            "template": "Team/fullLightPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4118,7 +4118,7 @@
                     "name": "高配水王",
                     "pipeline_override": {
                         "DefaultMecha_Water": {
-                            "template": "seniorWaterKing.png"
+                            "template": "Team/seniorWaterKing.png"
                         },
                         "enabled": true
                     }
@@ -4127,7 +4127,7 @@
                     "name": "终突水王",
                     "pipeline_override": {
                         "DefaultMecha_Water": {
-                            "template": "fullLevelWaterKing.png"
+                            "template": "Team/fullLevelWaterKing.png"
                         },
                         "enabled": true
                     }
@@ -4136,7 +4136,7 @@
                     "name": "高配水方130",
                     "pipeline_override": {
                         "DefaultMecha_Water": {
-                            "template": "advancedWaterPrescription.png"
+                            "template": "Team/advancedWaterPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4145,7 +4145,7 @@
                     "name": "终突水方150",
                     "pipeline_override": {
                         "DefaultMecha_Water": {
-                            "template": "fullLevelWaterPrescription.png"
+                            "template": "Team/fullLevelWaterPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4216,7 +4216,7 @@
                     "name": "高配土王",
                     "pipeline_override": {
                         "DefaultMecha_Soil": {
-                            "template": "seniorEarthKing.png"
+                            "template": "Team/seniorEarthKing.png"
                         },
                         "enabled": true
                     }
@@ -4225,7 +4225,7 @@
                     "name": "终突土王",
                     "pipeline_override": {
                         "DefaultMecha_Soil": {
-                            "template": "fullLevelEarthKing.png"
+                            "template": "Team/fullLevelEarthKing.png"
                         },
                         "enabled": true
                     }
@@ -4234,7 +4234,7 @@
                     "name": "高配土方130",
                     "pipeline_override": {
                         "DefaultMecha_Soil": {
-                            "template": "advancedEarthwork.png"
+                            "template": "Team/advancedEarthwork.png"
                         },
                         "enabled": true
                     }
@@ -4243,7 +4243,7 @@
                     "name": "终突土方150",
                     "pipeline_override": {
                         "DefaultMecha_Soil": {
-                            "template": "fullLevelEarthworkPrescription.png"
+                            "template": "Team/fullLevelEarthworkPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4314,7 +4314,7 @@
                     "name": "高配风王",
                     "pipeline_override": {
                         "DefaultMecha_Wind": {
-                            "template": "seniorWindKing.png"
+                            "template": "Team/seniorWindKing.png"
                         },
                         "enabled": true
                     }
@@ -4323,7 +4323,7 @@
                     "name": "终突风王",
                     "pipeline_override": {
                         "DefaultMecha_Wind": {
-                            "template": "fullLevelWindKing.png"
+                            "template": "Team/fullLevelWindKing.png"
                         },
                         "enabled": true
                     }
@@ -4332,7 +4332,7 @@
                     "name": "高配风方130",
                     "pipeline_override": {
                         "DefaultMecha_Wind": {
-                            "template": "advancedWind.png"
+                            "template": "Team/advancedWind.png"
                         },
                         "enabled": true
                     }
@@ -4341,7 +4341,7 @@
                     "name": "终突风方150",
                     "pipeline_override": {
                         "DefaultMecha_Wind": {
-                            "template": "fullLevelWindPrescription.png"
+                            "template": "Team/fullLevelWindPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4412,7 +4412,7 @@
                     "name": "高配火王",
                     "pipeline_override": {
                         "DefaultMecha_Fire": {
-                            "template": "seniorFireKing.png"
+                            "template": "Team/seniorFireKing.png"
                         },
                         "enabled": true
                     }
@@ -4421,7 +4421,7 @@
                     "name": "终突火王",
                     "pipeline_override": {
                         "DefaultMecha_Fire": {
-                            "template": "fullLevelFireKing.png"
+                            "template": "Team/fullLevelFireKing.png"
                         },
                         "enabled": true
                     }
@@ -4430,7 +4430,7 @@
                     "name": "高配火方130",
                     "pipeline_override": {
                         "DefaultMecha_Fire": {
-                            "template": "advancedFire.png"
+                            "template": "Team/advancedFire.png"
                         },
                         "enabled": true
                     }
@@ -4439,7 +4439,7 @@
                     "name": "终突火方150",
                     "pipeline_override": {
                         "DefaultMecha_Fire": {
-                            "template": "fullLevelFire.png"
+                            "template": "Team/fullLevelFire.png"
                         },
                         "enabled": true
                     }
@@ -4568,7 +4568,7 @@
                     "name": "高配火王",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "seniorFireKing.png"
+                            "template": "Team/seniorFireKing.png"
                         },
                         "enabled": true
                     }
@@ -4577,7 +4577,7 @@
                     "name": "终突火王",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "fullLevelFireKing.png"
+                            "template": "Team/fullLevelFireKing.png"
                         },
                         "enabled": true
                     }
@@ -4586,7 +4586,7 @@
                     "name": "高配火方130",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "advancedFire.png"
+                            "template": "Team/advancedFire.png"
                         },
                         "enabled": true
                     }
@@ -4595,7 +4595,7 @@
                     "name": "终突火方150",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "fullLevelFire.png"
+                            "template": "Team/fullLevelFire.png"
                         },
                         "enabled": true
                     }
@@ -4604,7 +4604,7 @@
                     "name": "高配水王",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "seniorWaterKing.png"
+                            "template": "Team/seniorWaterKing.png"
                         },
                         "enabled": true
                     }
@@ -4613,7 +4613,7 @@
                     "name": "终突水王",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "fullLevelWaterKing.png"
+                            "template": "Team/fullLevelWaterKing.png"
                         },
                         "enabled": true
                     }
@@ -4622,7 +4622,7 @@
                     "name": "高配水方130",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "advancedWaterPrescription.png"
+                            "template": "Team/advancedWaterPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4631,7 +4631,7 @@
                     "name": "终突水方150",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "fullLevelWaterPrescription.png"
+                            "template": "Team/fullLevelWaterPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4640,7 +4640,7 @@
                     "name": "高配土王",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "seniorEarthKing.png"
+                            "template": "Team/seniorEarthKing.png"
                         },
                         "enabled": true
                     }
@@ -4649,7 +4649,7 @@
                     "name": "终突土王",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "fullLevelEarthKing.png"
+                            "template": "Team/fullLevelEarthKing.png"
                         },
                         "enabled": true
                     }
@@ -4658,7 +4658,7 @@
                     "name": "高配土方130",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "advancedEarthwork.png"
+                            "template": "Team/advancedEarthwork.png"
                         },
                         "enabled": true
                     }
@@ -4667,7 +4667,7 @@
                     "name": "终突土方150",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "fullLevelEarthworkPrescription.png"
+                            "template": "Team/fullLevelEarthworkPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4676,7 +4676,7 @@
                     "name": "高配风王",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "seniorWindKing.png"
+                            "template": "Team/seniorWindKing.png"
                         },
                         "enabled": true
                     }
@@ -4685,7 +4685,7 @@
                     "name": "终突风王",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "fullLevelWindKing.png"
+                            "template": "Team/fullLevelWindKing.png"
                         },
                         "enabled": true
                     }
@@ -4694,7 +4694,7 @@
                     "name": "高配风方130",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "advancedWind.png"
+                            "template": "Team/advancedWind.png"
                         },
                         "enabled": true
                     }
@@ -4703,7 +4703,7 @@
                     "name": "终突风方150",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "fullLevelWindPrescription.png"
+                            "template": "Team/fullLevelWindPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4712,7 +4712,7 @@
                     "name": "高配光王",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "seniorKingofLight.png"
+                            "template": "Team/seniorKingofLight.png"
                         },
                         "enabled": true
                     }
@@ -4721,7 +4721,7 @@
                     "name": "终突光王",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "fullLevelKingofLight.png"
+                            "template": "Team/fullLevelKingofLight.png"
                         },
                         "enabled": true
                     }
@@ -4730,7 +4730,7 @@
                     "name": "高配光方130",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "advancedLightPrescription.png"
+                            "template": "Team/advancedLightPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4739,7 +4739,7 @@
                     "name": "终突光方150",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "fullLightPrescription.png"
+                            "template": "Team/fullLightPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4748,7 +4748,7 @@
                     "name": "高配暗王",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "seniorDarkKing.png"
+                            "template": "Team/seniorDarkKing.png"
                         },
                         "enabled": true
                     }
@@ -4757,7 +4757,7 @@
                     "name": "终突暗王",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "fullLevelDarkKing.png"
+                            "template": "Team/fullLevelDarkKing.png"
                         },
                         "enabled": true
                     }
@@ -4766,7 +4766,7 @@
                     "name": "高配暗方130",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "advancedDarkPrescription.png"
+                            "template": "Team/advancedDarkPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4775,7 +4775,7 @@
                     "name": "终突暗方150",
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
-                            "template": "fullLevelDarkPrescription.png"
+                            "template": "Team/fullLevelDarkPrescription.png"
                         },
                         "enabled": true
                     }
@@ -4788,42 +4788,42 @@
                     "name": "光->顺时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "光使节.png",
+                            "template": "Kinnara/光使节.png",
                             "recommended roi" : [353,56,95,88],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "暗使节.png",
+                            "template": "Kinnara/暗使节.png",
                             "recommended roi" : [833,56,98,87],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "火使节.png",
+                            "template": "Kinnara/火使节.png",
                             "recommended roi" : [923,323,98,101],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "水使节.png",
+                            "template": "Kinnara/水使节.png",
                             "recommended roi" : [828,564,103,89],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "地使节.png",
+                            "template": "Kinnara/地使节.png",
                             "recommended roi" : [346,563,96,90],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "风使节.png",
+                            "template": "Kinnara/风使节.png",
                             "recommended roi" : [260,328,97,86],
                             "next": [
                                 "offDefaultMecha_Fire"
@@ -4836,42 +4836,42 @@
                     "name": "光->逆时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "光使节.png",
+                            "template": "Kinnara/光使节.png",
                             "recommended roi" : [353,56,95,88],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "风使节.png",
+                            "template": "Kinnara/风使节.png",
                             "recommended roi" : [260,328,97,86],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "地使节.png",
+                            "template": "Kinnara/地使节.png",
                             "recommended roi" : [346,563,96,90],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "水使节.png",
+                            "template": "Kinnara/水使节.png",
                             "recommended roi" : [828,564,103,89],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "火使节.png",
+                            "template": "Kinnara/火使节.png",
                             "recommended roi" : [923,323,98,101],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "暗使节.png",
+                            "template": "Kinnara/暗使节.png",
                             "recommended roi" : [833,56,98,87],
                             "next": [
                                 "offDefaultMecha_Light"
@@ -4884,42 +4884,42 @@
                     "name": "暗->顺时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "暗使节.png",
+                            "template": "Kinnara/暗使节.png",
                             "recommended roi" : [833,56,98,87],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "火使节.png",
+                            "template": "Kinnara/火使节.png",
                             "recommended roi" : [923,323,98,101],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "水使节.png",
+                            "template": "Kinnara/水使节.png",
                             "recommended roi" : [828,564,103,89],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "地使节.png",
+                            "template": "Kinnara/地使节.png",
                             "recommended roi" : [346,563,96,90],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "风使节.png",
+                            "template": "Kinnara/风使节.png",
                             "recommended roi" : [260,328,97,86],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "光使节.png",
+                            "template": "Kinnara/光使节.png",
                             "recommended roi" : [353,56,95,88],
                             "next": [
                                 "offDefaultMecha_Dark"
@@ -4932,42 +4932,42 @@
                     "name": "暗->逆时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "暗使节.png",
+                            "template": "Kinnara/暗使节.png",
                             "recommended roi" : [833,56,98,87],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "光使节.png",
+                            "template": "Kinnara/光使节.png",
                             "recommended roi" : [353,56,95,88],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "风使节.png",
+                            "template": "Kinnara/风使节.png",
                             "recommended roi" : [260,328,97,86],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "地使节.png",
+                            "template": "Kinnara/地使节.png",
                             "recommended roi" : [346,563,96,90],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "水使节.png",
+                            "template": "Kinnara/水使节.png",
                             "recommended roi" : [828,564,103,89],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "火使节.png",
+                            "template": "Kinnara/火使节.png",
                             "recommended roi" : [923,323,98,101],
                             "next": [
                               "offDefaultMecha_Water"
@@ -4980,42 +4980,42 @@
                     "name": "火->顺时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "火使节.png",
+                            "template": "Kinnara/火使节.png",
                             "recommended roi" : [923,323,98,101],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "水使节.png",
+                            "template": "Kinnara/水使节.png",
                             "recommended roi" : [828,564,103,89],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "地使节.png",
+                            "template": "Kinnara/地使节.png",
                             "recommended roi" : [346,563,96,90],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "风使节.png",
+                            "template": "Kinnara/风使节.png",
                             "recommended roi" : [260,328,97,86],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "光使节.png",
+                            "template": "Kinnara/光使节.png",
                             "recommended roi" : [353,56,95,88],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "暗使节.png",
+                            "template": "Kinnara/暗使节.png",
                             "recommended roi" : [833,56,98,87],
                             "next": [
                                 "offDefaultMecha_Light"
@@ -5028,42 +5028,42 @@
                     "name": "火->逆时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "火使节.png",
+                            "template": "Kinnara/火使节.png",
                             "recommended roi" : [923,323,98,101],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "暗使节.png",
+                            "template": "Kinnara/暗使节.png",
                             "recommended roi" : [833,56,98,87],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "光使节.png",
+                            "template": "Kinnara/光使节.png",
                             "recommended roi" : [353,56,95,88],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "风使节.png",
+                            "template": "Kinnara/风使节.png",
                             "recommended roi" : [260,328,97,86],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "地使节.png",
+                            "template": "Kinnara/地使节.png",
                             "recommended roi" : [346,563,96,90],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "水使节.png",
+                            "template": "Kinnara/水使节.png",
                             "recommended roi" : [828,564,103,89],
                             "next": [
                                 "offDefaultMecha_Soil"
@@ -5076,42 +5076,42 @@
                     "name": "水->顺时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "水使节.png",
+                            "template": "Kinnara/水使节.png",
                             "recommended roi" : [828,564,103,89],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "地使节.png",
+                            "template": "Kinnara/地使节.png",
                             "recommended roi" : [346,563,96,90],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "风使节.png",
+                            "template": "Kinnara/风使节.png",
                             "recommended roi" : [260,328,97,86],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "光使节.png",
+                            "template": "Kinnara/光使节.png",
                             "recommended roi" : [353,56,95,88],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "暗使节.png",
+                            "template": "Kinnara/暗使节.png",
                             "recommended roi" : [833,56,98,87],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "火使节.png",
+                            "template": "Kinnara/火使节.png",
                             "recommended roi" : [923,323,98,101],
                             "next": [
                               "offDefaultMecha_Water"
@@ -5124,42 +5124,42 @@
                     "name": "水->逆时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "水使节.png",
+                            "template": "Kinnara/水使节.png",
                             "recommended roi" : [828,564,103,89],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "火使节.png",
+                            "template": "Kinnara/火使节.png",
                             "recommended roi" : [923,323,98,101],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "暗使节.png",
+                            "template": "Kinnara/暗使节.png",
                             "recommended roi" : [833,56,98,87],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "光使节.png",
+                            "template": "Kinnara/光使节.png",
                             "recommended roi" : [353,56,95,88],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "风使节.png",
+                            "template": "Kinnara/风使节.png",
                             "recommended roi" : [260,328,97,86],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "地使节.png",
+                            "template": "Kinnara/地使节.png",
                             "recommended roi" : [346,563,96,90],
                             "next": [
                                 "offDefaultMecha_Wind"
@@ -5172,42 +5172,42 @@
                     "name": "土->顺时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "地使节.png",
+                            "template": "Kinnara/地使节.png",
                             "recommended roi" : [346,563,96,90],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "风使节.png",
+                            "template": "Kinnara/风使节.png",
                             "recommended roi" : [260,328,97,86],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "光使节.png",
+                            "template": "Kinnara/光使节.png",
                             "recommended roi" : [353,56,95,88],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "暗使节.png",
+                            "template": "Kinnara/暗使节.png",
                             "recommended roi" : [833,56,98,87],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "火使节.png",
+                            "template": "Kinnara/火使节.png",
                             "recommended roi" : [923,323,98,101],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "水使节.png",
+                            "template": "Kinnara/水使节.png",
                             "recommended roi" : [828,564,103,89],
                             "next": [
                                 "offDefaultMecha_Soil"
@@ -5220,42 +5220,42 @@
                     "name": "土->逆时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "地使节.png",
+                            "template": "Kinnara/地使节.png",
                             "recommended roi" : [346,563,96,90],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "水使节.png",
+                            "template": "Kinnara/水使节.png",
                             "recommended roi" : [828,564,103,89],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "火使节.png",
+                            "template": "Kinnara/火使节.png",
                             "recommended roi" : [923,323,98,101],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "暗使节.png",
+                            "template": "Kinnara/暗使节.png",
                             "recommended roi" : [833,56,98,87],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "光使节.png",
+                            "template": "Kinnara/光使节.png",
                             "recommended roi" : [353,56,95,88],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "风使节.png",
+                            "template": "Kinnara/风使节.png",
                             "recommended roi" : [260,328,97,86],
                             "next": [
                                 "offDefaultMecha_Fire"
@@ -5269,42 +5269,42 @@
                     "name": "风->顺时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "风使节.png",
+                            "template": "Kinnara/风使节.png",
                             "recommended roi" : [260,328,97,86],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "光使节.png",
+                            "template": "Kinnara/光使节.png",
                             "recommended roi" : [353,56,95,88],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "暗使节.png",
+                            "template": "Kinnara/暗使节.png",
                             "recommended roi" : [833,56,98,87],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "火使节.png",
+                            "template": "Kinnara/火使节.png",
                             "recommended roi" : [923,323,98,101],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "水使节.png",
+                            "template": "Kinnara/水使节.png",
                             "recommended roi" : [828,564,103,89],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "地使节.png",
+                            "template": "Kinnara/地使节.png",
                             "recommended roi" : [346,563,96,90],
                             "next": [
                                 "offDefaultMecha_Wind"
@@ -5317,42 +5317,42 @@
                     "name": "风->逆时针",
                     "pipeline_override": {
                         "Envoy_one": {
-                            "template" : "风使节.png",
+                            "template": "Kinnara/风使节.png",
                             "recommended roi" : [260,328,97,86],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_two": {
-                            "template" : "地使节.png",
+                            "template": "Kinnara/地使节.png",
                             "recommended roi" : [346,563,96,90],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_three": {
-                            "template" : "水使节.png",
+                            "template": "Kinnara/水使节.png",
                             "recommended roi" : [828,564,103,89],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_four": {
-                            "template" : "火使节.png",
+                            "template": "Kinnara/火使节.png",
                             "recommended roi" : [923,323,98,101],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_five": {
-                            "template" : "暗使节.png",
+                            "template": "Kinnara/暗使节.png",
                             "recommended roi" : [833,56,98,87],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_six": {
-                            "template" : "光使节.png",
+                            "template": "Kinnara/光使节.png",
                             "recommended roi" : [353,56,95,88],
                             "next": [
                                 "offDefaultMecha_Dark"

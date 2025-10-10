@@ -16,7 +16,7 @@
   },
   "Kinnara_detectionHome": {
     "recognition": "TemplateMatch",
-    "template": "主页出击.png",
+    "template": "Common/主页出击.png",
     "roi" : [847,299,415,346],
     "next": [
       "clickHighDifficulty",
@@ -43,7 +43,7 @@
   },
   "clickKinnara": {
     "recognition": "TemplateMatch",
-    "template" : "Kinnara.png",
+    "template": "Kinnara/Kinnara.png",
     "roi" : [16,261,480,323],
     "action": "Click",
     "next": [
@@ -127,7 +127,7 @@
   },
   "teamBattleKinnara": {
     "recognition": "TemplateMatch",
-    "template" : "团队主界面.png",
+    "template": "Kinnara/团队主界面.png",
     "recommended roi" : [427,161,423,391],
     "next": [
       "Envoy_one",
@@ -145,7 +145,7 @@
   "Envoy_one": {
     "recognition": "TemplateMatch",
     "threshold": 0.95,
-    "template" : "水使节.png",
+    "template": "Kinnara/水使节.png",
     "recommended roi" : [828,564,103,89],
     "action": "Click",
     "next": [
@@ -156,7 +156,7 @@
   "Envoy_two": {
     "recognition": "TemplateMatch",
     "threshold": 0.95,
-    "template" : "地使节.png",
+    "template": "Kinnara/地使节.png",
     "recommended roi" : [346,563,96,90],
     "action": "Click",
     "next": [
@@ -168,7 +168,7 @@
   "Envoy_three": {
     "recognition": "TemplateMatch",
     "threshold": 0.95,
-    "template" : "风使节.png",
+    "template": "Kinnara/风使节.png",
     "recommended roi" : [260,328,97,86],
     "action": "Click",
     "next": [
@@ -180,7 +180,7 @@
   "Envoy_four": {
     "recognition": "TemplateMatch",
     "threshold": 0.95,
-    "template" : "光使节.png",
+    "template": "Kinnara/光使节.png",
     "recommended roi" : [353,56,95,88],
     "action": "Click",
     "next": [
@@ -192,7 +192,7 @@
   "Envoy_five": {
     "recognition": "TemplateMatch",
     "threshold": 0.95,
-    "template" : "暗使节.png",
+    "template": "Kinnara/暗使节.png",
     "recommended roi" : [833,56,98,87],
     "action": "Click",
     "next": [
@@ -204,7 +204,7 @@
   "Envoy_six": {
     "recognition": "TemplateMatch",
     "threshold": 0.95,
-    "template" : "火使节.png",
+    "template": "Kinnara/火使节.png",
     "recommended roi" : [923,323,98,101],
     "action": "Click",
     "next": [
@@ -216,7 +216,7 @@
   "Envoy_seven": {
     "recognition": "TemplateMatch",
     "threshold": 0.95,
-    "template" : "紧那罗本体.png",
+    "template": "Kinnara/紧那罗本体.png",
     "next": [
       "offDefaultMecha_Kinnara",
       "网络连接断开"
@@ -277,7 +277,7 @@
   },
   "changeLineup_Fire": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
+    "template": "Team/changeLineup.png",
     "roi" : [5,75,153,47],
     "target" : [82,160,53,58],
     "action": "Click",
@@ -332,7 +332,7 @@
   //备选方案2
   "offChangeLineup_Fire": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
+    "template": "Team/changeLineup.png",
     "roi" : [5,75,153,47],
     "target" : [1228,84,33,29],
     "action": "Click",
@@ -349,7 +349,7 @@
     "green_mask": true,
     "order_by": "Score",
     "threshold": 0.8,
-    "template": "fullLevelEarthworkPrescription.png",
+    "template": "Team/fullLevelEarthworkPrescription.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
     "next": [
@@ -374,7 +374,7 @@
   },
   "recognizeEnteringTheRoom_Fire": {
     "recognition": "TemplateMatch",
-    "template": "加载界面.png",
+    "template": "Common/加载界面.png",
     "roi": [
       373,
       155,
@@ -406,7 +406,7 @@
   },
   "battleVictory_Fire": {
     "recognition": "TemplateMatch",
-    "template": "战斗胜利.png",
+    "template": "Common/战斗胜利.png",
     "roi": [
       230,
       145,
@@ -423,7 +423,7 @@
   },
   "deathInBattle_Fire": {
     "recognition": "TemplateMatch",
-    "template": "取消.png",
+    "template": "Common/取消.png",
     "timeout": 900000,
     "rate_limit": 800,
     "action": "Click",
@@ -435,7 +435,7 @@
   },
   "battleConfirmation_Fire": {
     "recognition": "TemplateMatch",
-    "template": "继续.png",
+    "template": "Common/继续.png",
     "roi": [
       938,
       621,
@@ -474,7 +474,7 @@
   },
   "changeLineup_Water": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
+    "template": "Team/changeLineup.png",
     "roi" : [5,75,153,47],
     "target" : [81,237,57,55],
     "action": "Click",
@@ -529,7 +529,7 @@
   //备选方案2
   "offChangeLineup_Water": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
+    "template": "Team/changeLineup.png",
     "roi" : [5,75,153,47],
     "target" : [1228,84,33,29],
     "action": "Click",
@@ -546,7 +546,7 @@
     "green_mask": true,
     "order_by": "Score",
     "threshold": 0.8,
-    "template": "seniorWaterKing.png",
+    "template": "Team/seniorWaterKing.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
     "next": [
@@ -571,7 +571,7 @@
   },
   "recognizeEnteringTheRoom_Water": {
     "recognition": "TemplateMatch",
-    "template": "加载界面.png",
+    "template": "Common/加载界面.png",
     "roi": [
       373,
       155,
@@ -603,7 +603,7 @@
   },
   "battleVictory_Water": {
     "recognition": "TemplateMatch",
-    "template": "战斗胜利.png",
+    "template": "Common/战斗胜利.png",
     "roi": [
       230,
       145,
@@ -620,7 +620,7 @@
   },
   "deathInBattle_Water": {
     "recognition": "TemplateMatch",
-    "template": "取消.png",
+    "template": "Common/取消.png",
     "timeout": 900000,
     "rate_limit": 800,
     "action": "Click",
@@ -632,7 +632,7 @@
   },
   "battleConfirmation_Water": {
     "recognition": "TemplateMatch",
-    "template": "继续.png",
+    "template": "Common/继续.png",
     "roi": [
       938,
       621,
@@ -671,7 +671,7 @@
   },
   "changeLineup_Soil": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
+    "template": "Team/changeLineup.png",
     "roi" : [5,75,153,47],
     "target" : [78,308,62,51],
     "action": "Click",
@@ -726,7 +726,7 @@
   //备选方案2
   "offChangeLineup_Soil": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
+    "template": "Team/changeLineup.png",
     "roi" : [5,75,153,47],
     "target" : [1228,84,33,29],
     "action": "Click",
@@ -743,7 +743,7 @@
     "green_mask": true,
     "order_by": "Score",
     "threshold": 0.8,
-    "template": "fullLevelEarthKing.png",
+    "template": "Team/fullLevelEarthKing.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
     "next": [
@@ -768,7 +768,7 @@
   },
   "recognizeEnteringTheRoom_Soil": {
     "recognition": "TemplateMatch",
-    "template": "加载界面.png",
+    "template": "Common/加载界面.png",
     "roi": [
       373,
       155,
@@ -800,7 +800,7 @@
   },
   "battleVictory_Soil": {
     "recognition": "TemplateMatch",
-    "template": "战斗胜利.png",
+    "template": "Common/战斗胜利.png",
     "roi": [
       230,
       145,
@@ -817,7 +817,7 @@
   },
   "deathInBattle_Soil": {
     "recognition": "TemplateMatch",
-    "template": "取消.png",
+    "template": "Common/取消.png",
     "timeout": 900000,
     "rate_limit": 800,
     "action": "Click",
@@ -829,7 +829,7 @@
   },
   "battleConfirmation_Soil": {
     "recognition": "TemplateMatch",
-    "template": "继续.png",
+    "template": "Common/继续.png",
     "roi": [
       938,
       621,
@@ -868,7 +868,7 @@
   },
   "changeLineup_Wind": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
+    "template": "Team/changeLineup.png",
     "roi" : [5,75,153,47],
     "target" : [77,375,59,50],
     "action": "Click",
@@ -923,7 +923,7 @@
   //备选方案2
   "offChangeLineup_Wind": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
+    "template": "Team/changeLineup.png",
     "roi" : [5,75,153,47],
     "target" : [1228,84,33,29],
     "action": "Click",
@@ -940,7 +940,7 @@
     "green_mask": true,
     "order_by": "Score",
     "threshold": 0.8,
-    "template": "fullLevelWindPrescription.png",
+    "template": "Team/fullLevelWindPrescription.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
     "next": [
@@ -965,7 +965,7 @@
   },
   "recognizeEnteringTheRoom_Wind": {
     "recognition": "TemplateMatch",
-    "template": "加载界面.png",
+    "template": "Common/加载界面.png",
     "roi": [
       373,
       155,
@@ -997,7 +997,7 @@
   },
   "battleVictory_Wind": {
     "recognition": "TemplateMatch",
-    "template": "战斗胜利.png",
+    "template": "Common/战斗胜利.png",
     "roi": [
       230,
       145,
@@ -1014,7 +1014,7 @@
   },
   "deathInBattle_Wind": {
     "recognition": "TemplateMatch",
-    "template": "取消.png",
+    "template": "Common/取消.png",
     "timeout": 900000,
     "rate_limit": 800,
     "action": "Click",
@@ -1026,7 +1026,7 @@
   },
   "battleConfirmation_Wind": {
     "recognition": "TemplateMatch",
-    "template": "继续.png",
+    "template": "Common/继续.png",
     "roi": [
       938,
       621,
@@ -1065,7 +1065,7 @@
   },
   "changeLineup_Light": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
+    "template": "Team/changeLineup.png",
     "roi" : [5,75,153,47],
     "target" : [79,449,61,50],
     "action": "Click",
@@ -1120,7 +1120,7 @@
   //备选方案2
   "offChangeLineup_Light": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
+    "template": "Team/changeLineup.png",
     "roi" : [5,75,153,47],
     "target" : [1228,84,33,29],
     "action": "Click",
@@ -1137,7 +1137,7 @@
     "green_mask": true,
     "order_by": "Score",
     "threshold": 0.8,
-    "template": "fullLevelKingofLight.png",
+    "template": "Team/fullLevelKingofLight.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
     "next": [
@@ -1162,7 +1162,7 @@
   },
   "recognizeEnteringTheRoom_Light": {
     "recognition": "TemplateMatch",
-    "template": "加载界面.png",
+    "template": "Common/加载界面.png",
     "roi": [
       373,
       155,
@@ -1194,7 +1194,7 @@
   },
   "battleVictory_Light": {
     "recognition": "TemplateMatch",
-    "template": "战斗胜利.png",
+    "template": "Common/战斗胜利.png",
     "roi": [
       230,
       145,
@@ -1211,7 +1211,7 @@
   },
   "deathInBattle_Light": {
     "recognition": "TemplateMatch",
-    "template": "取消.png",
+    "template": "Common/取消.png",
     "timeout": 900000,
     "rate_limit": 800,
     "action": "Click",
@@ -1223,7 +1223,7 @@
   },
   "battleConfirmation_Light": {
     "recognition": "TemplateMatch",
-    "template": "继续.png",
+    "template": "Common/继续.png",
     "roi": [
       938,
       621,
@@ -1262,7 +1262,7 @@
   },
   "changeLineup_Dark": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
+    "template": "Team/changeLineup.png",
     "roi" : [5,75,153,47],
     "target" : [83,518,55,49],
     "action": "Click",
@@ -1320,7 +1320,7 @@
   //备选方案2
   "offChangeLineup_Dark": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
+    "template": "Team/changeLineup.png",
     "roi" : [5,75,153,47],
     "target" : [1228,84,33,29],
     "action": "Click",
@@ -1337,7 +1337,7 @@
     "green_mask": true,
     "order_by": "Score",
     "threshold": 0.8,
-    "template": "fullLevelDarkKing.png",
+    "template": "Team/fullLevelDarkKing.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
     "next": [
@@ -1362,7 +1362,7 @@
   },
   "recognizeEnteringTheRoom_Dark": {
     "recognition": "TemplateMatch",
-    "template": "加载界面.png",
+    "template": "Common/加载界面.png",
     "roi": [
       373,
       155,
@@ -1396,7 +1396,7 @@
   },
   "battleVictory_Dark": {
     "recognition": "TemplateMatch",
-    "template": "战斗胜利.png",
+    "template": "Common/战斗胜利.png",
     "roi": [
       230,
       145,
@@ -1431,7 +1431,7 @@
   },
   "deathInBattle_Dark": {
     "recognition": "TemplateMatch",
-    "template": "取消.png",
+    "template": "Common/取消.png",
     "timeout": 900000,
     "rate_limit": 800,
     "action": "Click",
@@ -1444,7 +1444,7 @@
   },
   "battleConfirmation_Dark": {
     "recognition": "TemplateMatch",
-    "template": "继续.png",
+    "template": "Common/继续.png",
     "roi": [
       938,
       621,
@@ -1482,7 +1482,7 @@
   },
   "changeLineup_Kinnara": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
+    "template": "Team/changeLineup.png",
     "roi" : [5,75,153,47],
     "target" : [77,375,59,50],
     "action": "Click",
@@ -1537,7 +1537,7 @@
   //备选方案2
   "offChangeLineup_Kinnara": {
     "recognition": "TemplateMatch",
-    "template" : "changeLineup.png",
+    "template": "Team/changeLineup.png",
     "roi" : [5,75,153,47],
     "target" : [1228,84,33,29],
     "action": "Click",
@@ -1554,7 +1554,7 @@
     "green_mask": true,
     "order_by": "Score",
     "threshold": 0.8,
-    "template": "fullLevelWindPrescription.png",
+    "template": "Team/fullLevelWindPrescription.png",
     "roi" : [149,138,1052,267],
     "action" : "Click",
     "next": [
@@ -1579,7 +1579,7 @@
   },
   "recognizeEnteringTheRoom_Kinnara": {
     "recognition": "TemplateMatch",
-    "template": "加载界面.png",
+    "template": "Common/加载界面.png",
     "roi": [
       373,
       155,
@@ -1613,7 +1613,7 @@
   },
   "battleVictory_Kinnara": {
     "recognition": "TemplateMatch",
-    "template": "战斗胜利.png",
+    "template": "Common/战斗胜利.png",
     "roi": [
       230,
       145,
@@ -1630,7 +1630,7 @@
   },
   "deathInBattle_Kinnara": {
     "recognition": "TemplateMatch",
-    "template": "取消.png",
+    "template": "Common/取消.png",
     "timeout": 900000,
     "rate_limit": 800,
     "action": "Click",
@@ -1658,7 +1658,7 @@
   },
   "battleConfirmation_Kinnara": {
     "recognition": "TemplateMatch",
-    "template": "继续.png",
+    "template": "Common/继续.png",
     "roi": [
       938,
       621,

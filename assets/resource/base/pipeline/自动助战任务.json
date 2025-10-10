@@ -9,7 +9,7 @@
     },
     "检测助战任务是否完成1": {
         "recognition": "TemplateMatch",
-        "template": "任务.png",
+        "template": "Main/任务.png",
         "action": "Click",
         "roi" : [449,640,139,71],
         "next": [
@@ -67,7 +67,7 @@
     },
     "检测助战任务是否完成2": {
         "recognition": "TemplateMatch",
-        "template": "助战金币.png",
+        "template": "Task/助战金币.png",
         "roi": [
             757,
             51,
@@ -114,7 +114,7 @@
     },
     "退出_助战": {
         "recognition": "TemplateMatch",
-        "template": "退出.png",
+        "template": "StartUp/退出.png",
         "action": "Click",
         "next": "加入战斗",
         "timeout": 4000,
@@ -122,7 +122,7 @@
     },
     "点击启用建房": {
         "recognition": "TemplateMatch",
-        "template": "off.png",
+        "template": "Common/off.png",
         "action": "Click",
         "roi": [
             346,

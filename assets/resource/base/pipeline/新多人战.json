@@ -9,7 +9,7 @@
     },
     "加入战斗": {
         "recognition": "TemplateMatch",
-        "template" : "联机战斗.png",
+        "template": "Multi/联机战斗.png",
         "roi" : [847,299,415,346],
         "action": "Click",
         "next": [
@@ -36,7 +36,7 @@
     },
     "点击自动战斗": {
         "recognition": "TemplateMatch",
-        "template": "自动战斗.png",
+        "template": "Multi/自动战斗.png",
         "action": "Click",
         "roi" : [151,221,152,160],
         "next": [
@@ -48,7 +48,7 @@
     },
     "打开off": {
         "recognition": "TemplateMatch",
-        "template": "off.png",
+        "template": "Common/off.png",
         "action": "Click",
         "roi": [
             296,
@@ -65,7 +65,7 @@
     },
     "点击连战设置": {
         "recognition": "TemplateMatch",
-        "template": "连战设置.png",
+        "template": "Common/连战设置.png",
         "action": "Click",
         "roi": [
             679,
@@ -82,7 +82,7 @@
     },
     "点击连战次数": {
         "recognition": "TemplateMatch",
-        "template": "连战次数界面.png",
+        "template": "Common/连战次数界面.png",
         "action": "Click",
         "roi": [
             521,
@@ -149,7 +149,7 @@
     },
     "打开自动再战": {
         "recognition": "TemplateMatch",
-        "template": "未自动再战.png",
+        "template": "Common/未自动再战.png",
         "roi": [
             472,
             356,
@@ -180,7 +180,7 @@
     },
     "检测已选中任务1-是": {
         "recognition": "TemplateMatch",
-        "template": "火幻.png",
+        "template": "Multi/火幻.png",
         "roi": [
             205,
             267,
@@ -198,7 +198,7 @@
     },
     "检测已选中任务1-否": {
         "recognition": "TemplateMatch",
-        "template": "火幻.png",
+        "template": "Multi/火幻.png",
         "roi": [
             205,
             267,
@@ -216,7 +216,7 @@
     },
     "检测已选中任务2-是": {
         "recognition": "TemplateMatch",
-        "template": "火龙.png",
+        "template": "Multi/火龙.png",
         "roi": [
             348,
             286,
@@ -234,7 +234,7 @@
     },
     "检测已选中任务2-否": {
         "recognition": "TemplateMatch",
-        "template": "火龙.png",
+        "template": "Multi/火龙.png",
         "roi": [
             348,
             286,
@@ -252,7 +252,7 @@
     },
     "检测已选中任务3-是": {
         "recognition": "TemplateMatch",
-        "template": "火机.png",
+        "template": "Multi/火机.png",
         "roi": [
             493,
             271,
@@ -270,7 +270,7 @@
     },
     "检测已选中任务3-否": {
         "recognition": "TemplateMatch",
-        "template": "火机.png",
+        "template": "Multi/火机.png",
         "roi": [
             493,
             271,
@@ -288,7 +288,7 @@
     },
     "检测已选中任务4-是": {
         "recognition": "TemplateMatch",
-        "template": "无设置.png",
+        "template": "Multi/无设置.png",
         "roi": [
             635,
             269,
@@ -305,7 +305,7 @@
     },
     "检测已选中任务4-否": {
         "recognition": "TemplateMatch",
-        "template": "无设置.png",
+        "template": "Multi/无设置.png",
         "roi": [
             635,
             269,
@@ -345,7 +345,7 @@
     },
     "检测是否清空关卡选择": {
         "recognition": "TemplateMatch",
-        "template": "无设置.png",
+        "template": "Multi/无设置.png",
         "roi": [
             205,
             267,
@@ -431,7 +431,7 @@
     },
     "选择关卡1_1": {
         "recognition": "TemplateMatch",
-        "template": "新多人_火龙.png",
+        "template": "Multi/新多人_火龙.png",
         "roi": "选择关卡1_0",
         "roi_offset": [
             -100,
@@ -543,7 +543,7 @@
     },
     "选择关卡2_1_上滑": {
         "recognition": "TemplateMatch",
-        "template": "新多人_火机.png",
+        "template": "Multi/新多人_火机.png",
         "roi": "选择关卡2_0_上滑",
         "roi_offset": [
             -100,
@@ -561,7 +561,7 @@
     },
     "选择关卡2_1_下滑": {
         "recognition": "TemplateMatch",
-        "template": "新多人_火机.png",
+        "template": "Multi/新多人_火机.png",
         "roi": "选择关卡2_0_下滑",
         "roi_offset": [
             -100,
@@ -672,7 +672,7 @@
     },
     "选择关卡3_1_上滑": {
         "recognition": "TemplateMatch",
-        "template": "新多人_火龙.png",
+        "template": "Multi/新多人_火龙.png",
         "roi": "选择关卡3_0_上滑",
         "roi_offset": [
             -100,
@@ -690,7 +690,7 @@
     },
     "选择关卡3_1_下滑": {
         "recognition": "TemplateMatch",
-        "template": "新多人_火龙.png",
+        "template": "Multi/新多人_火龙.png",
         "roi": "选择关卡3_0_下滑",
         "roi_offset": [
             -100,
@@ -718,7 +718,7 @@
     },
     "点击开始自动战斗": {
         "recognition": "TemplateMatch",
-        "template": "开始自动战斗.png",
+        "template": "Multi/开始自动战斗.png",
         "action": "Click",
         "post_delay": 200,
         "pre_delay": 200,
@@ -732,7 +732,7 @@
     },
     "xdr识别进入房间": {
         "recognition": "TemplateMatch",
-        "template": "加载界面.png",
+        "template": "Common/加载界面.png",
         "roi": [
             373,
             155,
@@ -751,7 +751,7 @@
     },
     "xdr识别进入房间1": {
         "recognition": "TemplateMatch",
-        "template": "停止连战.png",
+        "template": "Multi/停止连战.png",
         "roi": [
             412,
             7,
@@ -787,7 +787,7 @@
     },
     "限次_战斗胜利": {
         "recognition": "TemplateMatch",
-        "template": "战斗胜利.png",
+        "template": "Common/战斗胜利.png",
         "roi": [
             230,
             145,
@@ -803,7 +803,7 @@
     },
     "限次_战斗确认": {
         "recognition": "TemplateMatch",
-        "template": "继续.png",
+        "template": "Common/继续.png",
         "roi": [
             938,
             621,
@@ -819,7 +819,7 @@
     },
     "xdr离开战斗界面": {
         "recognition": "TemplateMatch",
-        "template": "停止连战.png",
+        "template": "Multi/停止连战.png",
         "roi": [
             412,
             7,
@@ -841,7 +841,7 @@
     },
     "战斗胜利": {
         "recognition": "TemplateMatch",
-        "template": "战斗胜利.png",
+        "template": "Common/战斗胜利.png",
         "roi": [
             230,
             145,
@@ -874,7 +874,7 @@
     },
     "xdr阵亡": {
         "recognition": "TemplateMatch",
-        "template": "取消.png",
+        "template": "Common/取消.png",
         "timeout": 120000,
         "rate_limit": 800,
         "action": "Click",
@@ -891,13 +891,13 @@
     },
     "xdr阵亡0": {
         "recognition": "TemplateMatch",
-        "template": "取消.png",
+        "template": "Common/取消.png",
         "timeout": 4000,
         "action": "Click"
     },
     "xdr战斗确认": {
         "recognition": "TemplateMatch",
-        "template": "继续.png",
+        "template": "Common/继续.png",
         "roi": [
             938,
             621,
@@ -919,7 +919,7 @@
     },
     "返回主页检测_次数限制专用": {
         "recognition": "TemplateMatch",
-        "template": "返回主页.png",
+        "template": "StartUp/返回主页.png",
         "action": "Click",
         "roi": [
             0,
@@ -932,7 +932,7 @@
     },
     "搜索中": {
         "recognition": "TemplateMatch",
-        "template": "快速加入房间.png",
+        "template": "Multi/快速加入房间.png",
         "roi": [
             529,
             374,
@@ -954,7 +954,7 @@
     },
     "战斗未找到": {
         "recognition": "TemplateMatch",
-        "template": "战斗未找到.png",
+        "template": "Multi/战斗未找到.png",
         "roi": [
             418,
             249,
@@ -990,7 +990,7 @@
     },
     "xdr超时跳车0": {
         "recognition": "TemplateMatch",
-        "template": "AUTO.png",
+        "template": "Common/AUTO.png",
         "roi": [
             1141,
             0,
@@ -1006,7 +1006,7 @@
     },
     "xdr超时跳车1": {
         "recognition": "TemplateMatch",
-        "template": "设置.png",
+        "template": "Multi/设置.png",
         "timeout": 4000,
         "roi": [
             1141,
@@ -1023,7 +1023,7 @@
     },
     "xdr超时跳车2": {
         "recognition": "TemplateMatch",
-        "template": "战斗撤退.png",
+        "template": "Multi/战斗撤退.png",
         "roi": [
             399,
             419,

@@ -1,7 +1,7 @@
 {
     "加入房间": {
         "recognition": "TemplateMatch",
-        "template": "加入房间.png",
+        "template": "Multi/加入房间.png",
         "roi": [
             1062,
             561,
@@ -239,7 +239,7 @@
     },
     "不再加入0": {
         "recognition": "TemplateMatch",
-        "template": "不再自动加入.png",
+        "template": "Common/不再自动加入.png",
         "roi": [
             204,
             563,
@@ -256,7 +256,7 @@
     },
     "不再加入": {
         "recognition": "TemplateMatch",
-        "template": "不再自动加入.png",
+        "template": "Common/不再自动加入.png",
         "roi": [
             204,
             563,
@@ -273,7 +273,7 @@
     },
     "退出房间0": {
         "recognition": "TemplateMatch",
-        "template": "退出.png",
+        "template": "StartUp/退出.png",
         "roi": [
             0,
             0,
@@ -306,7 +306,7 @@
     },
     "cc大蓝瓶": {
         "recognition": "TemplateMatch",
-        "template": "大蓝瓶.png",
+        "template": "Common/大蓝瓶.png",
         "action": "Swipe",
         "begin": [
             613,
@@ -327,7 +327,7 @@
     },
     "cc小蓝瓶": {
         "recognition": "TemplateMatch",
-        "template": "小蓝瓶.png",
+        "template": "Common/小蓝瓶.png",
         "action": "Swipe",
         "begin": [
             666,
@@ -356,7 +356,7 @@
     },
     "cc点击": {
         "recognition": "TemplateMatch",
-        "template": "补体力点击.png",
+        "template": "Common/补体力点击.png",
         "roi": [
             617,
             303,
