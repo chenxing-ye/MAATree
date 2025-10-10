@@ -361,6 +361,10 @@
             },
             "repeatable": true,
             "repeat_count": 1
+        },
+        {
+            "name": "每日在线",
+            "entry": "DailyOnline"
         }
     ],
     "option": {

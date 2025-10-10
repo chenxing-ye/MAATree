@@ -97,7 +97,10 @@
     },
     "点击空白处关闭": {
         "recognition": "OCR",
-        "expected": "点击空白处",
+        "expected": [
+            "点击空白处",
+            "空白处"
+        ],
         "action": "Click",
         "post_delay": 800
     },
@@ -263,7 +266,6 @@
     "MainFlag": {
         "recognition": "TemplateMatch",
         "template": "Main/主界面标识__1028_461_79_82__978_411_179_182.png",
-        "action": "Click",
         "roi": [
             1028,
             461,
