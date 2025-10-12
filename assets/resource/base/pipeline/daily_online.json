@@ -76,7 +76,10 @@
         },
         "next": [
             "DailyOnlineGain",
-            "ReturnMain"
+            "MainFlag"
+        ],
+        "interrupt": [
+            "点击空白处关闭"
         ]
     }
 }
