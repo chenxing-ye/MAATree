@@ -184,7 +184,10 @@
                     "next": "Sweep"
                 },
                 "EnterDungeonMain": {
-                    "next": "ClickMaterail"
+                    "next": [
+                        "ClickMaterail",
+                        "EnterDungeonMain"
+                    ]
                 }
             },
             "option": [
@@ -6080,7 +6083,7 @@
                             "template": "MaterailSweep/武备特级__613_244_90_37__563_194_190_137.png"
                         },
                         "MaterailMain": {
-                            "expected": "武备整顿"
+                            "expected": "武备整顿特级"
                         }
                     }
                 },
@@ -6094,7 +6097,7 @@
                             "template": "MaterailSweep/训练特级__613_483_92_40__563_433_192_140.png"
                         },
                         "MaterailMain": {
-                            "expected": "战斗训练"
+                            "expected": "战斗训练特级"
                         }
                     }
                 },
@@ -6108,7 +6111,7 @@
                             "template": "MaterailSweep/雾水特级__808_246_96_33__758_196_196_133.png"
                         },
                         "MaterailMain": {
-                            "expected": "雾水遗迹"
+                            "expected": "雾水遗迹特级"
                         }
                     }
                 },
@@ -6122,7 +6125,7 @@
                             "template": "MaterailSweep/炽焰特级__810_481_86_38__760_431_186_138.png"
                         },
                         "MaterailMain": {
-                            "expected": "炽焰遗迹"
+                            "expected": "炽焰遗迹特级"
                         }
                     }
                 },
@@ -6136,7 +6139,7 @@
                             "template": "MaterailSweep/崭岩特级__809_485_90_36__759_435_190_136.png"
                         },
                         "MaterailMain": {
-                            "expected": "崭岩遗迹"
+                            "expected": "崭岩遗迹特级"
                         }
                     }
                 },
@@ -6150,7 +6153,7 @@
                             "template": "MaterailSweep/驰风特级__812_242_84_41__762_192_184_141.png"
                         },
                         "MaterailMain": {
-                            "expected": "驰风遗迹"
+                            "expected": "驰风遗迹特级"
                         }
                     }
                 },
@@ -6164,7 +6167,7 @@
                             "template": "MaterailSweep/迷暗特级__809_243_89_39__759_193_189_139.png"
                         },
                         "MaterailMain": {
-                            "expected": "迷暗遗迹"
+                            "expected": "迷暗遗迹特级"
                         }
                     }
                 },
@@ -6178,7 +6181,7 @@
                             "template": "MaterailSweep/胧光特级__810_481_88_37__760_431_188_137.png"
                         },
                         "MaterailMain": {
-                            "expected": "胧光遗迹"
+                            "expected": "胧光遗迹特级"
                         }
                     }
                 },
@@ -6201,7 +6204,7 @@
                             ]
                         },
                         "MaterailMain": {
-                            "expected": "职业试炼"
+                            "expected": "苍雷"
                         }
                     }
                 },
@@ -6221,7 +6224,7 @@
                             ]
                         },
                         "MaterailMain": {
-                            "expected": "职业试炼"
+                            "expected": "刃舞"
                         }
                     }
                 },
@@ -6241,7 +6244,7 @@
                             ]
                         },
                         "MaterailMain": {
-                            "expected": "职业试炼"
+                            "expected": "送葬"
                         }
                     }
                 },
@@ -6261,7 +6264,7 @@
                             ]
                         },
                         "MaterailMain": {
-                            "expected": "职业试炼"
+                            "expected": "颂歌"
                         }
                     }
                 },
@@ -6284,7 +6287,7 @@
                             ]
                         },
                         "MaterailMain": {
-                            "expected": "职业试炼"
+                            "expected": "共鸣"
                         }
                     }
                 }
