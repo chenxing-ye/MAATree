@@ -120,7 +120,7 @@ jobs:
             mkdir -p install
             cp -rpvn MFA/. install/
           # url项示例  https://github.com/caicai00001/MAATree
-            jq --arg version_name "MAATree" --arg url ""https://github.com/caicai00001/MAATree"" --arg version ${{ needs.meta.outputs.tag }} '. + {"name": $version_name, "url": $url,"version": $version}' ./assets/interface.json > ./install/interface.json
+            jq --arg version_name "MAATree" --arg custom_title "树批小助手${{ needs.meta.outputs.tag }}" --arg url ""https://github.com/caicai00001/MAATree"" --arg version ${{ needs.meta.outputs.tag }} '. + {"name": $version_name, "custom_title": $custom_title, "url": $url,"version": $version}' ./assets/interface.json > ./install/interface.json
           else
             echo "MFA directory not found, skipping copy."
           fi
