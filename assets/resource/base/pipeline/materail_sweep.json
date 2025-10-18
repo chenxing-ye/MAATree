@@ -63,6 +63,7 @@
                     352
                 ],
                 "template": "MaterailSweep/训练特级__613_483_92_40__563_433_192_140.png",
+                "order_by": "Score",
                 "threshold": 0.9
             }
         },
@@ -79,12 +80,12 @@
             "type": "OCR",
             "param": {
                 "roi": [
-                    877,
-                    111,
-                    146,
-                    52
+                    875,
+                    105,
+                    226,
+                    54
                 ],
-                "expected": "战斗训练"
+                "expected": "特级"
             }
         },
         "action": {
