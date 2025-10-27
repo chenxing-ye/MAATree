@@ -3887,6 +3887,36 @@
         "神狱之主等级": {
             "cases": [
                 {
+                    "name": "60级(迷失之物)",
+                    "pipeline_override": {
+                        "startAutoTaoyuanTownship": {
+                            "next": [
+                                "lostItem",
+                                "detectionHome",
+                                "返回主页检测"
+                            ]
+                        },
+                        "moppingLostItem_waitForCompletion": {
+                            "next": []
+                        }
+                    }
+                },
+                {
+                    "name": "80级(遗落之物)",
+                    "pipeline_override": {
+                        "startAutoTaoyuanTownship": {
+                            "next": [
+                                "LostThings",
+                                "detectionHome",
+                                "返回主页检测"
+                            ]
+                        },
+                        "moppingLostThings_waitForCompletion": {
+                            "next": []
+                        }
+                    }
+                },
+                {
                     "name": "100级",
                     "pipeline_override": {
                         "theMasterOfTaoyuan_Difficulty": {
