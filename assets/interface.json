@@ -7,7 +7,13 @@
         },
         {
             "name": "Win32 桌面应用方式",
-            "type": "Win32"
+            "type": "Win32",
+            "win32": {
+                "class_regex": ".*",
+                "window_regex": "悠久之树",
+                "input": 1,
+                "screencap": 2
+            }
         }
     ],
     "resource": [
