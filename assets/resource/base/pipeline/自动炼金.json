@@ -80,7 +80,10 @@
         "timeout": 3000,
         "post_delay": 700,
         "on_error": "stopapp",
-        "next": "点击炼成"
+        "next": [
+            "点击炼成",
+            "点击工坊"
+        ]
     },
     "点击炼成": {
         "recognition": "TemplateMatch",
@@ -97,7 +100,10 @@
         "timeout": 3000,
         "post_delay": 600,
         "on_error": "stopapp",
-        "next": "点击常规熔炼"
+        "next": [
+            "点击常规熔炼",
+            "点击炼成"
+        ]
     },
     "点击常规熔炼": {
         "recognition": "OCR",
