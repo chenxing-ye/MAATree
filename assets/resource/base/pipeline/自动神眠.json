@@ -163,6 +163,7 @@
         ],
         "post_delay": 300,
         "next": [
+            "选择难度90级_新生_确认_2",
             "选择难度90级_新生_确认",
             "选择难度90级_新生"
         ],
@@ -178,6 +179,29 @@
             112,
             107,
             43
+        ],
+        "post_delay": 300,
+        "next": "扫荡_神眠",
+        "timeout": 3000,
+        "on_error": "stopapp"
+    },
+    "选择难度90级_新生_确认_2": {
+        "recognition": "ColorMatch",
+        "upper": [
+            200,
+            200,
+            200
+        ],
+        "lower": [
+            55,
+            55,
+            55
+        ],
+        "roi": [
+            808,
+            331,
+            19,
+            18
         ],
         "post_delay": 300,
         "next": "扫荡_神眠",
@@ -345,6 +369,7 @@
         "target": [801,457,35,55],
         "action": "Click",
         "next": [
+            "选择难度_褪色的罪人_确认_2",
             "选择难度_褪色的罪人_确认",
             "选择难度_褪色的罪人"
         ],
@@ -357,6 +382,30 @@
         "recognition": "TemplateMatch",
         "template": "GoldSleep/神眠160__1051_112_107_43__1001_62_207_143.png",
         "threshold": 0.95,
+        "roi": [
+            1051,
+            112,
+            107,
+            43
+        ],
+        "next": "扫荡_褪色的罪人",
+        "pre_delay": 400,
+        "post_delay": 400,
+        "timeout": 3000,
+        "on_error": "stopapp"
+    },
+    "选择难度_褪色的罪人_确认_2": {
+        "recognition": "ColorMatch",
+        "upper": [
+            200,
+            200,
+            200
+        ],
+        "lower": [
+            55,
+            55,
+            55
+        ],
         "roi": [
             1051,
             112,
@@ -471,6 +520,7 @@
         ],
         "post_delay": 300,
         "next": [
+            "选择难度_确认_2",
             "选择难度_确认",
             "选择难度"
         ],
@@ -481,6 +531,29 @@
         "recognition": "TemplateMatch",
         "template": "GoldSleep/神眠275__1051_112_107_43__1001_62_207_143.png",
         "threshold": 0.95,
+        "roi": [
+            1051,
+            112,
+            107,
+            43
+        ],
+        "post_delay": 300,
+        "next": "出击_神眠",
+        "timeout": 3000,
+        "on_error": "stopapp"
+    },
+    "选择难度_确认_2": {
+        "recognition": "ColorMatch",
+        "upper": [
+            200,
+            200,
+            200
+        ],
+        "lower": [
+            55,
+            55,
+            55
+        ],
         "roi": [
             1051,
             112,
