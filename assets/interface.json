@@ -1074,7 +1074,8 @@
         "是否进行高阶炼成(一般用于保留花)": {
             "cases": [
                 {
-                    "name": "是"
+                    "name": "是",
+                    "pipeline_override": {}
                 },
                 {
                     "name": "否",
@@ -4101,8 +4102,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Dark": {
                             "target": [1134,159,52,54]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4110,8 +4110,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Dark": {
                             "target": [1140,227,36,47]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4119,8 +4118,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Dark": {
                             "target" : [1137,287,44,48]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4128,8 +4126,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Dark": {
                             "target": [1139,350,41,44]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4137,8 +4134,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Dark": {
                             "target" : [1137,413,43,43]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4146,8 +4142,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Dark": {
                             "target" : [1138,475,42,42]
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
@@ -4159,8 +4154,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Dark": {
                             "template": "Team/seniorDarkKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4168,8 +4162,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Dark": {
                             "template": "Team/fullLevelDarkKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4177,8 +4170,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Dark": {
                             "template": "Team/advancedDarkPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4186,8 +4178,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Dark": {
                             "template": "Team/fullLevelDarkPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
@@ -4199,8 +4190,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Light": {
                             "target": [1134,159,52,54]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4208,8 +4198,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Light": {
                             "target": [1140,227,36,47]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4217,8 +4206,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Light": {
                             "target" : [1137,287,44,48]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4226,8 +4214,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Light": {
                             "target": [1139,350,41,44]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4235,8 +4222,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Light": {
                             "target" : [1137,413,43,43]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4244,8 +4230,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Light": {
                             "target" : [1138,475,42,42]
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
@@ -4257,8 +4242,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Light": {
                             "template": "Team/seniorKingofLight.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4266,8 +4250,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Light": {
                             "template": "Team/fullLevelKingofLight.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4275,8 +4258,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Light": {
                             "template": "Team/advancedDarkPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4284,8 +4266,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Light": {
                             "template": "Team/fullLightPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
@@ -4297,8 +4278,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Water": {
                             "target": [1134,159,52,54]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4306,8 +4286,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Water": {
                             "target": [1140,227,36,47]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4315,8 +4294,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Water": {
                             "target" : [1137,287,44,48]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4324,8 +4302,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Water": {
                             "target": [1139,350,41,44]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4333,8 +4310,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Water": {
                             "target" : [1137,413,43,43]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4342,8 +4318,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Water": {
                             "target" : [1138,475,42,42]
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
@@ -4355,8 +4330,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Water": {
                             "template": "Team/seniorWaterKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4364,8 +4338,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Water": {
                             "template": "Team/fullLevelWaterKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4373,8 +4346,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Water": {
                             "template": "Team/advancedWaterPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4382,8 +4354,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Water": {
                             "template": "Team/fullLevelWaterPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
@@ -4395,8 +4366,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Soil": {
                             "target": [1134,159,52,54]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4404,8 +4374,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Soil": {
                             "target": [1140,227,36,47]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4413,8 +4382,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Soil": {
                             "target" : [1137,287,44,48]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4422,8 +4390,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Soil": {
                             "target": [1139,350,41,44]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4431,8 +4398,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Soil": {
                             "target" : [1137,413,43,43]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4440,8 +4406,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Soil": {
                             "target" : [1138,475,42,42]
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
@@ -4453,8 +4418,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Soil": {
                             "template": "Team/seniorEarthKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4462,8 +4426,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Soil": {
                             "template": "Team/fullLevelEarthKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4471,8 +4434,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Soil": {
                             "template": "Team/advancedEarthwork.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4480,8 +4442,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Soil": {
                             "template": "Team/fullLevelEarthworkPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
@@ -4493,8 +4454,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Wind": {
                             "target": [1134,159,52,54]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4502,8 +4462,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Wind": {
                             "target": [1140,227,36,47]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4511,8 +4470,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Wind": {
                             "target" : [1137,287,44,48]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4520,8 +4478,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Wind": {
                             "target": [1139,350,41,44]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4529,8 +4486,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Wind": {
                             "target" : [1137,413,43,43]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4538,8 +4494,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Wind": {
                             "target" : [1138,475,42,42]
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
@@ -4551,8 +4506,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Wind": {
                             "template": "Team/seniorWindKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4560,8 +4514,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Wind": {
                             "template": "Team/fullLevelWindKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4569,8 +4522,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Wind": {
                             "template": "Team/advancedWind.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4578,8 +4530,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Wind": {
                             "template": "Team/fullLevelWindPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
@@ -4591,8 +4542,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Fire": {
                             "target": [1134,159,52,54]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4600,8 +4550,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Fire": {
                             "target": [1140,227,36,47]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4609,8 +4558,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Fire": {
                             "target" : [1137,287,44,48]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4618,8 +4566,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Fire": {
                             "target": [1139,350,41,44]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4627,8 +4574,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Fire": {
                             "target" : [1137,413,43,43]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4636,8 +4582,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Fire": {
                             "target" : [1138,475,42,42]
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
@@ -4649,8 +4594,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Fire": {
                             "template": "Team/seniorFireKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4658,8 +4602,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Fire": {
                             "template": "Team/fullLevelFireKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4667,8 +4610,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Fire": {
                             "template": "Team/advancedFire.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4676,8 +4618,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Fire": {
                             "template": "Team/fullLevelFire.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
@@ -4690,7 +4631,9 @@
                         "changeLineup_Kinnara": {
                             "target" : [82,160,53,58]
                         },
-                        "enabled": true
+                        "changeLineup_Kinnara_confirm": {
+                            "template": "Common/队伍属性图标_火__93_169_42_43__43_119_142_143.png"
+                        }
                     }
                 },
                 {
@@ -4699,7 +4642,9 @@
                         "changeLineup_Kinnara": {
                             "target" : [81,237,57,55]
                         },
-                        "enabled": true
+                        "changeLineup_Kinnara_confirm": {
+                            "template": "Common/队伍属性图标_水__91_239_42_43__41_189_142_143.png"
+                        }
                     }
                 },
                 {
@@ -4708,7 +4653,9 @@
                         "changeLineup_Kinnara": {
                             "target" : [78,308,62,51]
                         },
-                        "enabled": true
+                        "changeLineup_Kinnara_confirm": {
+                            "template": "Common/队伍属性图标_地__92_311_42_43__42_261_142_143.png"
+                        }
                     }
                 },
                 {
@@ -4717,7 +4664,9 @@
                         "changeLineup_Kinnara": {
                             "target" : [77,375,59,50]
                         },
-                        "enabled": true
+                        "changeLineup_Kinnara_confirm": {
+                            "template": "Common/队伍属性图标_风__90_376_42_43__40_326_142_143.png"
+                        }
                     }
                 },
                 {
@@ -4726,7 +4675,9 @@
                         "changeLineup_Kinnara": {
                             "target" : [79,449,61,50]
                         },
-                        "enabled": true
+                        "changeLineup_Kinnara_confirm": {
+                            "template": "Common/队伍属性图标_光__92_452_42_43__42_402_142_143.png"
+                        }
                     }
                 },
                 {
@@ -4735,7 +4686,9 @@
                         "changeLineup_Kinnara": {
                             "target" : [83,518,55,49]
                         },
-                        "enabled": true
+                        "changeLineup_Kinnara_confirm": {
+                            "template": "Common/队伍属性图标_暗__91_520_42_43__41_470_142_143.png"
+                        }
                     }
                 }
             ]
@@ -4747,8 +4700,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Kinnara": {
                             "target": [1134,159,52,54]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4756,8 +4708,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Kinnara": {
                             "target": [1140,227,36,47]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4765,8 +4716,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Kinnara": {
                             "target" : [1137,287,44,48]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4774,8 +4724,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Kinnara": {
                             "target": [1139,350,41,44]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4783,8 +4732,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Kinnara": {
                             "target" : [1137,413,43,43]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4792,8 +4740,7 @@
                     "pipeline_override": {
                         "dispatchTeam_Kinnara": {
                             "target" : [1138,475,42,42]
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
@@ -4805,8 +4752,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/seniorFireKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4814,8 +4760,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/fullLevelFireKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4823,8 +4768,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/advancedFire.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4832,8 +4776,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/fullLevelFire.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4841,8 +4784,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/seniorWaterKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4850,8 +4792,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/fullLevelWaterKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4859,8 +4800,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/advancedWaterPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4868,8 +4808,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/fullLevelWaterPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4877,8 +4816,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/seniorEarthKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4886,8 +4824,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/fullLevelEarthKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4895,8 +4832,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/advancedEarthwork.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4904,8 +4840,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/fullLevelEarthworkPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4913,8 +4848,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/seniorWindKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4922,8 +4856,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/fullLevelWindKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4931,8 +4864,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/advancedWind.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4940,8 +4872,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/fullLevelWindPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4949,8 +4880,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/seniorKingofLight.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4958,8 +4888,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/fullLevelKingofLight.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4967,8 +4896,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/advancedLightPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4976,8 +4904,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/fullLightPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4985,8 +4912,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/seniorDarkKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -4994,8 +4920,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/fullLevelDarkKing.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -5003,8 +4928,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/advancedDarkPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -5012,8 +4936,7 @@
                     "pipeline_override": {
                         "DefaultMecha_Kinnara": {
                             "template": "Team/fullLevelDarkPrescription.png"
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
@@ -5025,47 +4948,76 @@
                     "pipeline_override": {
                         "Envoy_one": {
                             "template": "Kinnara/光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_two": {
                             "template": "Kinnara/暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_three": {
                             "template": "Kinnara/火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_four": {
                             "template": "Kinnara/水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_five": {
                             "template": "Kinnara/地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_six": {
                             "template": "Kinnara/风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -5073,47 +5025,76 @@
                     "pipeline_override": {
                         "Envoy_one": {
                             "template": "Kinnara/光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_two": {
                             "template": "Kinnara/风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_three": {
                             "template": "Kinnara/地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_four": {
                             "template": "Kinnara/水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_five": {
                             "template": "Kinnara/火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_six": {
                             "template": "Kinnara/暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -5121,47 +5102,76 @@
                     "pipeline_override": {
                         "Envoy_one": {
                             "template": "Kinnara/暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_two": {
                             "template": "Kinnara/火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_three": {
                             "template": "Kinnara/水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_four": {
                             "template": "Kinnara/地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_five": {
                             "template": "Kinnara/风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_six": {
                             "template": "Kinnara/光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -5169,47 +5179,76 @@
                     "pipeline_override": {
                         "Envoy_one": {
                             "template": "Kinnara/暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_two": {
                             "template": "Kinnara/光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_three": {
                             "template": "Kinnara/风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_four": {
                             "template": "Kinnara/地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_five": {
                             "template": "Kinnara/水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_six": {
                             "template": "Kinnara/火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -5217,47 +5256,76 @@
                     "pipeline_override": {
                         "Envoy_one": {
                             "template": "Kinnara/火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_two": {
                             "template": "Kinnara/水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_three": {
                             "template": "Kinnara/地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_four": {
                             "template": "Kinnara/风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_five": {
                             "template": "Kinnara/光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_six": {
                             "template": "Kinnara/暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -5265,47 +5333,76 @@
                     "pipeline_override": {
                         "Envoy_one": {
                             "template": "Kinnara/火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_two": {
                             "template": "Kinnara/暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_three": {
                             "template": "Kinnara/光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_four": {
                             "template": "Kinnara/风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_five": {
                             "template": "Kinnara/地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_six": {
                             "template": "Kinnara/水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -5313,47 +5410,76 @@
                     "pipeline_override": {
                         "Envoy_one": {
                             "template": "Kinnara/水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_two": {
                             "template": "Kinnara/地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_three": {
                             "template": "Kinnara/风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_four": {
                             "template": "Kinnara/光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_five": {
                             "template": "Kinnara/暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_six": {
                             "template": "Kinnara/火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -5361,47 +5487,76 @@
                     "pipeline_override": {
                         "Envoy_one": {
                             "template": "Kinnara/水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_two": {
                             "template": "Kinnara/火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_three": {
                             "template": "Kinnara/暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_four": {
                             "template": "Kinnara/光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_five": {
                             "template": "Kinnara/风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_six": {
                             "template": "Kinnara/地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -5409,47 +5564,76 @@
                     "pipeline_override": {
                         "Envoy_one": {
                             "template": "Kinnara/地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_two": {
                             "template": "Kinnara/风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_three": {
                             "template": "Kinnara/光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_four": {
                             "template": "Kinnara/暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_five": {
                             "template": "Kinnara/火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_six": {
                             "template": "Kinnara/水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -5457,47 +5641,76 @@
                     "pipeline_override": {
                         "Envoy_one": {
                             "template": "Kinnara/地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_two": {
                             "template": "Kinnara/水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_three": {
                             "template": "Kinnara/火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_four": {
                             "template": "Kinnara/暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_five": {
                             "template": "Kinnara/光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_six": {
                             "template": "Kinnara/风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
 
@@ -5506,47 +5719,76 @@
                     "pipeline_override": {
                         "Envoy_one": {
                             "template": "Kinnara/风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_two": {
                             "template": "Kinnara/光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
                         },
                         "Envoy_three": {
                             "template": "Kinnara/暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_four": {
                             "template": "Kinnara/火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_five": {
                             "template": "Kinnara/水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_six": {
                             "template": "Kinnara/地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
-                        },
-                        "enabled": true
+                        }
                     }
                 },
                 {
@@ -5554,47 +5796,76 @@
                     "pipeline_override": {
                         "Envoy_one": {
                             "template": "Kinnara/风使节.png",
-                            "recommended roi" : [260,328,97,86],
+                            "roi": [
+                                260,
+                                328,
+                                97,
+                                86
+                            ],
                             "next": [
                                 "offDefaultMecha_Fire"
                             ]
                         },
                         "Envoy_two": {
                             "template": "Kinnara/地使节.png",
-                            "recommended roi" : [346,563,96,90],
+                            "roi": [
+                                346,
+                                563,
+                                96,
+                                90
+                            ],
                             "next": [
                                 "offDefaultMecha_Wind"
                             ]
                         },
                         "Envoy_three": {
                             "template": "Kinnara/水使节.png",
-                            "recommended roi" : [828,564,103,89],
+                            "roi": [
+                                828,
+                                564,
+                                103,
+                                89
+                            ],
                             "next": [
                                 "offDefaultMecha_Soil"
                             ]
                         },
                         "Envoy_four": {
                             "template": "Kinnara/火使节.png",
-                            "recommended roi" : [923,323,98,101],
+                            "roi": [
+                                923,
+                                323,
+                                98,
+                                101
+                            ],
                             "next": [
                               "offDefaultMecha_Water"
                             ]
                         },
                         "Envoy_five": {
                             "template": "Kinnara/暗使节.png",
-                            "recommended roi" : [833,56,98,87],
+                            "roi": [
+                                833,
+                                56,
+                                98,
+                                87
+                            ],
                             "next": [
                                 "offDefaultMecha_Light"
                             ]
                         },
                         "Envoy_six": {
                             "template": "Kinnara/光使节.png",
-                            "recommended roi" : [353,56,95,88],
+                            "roi": [
+                                353,
+                                56,
+                                95,
+                                88
+                            ],
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
-                        },
-                        "enabled": true
+                        }
                     }
                 }
             ]
