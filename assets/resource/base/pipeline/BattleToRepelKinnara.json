@@ -174,7 +174,7 @@
   "teamBattleKinnara": {
     "recognition": "TemplateMatch",
     "template": "Kinnara/团队主界面.png",
-    "recommended roi": [
+    "roi": [
       427,
       161,
       423,
@@ -363,16 +363,12 @@
       150
     ],
     "pre_delay": 150,
-    "target": [
-      1213,
-      76,
-      45,
-      45
-    ],
-    "action": "Click",
     "next": [
       "changeLineup_Fire",
       "网络连接断开"
+    ],
+    "interrupt": [
+      "offDefaultMecha"
     ],
     "timeout": 3000,
     "on_error": "offDefaultMecha_Fire"
@@ -393,6 +389,24 @@
       58
     ],
     "action": "Click",
+    "next": [
+      "changeLineup_Fire_confirm",
+      "changeLineup_Fire",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "changeLineup_Fire_confirm": {
+    "recognition": "TemplateMatch",
+    "template": "Common/队伍属性图标_火__93_169_42_43__43_119_142_143.png",
+    "threshold": 0.9,
+    "roi": [
+      70,
+      139,
+      86,
+      440
+    ],
     "next": [
       "dispatchTeam_Fire",
       "网络连接断开"
@@ -447,16 +461,12 @@
       150
     ],
     "pre_delay": 150,
-    "target": [
-      1213,
-      76,
-      45,
-      45
-    ],
-    "action": "Click",
     "next": [
       "offChangeLineup_Fire",
       "网络连接断开"
+    ],
+    "interrupt": [
+      "offDefaultMecha"
     ],
     "timeout": 3000,
     "on_error": "offMecha_Fire"
@@ -624,16 +634,12 @@
       150
     ],
     "pre_delay": 150,
-    "target": [
-      1213,
-      76,
-      45,
-      45
-    ],
-    "action": "Click",
     "next": [
       "changeLineup_Water",
       "网络连接断开"
+    ],
+    "interrupt": [
+      "offDefaultMecha"
     ],
     "timeout": 3000,
     "on_error": "offDefaultMecha_Water"
@@ -654,6 +660,24 @@
       55
     ],
     "action": "Click",
+    "next": [
+      "changeLineup_Water_confirm",
+      "changeLineup_Water",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "changeLineup_Water_confirm": {
+    "recognition": "TemplateMatch",
+    "template": "Common/队伍属性图标_水__91_239_42_43__41_189_142_143.png",
+    "threshold": 0.9,
+    "roi": [
+      70,
+      139,
+      86,
+      440
+    ],
     "next": [
       "dispatchTeam_Water",
       "网络连接断开"
@@ -708,16 +732,12 @@
       150
     ],
     "pre_delay": 150,
-    "target": [
-      1213,
-      76,
-      45,
-      45
-    ],
-    "action": "Click",
     "next": [
       "offChangeLineup_Water",
       "网络连接断开"
+    ],
+    "interrupt": [
+      "offDefaultMecha"
     ],
     "timeout": 3000,
     "on_error": "offMecha_Water"
@@ -885,16 +905,12 @@
       150
     ],
     "pre_delay": 150,
-    "target": [
-      1213,
-      76,
-      45,
-      45
-    ],
-    "action": "Click",
     "next": [
       "changeLineup_Soil",
       "网络连接断开"
+    ],
+    "interrupt": [
+      "offDefaultMecha"
     ],
     "timeout": 3000,
     "on_error": "offDefaultMecha_Soil"
@@ -915,6 +931,24 @@
       51
     ],
     "action": "Click",
+    "next": [
+      "changeLineup_Soil_confirm",
+      "changeLineup_Soil",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "changeLineup_Soil_confirm": {
+    "recognition": "TemplateMatch",
+    "template": "Common/队伍属性图标_地__92_311_42_43__42_261_142_143.png",
+    "threshold": 0.9,
+    "roi": [
+      70,
+      139,
+      86,
+      440
+    ],
     "next": [
       "dispatchTeam_Soil",
       "网络连接断开"
@@ -969,16 +1003,12 @@
       150
     ],
     "pre_delay": 150,
-    "target": [
-      1213,
-      76,
-      45,
-      45
-    ],
-    "action": "Click",
     "next": [
       "offChangeLineup_Soil",
       "网络连接断开"
+    ],
+    "interrupt": [
+      "offDefaultMecha"
     ],
     "timeout": 3000,
     "on_error": "offMecha_Soil"
@@ -1146,16 +1176,12 @@
       150
     ],
     "pre_delay": 150,
-    "target": [
-      1213,
-      76,
-      45,
-      45
-    ],
-    "action": "Click",
     "next": [
       "changeLineup_Wind",
       "网络连接断开"
+    ],
+    "interrupt": [
+      "offDefaultMecha"
     ],
     "timeout": 3000,
     "on_error": "offDefaultMecha_Wind"
@@ -1176,6 +1202,24 @@
       50
     ],
     "action": "Click",
+    "next": [
+      "changeLineup_Wind_confirm",
+      "changeLineup_Wind",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "changeLineup_Wind_confirm": {
+    "recognition": "TemplateMatch",
+    "template": "Common/队伍属性图标_风__90_376_42_43__40_326_142_143.png",
+    "threshold": 0.9,
+    "roi": [
+      70,
+      139,
+      86,
+      440
+    ],
     "next": [
       "dispatchTeam_Wind",
       "网络连接断开"
@@ -1230,16 +1274,12 @@
       150
     ],
     "pre_delay": 150,
-    "target": [
-      1213,
-      76,
-      45,
-      45
-    ],
-    "action": "Click",
     "next": [
       "offChangeLineup_Wind",
       "网络连接断开"
+    ],
+    "interrupt": [
+      "offDefaultMecha"
     ],
     "timeout": 3000,
     "on_error": "offMecha_Wind"
@@ -1407,16 +1447,12 @@
       150
     ],
     "pre_delay": 150,
-    "target": [
-      1213,
-      76,
-      45,
-      45
-    ],
-    "action": "Click",
     "next": [
       "changeLineup_Light",
       "网络连接断开"
+    ],
+    "interrupt": [
+      "offDefaultMecha"
     ],
     "timeout": 3000,
     "on_error": "offDefaultMecha_Light"
@@ -1437,6 +1473,24 @@
       50
     ],
     "action": "Click",
+    "next": [
+      "changeLineup_Light_confirm",
+      "changeLineup_Light",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "changeLineup_Light_confirm": {
+    "recognition": "TemplateMatch",
+    "template": "Common/队伍属性图标_光__92_452_42_43__42_402_142_143.png",
+    "threshold": 0.9,
+    "roi": [
+      70,
+      139,
+      86,
+      440
+    ],
     "next": [
       "dispatchTeam_Light",
       "网络连接断开"
@@ -1491,16 +1545,12 @@
       150
     ],
     "pre_delay": 150,
-    "target": [
-      1213,
-      76,
-      45,
-      45
-    ],
-    "action": "Click",
     "next": [
       "offChangeLineup_Light",
       "网络连接断开"
+    ],
+    "interrupt": [
+      "offDefaultMecha"
     ],
     "timeout": 3000,
     "on_error": "offMecha_Light"
@@ -1668,16 +1718,12 @@
       150
     ],
     "pre_delay": 150,
-    "target": [
-      1213,
-      76,
-      45,
-      45
-    ],
-    "action": "Click",
     "next": [
       "changeLineup_Dark",
       "网络连接断开"
+    ],
+    "interrupt": [
+      "offDefaultMecha"
     ],
     "timeout": 3000,
     "on_error": "offDefaultMecha_Dark"
@@ -1698,6 +1744,24 @@
       49
     ],
     "action": "Click",
+    "next": [
+      "changeLineup_Dark_confirm",
+      "changeLineup_Dark",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "changeLineup_Dark_confirm": {
+    "recognition": "TemplateMatch",
+    "template": "Common/队伍属性图标_暗__91_520_42_43__41_470_142_143.png",
+    "threshold": 0.9,
+    "roi": [
+      70,
+      139,
+      86,
+      440
+    ],
     "next": [
       "dispatchTeam_Dark",
       "网络连接断开"
@@ -1755,16 +1819,12 @@
       150
     ],
     "pre_delay": 150,
-    "target": [
-      1213,
-      76,
-      45,
-      45
-    ],
-    "action": "Click",
     "next": [
       "offChangeLineup_Dark",
       "网络连接断开"
+    ],
+    "interrupt": [
+      "offDefaultMecha"
     ],
     "timeout": 3000,
     "on_error": "offMecha_Dark"
@@ -1952,16 +2012,12 @@
       150
     ],
     "pre_delay": 150,
-    "target": [
-      1213,
-      76,
-      45,
-      45
-    ],
-    "action": "Click",
     "next": [
       "changeLineup_Kinnara",
       "网络连接断开"
+    ],
+    "interrupt": [
+      "offDefaultMecha"
     ],
     "timeout": 3000,
     "on_error": "offDefaultMecha_Kinnara"
@@ -1982,6 +2038,24 @@
       50
     ],
     "action": "Click",
+    "next": [
+      "changeLineup_Kinnara_confirm",
+      "changeLineup_Kinnara",
+      "网络连接断开"
+    ],
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "changeLineup_Kinnara_confirm": {
+    "recognition": "TemplateMatch",
+    "template": "Common/队伍属性图标_火__93_169_42_43__43_119_142_143.png",
+    "threshold": 0.9,
+    "roi": [
+      70,
+      139,
+      86,
+      440
+    ],
     "next": [
       "dispatchTeam_Kinnara",
       "网络连接断开"
@@ -2009,7 +2083,7 @@
   "selectEmpty_Kinnara": {
     "recognition": "OCR",
     "expected": "EMPTY",
-    "recommended roi": [
+    "roi": [
       863,
       434,
       174,
@@ -2036,16 +2110,12 @@
       150
     ],
     "pre_delay": 150,
-    "target": [
-      1213,
-      76,
-      45,
-      45
-    ],
-    "action": "Click",
     "next": [
       "offChangeLineup_Kinnara",
       "网络连接断开"
+    ],
+    "interrupt": [
+      "offDefaultMecha"
     ],
     "timeout": 3000,
     "on_error": "offMecha_Kinnara"
@@ -2099,7 +2169,7 @@
   "dispatchCombat_Kinnara": {
     "recognition": "OCR",
     "expected": "出击",
-    "recommended roi": [
+    "roi": [
       1092,
       575,
       159,
@@ -2214,5 +2284,16 @@
       "clickOnTheBlankAreaKinnara"
     ],
     "on_error": "stopapp"
+  },
+  "offDefaultMecha": {
+    "recognition": "TemplateMatch",
+    "template": "Common/支援虚数体页面关闭按钮__1221_83_34_31__1171_33_109_131.png",
+    "roi": [
+      1168,
+      71,
+      101,
+      55
+    ],
+    "action": "Click"
   }
 }
