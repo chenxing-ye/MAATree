@@ -17,7 +17,7 @@
     "action": "Click",
     "next": [
       "clickTaoyuanTownship",
-      "clickChallenge"
+      "clickCompact"
     ],
     "timeout": 3000,
     "on_error": "stopapp"
@@ -399,13 +399,13 @@
       "mopping_lostItem"
     ]
   },
-  "clickChallenge": {
+  "clickCompact": {
     "recognition": "OCR",
-    "expected": "挑战",
+    "expected": "契约",
     "roi": [
-      434,
+      43,
       84,
-      146,
+      1205,
       60
     ],
     "action": "Click",

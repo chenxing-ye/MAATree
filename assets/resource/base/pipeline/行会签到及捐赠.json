@@ -21,14 +21,20 @@
         "on_error": "stopapp"
     },
     "点击行会": {
-        "recognition": "TemplateMatch",
-        "template": "Guild/工会.png",
-        "roi" : [320,634,157,80],
+        "recognition": "OCR",
+        "expected": "工会",
+        "roi": [
+            36,
+            640,
+            594,
+            55
+        ],
         "action": "Click",
         "pre_delay": 100,
         "post_delay": 800,
         "next": [
-            "等待进入行会"
+            "等待进入行会",
+            "点击行会"
         ],
         "timeout": 3000,
         "on_error": "stopapp"

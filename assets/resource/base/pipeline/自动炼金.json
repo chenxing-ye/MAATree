@@ -72,11 +72,16 @@
         "on_error": "stopapp"
     },
     "点击工坊": {
-        "recognition": "TemplateMatch",
-        "template": "Alchemy/工坊.png",
+        "recognition": "OCR",
+        "expected": "工坊",
+        "roi": [
+            36,
+            640,
+            594,
+            55
+        ],
         "action": "Click",
         "pre_delay": 500,
-        "roi" : [40,640,178,76],
         "timeout": 3000,
         "post_delay": 700,
         "on_error": "stopapp",
