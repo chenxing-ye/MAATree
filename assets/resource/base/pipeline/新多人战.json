@@ -726,8 +726,8 @@
         "on_error": "stopapp"
     },
     "点击开始自动战斗": {
-        "recognition": "TemplateMatch",
-        "template": "Multi/开始自动战斗.png",
+        "recognition": "OCR",
+        "expected": "开始自动战斗",
         "action": "Click",
         "post_delay": 200,
         "pre_delay": 200,

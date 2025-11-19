@@ -24,7 +24,8 @@
             "type": "Click"
         },
         "next": [
-            "DailyOnlineMain"
+            "DailyOnlineMain",
+            "ClickDailyOnline"
         ]
     },
     "DailyOnlineMain": {
@@ -51,6 +52,7 @@
             "MainFlag"
         ],
         "interrupt": [
+            "QuitOnline",
             "点击空白处关闭"
         ]
     },
@@ -79,7 +81,21 @@
             "MainFlag"
         ],
         "interrupt": [
+            "QuitOnline",
             "点击空白处关闭"
         ]
+    },
+    "QuitOnline": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    10,
+                    10,
+                    10,
+                    10
+                ]
+            }
+        }
     }
 }

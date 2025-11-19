@@ -425,7 +425,160 @@
     "timeout": 2000,
     "next": [
       "器灵讨伐书_奖励_一键领取",
+      "点击探求者之书_2"
+    ],
+    "on_error": "停止"
+  },
+  "点击探求者之书_2": {
+    "recognition": "OCR",
+    "expected": "探求",
+    "roi": [
+      7,
+      328,
+      228,
+      101
+    ],
+    "action": "Click",
+    "next": "探求者之书_任务_点击_2",
+    "pre_delay": 150,
+    "post_delay": 150,
+    "post_wait_freezes": 300,
+    "timeout": 8000
+  },
+  "探求者之书_任务_点击_2": {
+    "recognition": "OCR",
+    "expected": "任务",
+    "roi": [
+      1115,
+      663,
+      123,
+      57
+    ],
+    "action": "Click",
+    "next": [
+      "一键领取_探索者之书_日常任务奖励_2"
+    ],
+    "pre_delay": 150,
+    "post_delay": 150,
+    "timeout": 800,
+    "on_error": "探求者之书_任务_本周_切换_2"
+  },
+  "一键领取_探索者之书_日常任务奖励_2": {
+    "recognition": "OCR",
+    "expected": "领取",
+    "roi": [
+      1167,
+      44,
+      73,
+      24
+    ],
+    "action": "Click",
+    "next": [
+      "探索书_暂无可领取奖励_2",
+      "一键领取_探索者之书_日常任务奖励_2"
+    ],
+    "interrupt": [
+      "ts点击空白处"
+    ],
+    "pre_delay": 150,
+    "post_delay": 150,
+    "timeout": 800,
+    "on_error": "stopapp"
+  },
+  "探求者之书_任务_本周_切换_2": {
+    "recognition": "OCR",
+    "expected": "本周任务",
+    "roi": [
+      1004,
+      126,
+      122,
+      52
+    ],
+    "action": "Click",
+    "next": "一键领取_探索者之书_本周任务奖励_2",
+    "pre_delay": 100,
+    "post_delay": 100,
+    "timeout": 800,
+    "on_error": "探求者之书_奖励"
+  },
+  "一键领取_探索者之书_本周任务奖励_2": {
+    "recognition": "OCR",
+    "expected": "领取",
+    "roi": [
+      982,
+      203,
+      128,
+      67
+    ],
+    "action": "Click",
+    "target": [
+      1150,
+      38,
+      89,
+      33
+    ],
+    "next": [
+      "一键领取_探索者之书_本周任务奖励_2",
+      "探求者之书_奖励_2"
+    ],
+    "interrupt": [
+      "ts点击空白处"
+    ],
+    "pre_delay": 150,
+    "post_delay": 150,
+    "timeout": 3000,
+    "on_error": "stopapp"
+  },
+  "探求者之书_奖励_2": {
+    "recognition": "OCR",
+    "expected": "奖励",
+    "roi": [
+      919,
+      667,
+      111,
+      53
+    ],
+    "action": "Click",
+    "next": "探求者之书_奖励_一键领取_2",
+    "pre_delay": 100,
+    "post_delay": 100,
+    "timeout": 800,
+    "on_error": "探求者之书_奖励_器灵讨伐书"
+  },
+  "探求者之书_奖励_一键领取_2": {
+    "recognition": "OCR",
+    "expected": "领取",
+    "roi": [
+      1108,
+      27,
+      159,
+      58
+    ],
+    "action": "Click",
+    "post_wait_freezes": 300,
+    "next": [
+      "探求者之书_奖励_一键领取_2",
       "停止"
-    ]
+    ],
+    "interrupt": [
+      "ts点击空白处"
+    ],
+    "pre_delay": 150,
+    "post_delay": 150,
+    "timeout": 2000,
+    "on_error": "stopapp"
+  },
+  "探索书_暂无可领取奖励_2": {
+    "recognition": "OCR",
+    "expected": "暂无",
+    "roi": [
+      528,
+      344,
+      225,
+      40
+    ],
+    "action": "Click",
+    "timeout": 2000,
+    "next": "探求者之书_任务_本周_切换_2"
   }
 }

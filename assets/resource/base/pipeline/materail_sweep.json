@@ -47,9 +47,9 @@
         "action": {
             "type": "Click"
         },
-        "post_delay": 1000,
         "next": [
-            "SelectMaterailSecond"
+            "SelectMaterailSecond",
+            "SelectMaterailFirst"
         ]
     },
     "SelectMaterailSecond": {
