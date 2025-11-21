@@ -4628,8 +4628,8 @@
                 {
                     "name": "火队",
                     "pipeline_override": {
-                        "changeLineup_Kinnara": {
-                            "target" : [82,160,53,58]
+                        "changeLineup_Kinnara_Click": {
+                            "template": "Common/队伍属性图标_火_未点亮__93_169_42_43__43_119_142_143.png"
                         },
                         "changeLineup_Kinnara_confirm": {
                             "template": "Common/队伍属性图标_火__93_169_42_43__43_119_142_143.png"
@@ -4639,8 +4639,8 @@
                 {
                     "name": "水队",
                     "pipeline_override": {
-                        "changeLineup_Kinnara": {
-                            "target" : [81,237,57,55]
+                        "changeLineup_Kinnara_Click": {
+                            "template": "Common/队伍属性图标_水_未点亮__91_239_42_43__41_189_142_143.png"
                         },
                         "changeLineup_Kinnara_confirm": {
                             "template": "Common/队伍属性图标_水__91_239_42_43__41_189_142_143.png"
@@ -4650,8 +4650,8 @@
                 {
                     "name": "土队",
                     "pipeline_override": {
-                        "changeLineup_Kinnara": {
-                            "target" : [78,308,62,51]
+                        "changeLineup_Kinnara_Click": {
+                            "template": "Common/队伍属性图标_地_未点亮__92_311_42_43__42_261_142_143.png"
                         },
                         "changeLineup_Kinnara_confirm": {
                             "template": "Common/队伍属性图标_地__92_311_42_43__42_261_142_143.png"
@@ -4661,8 +4661,8 @@
                 {
                     "name": "风队",
                     "pipeline_override": {
-                        "changeLineup_Kinnara": {
-                            "target" : [77,375,59,50]
+                        "changeLineup_Kinnara_Click": {
+                            "template": "Common/队伍属性图标_风_未点亮__90_376_42_43__40_326_142_143.png"
                         },
                         "changeLineup_Kinnara_confirm": {
                             "template": "Common/队伍属性图标_风__90_376_42_43__40_326_142_143.png"
@@ -4672,8 +4672,8 @@
                 {
                     "name": "光队",
                     "pipeline_override": {
-                        "changeLineup_Kinnara": {
-                            "target" : [79,449,61,50]
+                        "changeLineup_Kinnara_Click": {
+                            "template": "Common/队伍属性图标_光_未点亮__92_452_42_43__42_402_142_143.png"
                         },
                         "changeLineup_Kinnara_confirm": {
                             "template": "Common/队伍属性图标_光__92_452_42_43__42_402_142_143.png"
@@ -4683,8 +4683,8 @@
                 {
                     "name": "暗队",
                     "pipeline_override": {
-                        "changeLineup_Kinnara": {
-                            "target" : [83,518,55,49]
+                        "changeLineup_Kinnara_Click": {
+                            "template": "Common/队伍属性图标_暗_未点亮__91_520_42_43__41_470_142_143.png"
                         },
                         "changeLineup_Kinnara_confirm": {
                             "template": "Common/队伍属性图标_暗__91_520_42_43__41_470_142_143.png"
