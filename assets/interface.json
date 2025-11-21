@@ -250,7 +250,7 @@
             "name": "自动紧纳罗",
             "entry": "startAutoKinnara",
             "pipeline_override": {
-                "等待进入": {
+                "start": {
                     "next":[
                         "主页检测",
                         "clickJoinTheBattle",
