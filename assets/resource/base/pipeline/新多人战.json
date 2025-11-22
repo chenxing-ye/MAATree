@@ -8,9 +8,17 @@
         "on_error": "stopapp"
     },
     "加入战斗": {
-        "recognition": "TemplateMatch",
-        "template": "Multi/联机战斗.png",
-        "roi" : [847,299,415,346],
+        "recognition": "OCR",
+        "expected": [
+            "联",
+            "机"
+        ],
+        "roi": [
+            1100,
+            526,
+            136,
+            73
+        ],
         "action": "Click",
         "next": [
             "点击自动战斗",
