@@ -471,7 +471,7 @@
     },
     "常规熔炼_低级奥秘_未炼完": {
         "recognition": "TemplateMatch",
-        "threshold": 0.95,
+        "threshold": 0.90,
         "template": [
             "Alchemy/未炼完检测1__290_314_22_12__240_264_122_112.png",
             "Alchemy/未炼完检测2__486_316_23_11__436_266_123_111.png"
@@ -637,8 +637,11 @@
     },
     "一键炼成_珍品熔炼_清空选择": {
         // 增加清空选择，否则自动选择偶尔会浪费半格
-        "recognition": "TemplateMatch",
-        "template": "Alchemy/炼金清空选择__701_26_76_28__651_0_176_104.png",
+        "recognition": "OCR",
+        "expected": [
+            "清空",
+            "选择"
+        ],
         "roi": [
             701,
             26,

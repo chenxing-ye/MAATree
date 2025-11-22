@@ -61,9 +61,12 @@
     "on_error": "stopapp"
   },
   "lostItem_1": {
-    "recognition": "OCR",
-    "expected" : "IV",
-    "roi" : [754,431,109,98],
+    "target": [
+      810,
+      446,
+      19,
+      18
+    ],
     "action": "Click",
     "next": [
       "lostItem_2",
