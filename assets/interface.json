@@ -64,13 +64,13 @@
                     "expected": "极难",
                     "next": [
                         "体力判定足够",
-                        "体力判定不足"
+                        "检测补体0"
                     ]
                 },
                 "zx下一章": {
                     "next": [
                         "体力判定足够",
-                        "体力判定不足"
+                        "检测补体0"
                     ]
                 },
                 "zx识别结束": {
@@ -6083,6 +6083,29 @@
                             "next": [
                                 "offDefaultMecha_Dark"
                             ]
+                        }
+                    }
+                },
+                {
+                    "name": "紧开",
+                    "pipeline_override": {
+                        "Envoy_one": {
+                            "enabled": false
+                        },
+                        "Envoy_two": {
+                            "enabled": false
+                        },
+                        "Envoy_three": {
+                            "enabled": false
+                        },
+                        "Envoy_four": {
+                            "enabled": false
+                        },
+                        "Envoy_five": {
+                            "enabled": false
+                        },
+                        "Envoy_six": {
+                            "enabled": false
                         }
                     }
                 }

@@ -499,7 +499,7 @@
     "pre_delay": 100,
     "post_delay": 100,
     "timeout": 800,
-    "on_error": "探求者之书_奖励"
+    "on_error": "探求者之书_奖励_2"
   },
   "一键领取_探索者之书_本周任务奖励_2": {
     "recognition": "OCR",
@@ -543,7 +543,7 @@
     "pre_delay": 100,
     "post_delay": 100,
     "timeout": 800,
-    "on_error": "探求者之书_奖励_器灵讨伐书"
+    "on_error": "停止"
   },
   "探求者之书_奖励_一键领取_2": {
     "recognition": "OCR",
