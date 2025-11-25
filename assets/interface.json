@@ -5867,6 +5867,29 @@
                             ]
                         }
                     }
+                },
+                {
+                    "name": "紧开",
+                    "pipeline_override": {
+                        "Envoy_one": {
+                            "enabled": false
+                        },
+                        "Envoy_two": {
+                            "enabled": false
+                        },
+                        "Envoy_three": {
+                            "enabled": false
+                        },
+                        "Envoy_four": {
+                            "enabled": false
+                        },
+                        "Envoy_five": {
+                            "enabled": false
+                        },
+                        "Envoy_six": {
+                            "enabled": false
+                        }
+                    }
                 }
             ]
         },
