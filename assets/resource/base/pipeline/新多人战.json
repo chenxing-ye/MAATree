@@ -955,7 +955,26 @@
             "xdr识别进入房间1",
             "战斗胜利",
             "战斗未找到",
-            "房间已满"
+            "房间已满",
+            "房间未找到"
+        ],
+        "timeout": 35000,
+        "on_error": "stopapp"
+    },
+    "房间未找到": {
+        "recognition": "OCR",
+        "expected": "继续",
+        "roi": [
+            719,
+            466,
+            133,
+            50
+        ],
+        "rate_limit": 800,
+        "action": "Click",
+        "next": [
+            "搜索中",
+            "xdr识别进入房间1"
         ],
         "timeout": 35000,
         "on_error": "stopapp"
