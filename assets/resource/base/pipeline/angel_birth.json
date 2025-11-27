@@ -1,0 +1,96 @@
+{
+    "AngelBirth": {
+        "next": [
+            "EnterDungeonMain"
+        ],
+        "interrupt": [
+            "ReturnMain"
+        ]
+    },
+    "ClickAngel": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    906,
+                    101,
+                    59,
+                    30
+                ],
+                "expected": "契约"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "SelectAngelFirst"
+        ]
+    },
+    "SelectAngelFirst": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    26,
+                    227,
+                    1217,
+                    401
+                ],
+                "template": "AngelBirth/天使诞生__665_489_209_57__615_439_309_157.png"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "SelectAngelSecond",
+            "SelectAngelFirst"
+        ]
+    },
+    "SelectAngelSecond": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1112,
+                    627,
+                    93,
+                    30
+                ],
+                "expected": [
+                    "挑",
+                    "战"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "AngelBirthCountLack",
+            "StartBattle",
+            "AddAPMain"
+        ]
+    },
+    "AngelBirthCountLack": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    524,
+                    319,
+                    220,
+                    73
+                ],
+                "expected": [
+                    "挑战",
+                    "次数不足"
+                ]
+            }
+        },
+        "next": [
+            "ReturnMain"
+        ]
+    }
+}

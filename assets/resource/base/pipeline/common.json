@@ -772,5 +772,42 @@
             "CheckAddBPON"
         ]
     },
+    "AddAPMain": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    586,
+                    51,
+                    107,
+                    40
+                ],
+                "expected": [
+                    "回复",
+                    "AP"
+                ]
+            }
+        },
+        "next": [
+            "AddAPClick"
+        ]
+    },
+    "AddAPClick": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    761,
+                    403,
+                    79,
+                    42
+                ],
+                "expected": [
+                    "使用"
+                ]
+            }
+        },
+        "action": "Click"
+    },
     "TODO": {}
 }

@@ -367,6 +367,23 @@
         {
             "name": "每日在线",
             "entry": "DailyOnline"
+        },
+        {
+            "name": "天使诞生每日",
+            "entry": "AngelBirth",
+            "pipeline_override": {
+                "EnterDungeonMain": {
+                    "next": [
+                        "ClickAngel",
+                        "EnterDungeonMain"
+                    ]
+                },
+                "AddAPClick": {
+                    "next": [
+                        "SelectAngelSecond"
+                    ]
+                }
+            }
         }
     ],
     "option": {

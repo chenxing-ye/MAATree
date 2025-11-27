@@ -1,0 +1,141 @@
+{
+    "StartBattle": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    578,
+                    48,
+                    200,
+                    45
+                ],
+                "expected": [
+                    "选择",
+                    "支援",
+                    "虚数体"
+                ]
+            }
+        },
+        "next": [
+            "BattleConfirm"
+        ],
+        "interrupt": [
+            "AssistMain"
+        ]
+    },
+    "AssistMain": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    578,
+                    48,
+                    200,
+                    45
+                ],
+                "expected": [
+                    "选择",
+                    "支援",
+                    "虚数体"
+                ]
+            }
+        },
+        "next": [
+            "SelectAssist"
+        ]
+    },
+    "SelectAssist": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    260,
+                    325,
+                    27,
+                    29
+                ]
+            }
+        }
+    },
+    "BattleConfirm": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1164,
+                    588,
+                    75,
+                    42
+                ],
+                "expected": [
+                    "出击"
+                ]
+            }
+        },
+        "action": "Click",
+        "next": [
+            "EnterRoom"
+        ]
+    },
+    "EnterRoom": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    10,
+                    9,
+                    182,
+                    36
+                ],
+                "expected": [
+                    "回合",
+                    "阶段"
+                ]
+            }
+        },
+        "next": [
+            "BattleEnd"
+        ],
+        "interrupt": [
+            "Battling"
+        ]
+    },
+    "Battling": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    10,
+                    9,
+                    182,
+                    36
+                ],
+                "expected": [
+                    "回合",
+                    "阶段"
+                ]
+            }
+        },
+        "post_delay": 3000
+    },
+    "BattleEnd": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1081,
+                    616,
+                    192,
+                    99
+                ],
+                "expected": [
+                    "返回"
+                ]
+            }
+        },
+        "next": [
+            "ReturnMain",
+            "BattleEnd"
+        ]
+    }
+}
