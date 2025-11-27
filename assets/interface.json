@@ -141,16 +141,8 @@
             "repeatable": false
         },
         {
-            "name": "探索活动奖励领取",
-            "entry": "探索活动领取-3.10版本",
-            "pipeline_override": {
-                "等待进入": {
-                    "next": "主页检测"
-                },
-                "礼包检测": {
-                    "next": "探索活动领取-3.10版本"
-                }
-            },
+            "name": "探索活动及每日奖励领取",
+            "entry": "DailyTask",
             "repeatable": false
         },
         {
@@ -303,7 +295,8 @@
                 "第一优先级关卡",
                 "第二优先级关卡(不要重复)",
                 "第三优先级关卡",
-                "连战次数"
+                "连战次数",
+                "是否创建房间"
             ],
             "doc": "[color:blue][size:20][u]高级设置[/u]中可以设置所有任务运行完成后重启电脑[/size][/color]\n[size:20][color:red]通过此设置可以缓解长时间运行容易出错的问题[/color][/size]",
             "repeatable": true,
@@ -385,6 +378,23 @@
         {
             "name": "每日在线",
             "entry": "DailyOnline"
+        },
+        {
+            "name": "天使诞生每日",
+            "entry": "AngelBirth",
+            "pipeline_override": {
+                "EnterDungeonMain": {
+                    "next": [
+                        "ClickAngel",
+                        "EnterDungeonMain"
+                    ]
+                },
+                "AddAPClick": {
+                    "next": [
+                        "SelectAngelSecond"
+                    ]
+                }
+            }
         }
     ],
     "option": {
@@ -1189,6 +1199,27 @@
                             "next": [
                                 "打开自动再战",
                                 "点击确定"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "是否创建房间": {
+            "cases": [
+                {
+                    "name": "是",
+                    "pipeline_override": {}
+                },
+                {
+                    "name": "否",
+                    "pipeline_override": {
+                        "打开off": {
+                            "roi": [
+                                296,
+                                208,
+                                525,
+                                77
                             ]
                         }
                     }

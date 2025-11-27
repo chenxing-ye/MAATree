@@ -1,10 +1,11 @@
 {
   "探索活动领取-3.10版本": {
     "next": [
-      "探索活动领取",
-      "返回主页检测"
+      "探索活动领取"
     ],
-    "timeout": 3000,
+    "interrupt": [
+      "ReturnMain"
+    ],
     "on_error": "stopapp"
   },
   "探索活动领取": {
@@ -272,7 +273,7 @@
     ],
     "next": [
       "一键领取_器灵讨伐书_本周任务奖励",
-      "器灵讨伐书_任务_点击_二次领取"
+      "器灵讨伐书_奖励"
     ],
     "interrupt": [
       "ts点击空白处"
@@ -280,53 +281,6 @@
     "pre_delay": 150,
     "post_delay": 150,
     "timeout": 3000,
-    "on_error": "stopapp"
-  },
-  "器灵讨伐书_任务_点击_二次领取": {
-    "recognition": "OCR",
-    "expected": "任务",
-    "roi": [
-      1115,
-      663,
-      123,
-      57
-    ],
-    "action": "Click",
-    "next": [
-      "一键领取_器灵讨伐书_日常任务奖励_二次领取",
-      "器灵讨伐书_奖励"
-    ],
-    "pre_delay": 150,
-    "post_delay": 150,
-    "timeout": 800,
-    "on_error": "器灵讨伐书_任务_本周_切换"
-  },
-  "一键领取_器灵讨伐书_日常任务奖励_二次领取": {
-    "recognition": "OCR",
-    "expected": "领取",
-    "roi": [
-      982,
-      203,
-      128,
-      67
-    ],
-    "action": "Click",
-    "target": [
-      1150,
-      38,
-      89,
-      33
-    ],
-    "next": [
-      "一键领取_器灵讨伐书_日常任务奖励_二次领取",
-      "器灵讨伐书_奖励"
-    ],
-    "interrupt": [
-      "ts点击空白处"
-    ],
-    "pre_delay": 150,
-    "post_delay": 150,
-    "timeout": 800,
     "on_error": "stopapp"
   },
   "器灵讨伐书_奖励": {
@@ -342,7 +296,8 @@
     "next": "器灵书_奖励界面",
     "pre_delay": 100,
     "post_delay": 100,
-    "timeout": 2000
+    "timeout": 800,
+    "on_error": "stopapp"
   },
   "器灵讨伐书_奖励_一键领取": {
     "recognition": "OCR",
@@ -580,5 +535,65 @@
     "action": "Click",
     "timeout": 2000,
     "next": "探求者之书_任务_本周_切换_2"
+  },
+  "DailyTask": {
+    "next": [
+      "ClickTask"
+    ],
+    "interrupt": [
+      "ReturnMain"
+    ]
+  },
+  "ClickTask": {
+    "recognition": "OCR",
+    "expected": "任务",
+    "roi": [
+      36,
+      640,
+      594,
+      55
+    ],
+    "action": "Click",
+    "next": [
+      "TaskAllGain",
+      "ClickTask"
+    ]
+  },
+  "TaskAllGain": {
+    "recognition": "OCR",
+    "expected": [
+      "一键",
+      "领取"
+    ],
+    "roi": [
+      885,
+      12,
+      169,
+      53
+    ],
+    "action": "Click",
+    "next": [
+      "TaskNoGain",
+      "TaskAllGain"
+    ],
+    "interrupt": [
+      "点击空白处关闭"
+    ]
+  },
+  "TaskNoGain": {
+    "recognition": "OCR",
+    "expected": [
+      "暂无",
+      "可领取"
+    ],
+    "roi": [
+      525,
+      335,
+      228,
+      44
+    ],
+    "next": [
+      "探索活动领取-3.10版本"
+    ]
   }
 }
