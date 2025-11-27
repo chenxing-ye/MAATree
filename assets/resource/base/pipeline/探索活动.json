@@ -575,6 +575,9 @@
         "next": [
             "TaskNoGain",
             "TaskAllGain"
+        ],
+        "interrupt": [
+            "点击空白处关闭"
         ]
     },
     "TaskNoGain": {
