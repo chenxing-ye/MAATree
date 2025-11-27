@@ -70,8 +70,10 @@
         "next": [
             "AngelBirthCountLack",
             "StartBattle",
-            "AddAPMain"
-        ]
+            "AddAPMain",
+            "SelectAngelSecond"
+        ],
+        "post_delay": 2000
     },
     "AngelBirthCountLack": {
         "recognition": {
